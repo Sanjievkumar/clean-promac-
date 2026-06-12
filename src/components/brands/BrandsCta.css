@@ -1,0 +1,87 @@
+.brands-cta-section {
+  padding: 4rem 0 6rem;
+  background-color: var(--color-gray-50);
+}
+
+.brands-cta-box {
+  background-color: var(--color-navy);
+  border-radius: var(--radius-xl);
+  padding: 4rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+/* Subtle background pattern for the CTA box */
+.brands-cta-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+}
+
+.cta-content {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-subtitle {
+  display: block;
+  font-family: var(--font-family-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.cta-title {
+  color: var(--color-white);
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.cta-desc {
+  color: var(--color-gray-300);
+  font-size: 1rem;
+  max-width: 450px;
+  margin-bottom: 0;
+}
+
+.cta-action {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-btn {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+  .brands-cta-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  
+  .cta-desc {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .cta-title {
+    font-size: 2rem;
+  }
+}

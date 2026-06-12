@@ -1,0 +1,59 @@
+.brands-intro {
+  padding: 6rem 0 4rem;
+  text-align: center;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+}
+
+.brands-intro-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.intro-subtitle {
+  display: block;
+  font-family: var(--font-family-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.intro-title {
+  font-size: 3rem;
+  color: var(--color-navy);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.intro-desc {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Diagonal shape matching the design */
+.intro-bg-shape {
+  position: absolute;
+  bottom: -50px;
+  right: -5%;
+  width: 400px;
+  height: 200px;
+  background-color: var(--color-navy);
+  transform: rotate(-15deg);
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .brands-intro {
+    padding: 4rem 0 2rem;
+  }
+  
+  .intro-title {
+    font-size: 2.2rem;
+  }
+}
