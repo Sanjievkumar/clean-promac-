@@ -36,7 +36,11 @@ const BrandsHero = () => {
 
         {/* The Dotted Globe exactly positioned over the SVG's circular bulge */}
         <div className="precise-globe-container">
-          <div className="dotted-globe-pattern"></div>
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg" 
+            alt="World Map" 
+            className="dotted-world-map-img"
+          />
           
           {/* Pulsing red location markers */}
           <div className="map-marker loc-usa">
