@@ -1,0 +1,155 @@
+.services-hero {
+  position: relative;
+  min-height: 80vh;
+  background-color: var(--color-gray-50);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-top: var(--header-height);
+  z-index: 1;
+}
+
+/* Organic swooping white background using scalable SVG */
+.organic-svg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.precise-swoop-svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Circular Masked Image exactly positioned over the SVG bulge */
+.precise-image-container {
+  position: absolute;
+  /* Center coordinates of the globe bulge based on the 1440x900 SVG viewBox */
+  /* Center is X:1150, Y:500. Radius is 350. */
+  left: calc((1150 - 350) / 1440 * 100%);
+  top: calc((500 - 350) / 900 * 100%);
+  width: calc(700 / 1440 * 100%);
+  height: calc(700 / 900 * 100%);
+  border-radius: 50%;
+  overflow: visible; /* To allow glow to bleed out */
+}
+
+.services-hero-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
+}
+
+.image-pulse-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 110%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255,255,255,0) 70%);
+  border-radius: 50%;
+  z-index: 1;
+  animation: slowPulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes slowPulse {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+  100% { transform: translate(-50%, -50%) scale(1.05); opacity: 0.8; }
+}
+
+.services-hero-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding-right: 50%;
+}
+
+.breadcrumbs {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.services-hero-title {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  color: var(--color-navy);
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.title-underline {
+  width: 60px;
+  height: 4px;
+  background-color: var(--color-red);
+  margin-bottom: 2rem;
+  border-radius: 2px;
+}
+
+.services-hero-desc {
+  font-size: 1.1rem;
+  max-width: 80%;
+  line-height: 1.7;
+}
+
+/* Floating Card */
+.services-floating-card {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  background: var(--color-navy);
+  color: var(--color-white);
+  padding: 2.5rem;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 30px 60px rgba(8, 12, 22, 0.3);
+  z-index: 10;
+  width: 350px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transform: translateY(0);
+  transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.services-floating-card:hover {
+  transform: translateY(-10px);
+}
+
+.floating-card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: rgba(230, 57, 70, 0.1);
+  color: var(--color-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(230, 57, 70, 0.2);
+}
+
+.floating-card-text p {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-gray-200);
+}
+
+.floating-card-text p:last-child {
+  margin-bottom: 0;
+}
