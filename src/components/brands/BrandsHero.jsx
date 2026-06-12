@@ -24,14 +24,27 @@ const BrandsHero = () => {
           </p>
         </div>
 
-        {/* Right Visual / Globe */}
+        {/* Right Visual / Globe Map */}
         <div className="brands-hero-visual animate-on-scroll">
           <div className="globe-wrapper">
-            <div className="globe-pattern"></div>
-            {/* Red accent dots matching design */}
-            <div className="red-dot dot-1"></div>
-            <div className="red-dot dot-2"></div>
-            <div className="red-dot dot-3"></div>
+            <div className="world-map-svg">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg" alt="World Map" style={{opacity: 0.15, width: '120%', filter: 'grayscale(100%)', transform: 'scale(1.2)'}} />
+            </div>
+            
+            {/* Red accent dots mapping to locations */}
+            <div className="map-marker loc-usa">
+              <div className="marker-dot"></div>
+              <div className="marker-pulse"></div>
+            </div>
+            <div className="map-marker loc-uk">
+              <div className="marker-dot"></div>
+              <div className="marker-pulse"></div>
+            </div>
+            <div className="map-marker loc-asia">
+              <div className="marker-dot"></div>
+              <div className="marker-pulse"></div>
+            </div>
+            
           </div>
           <div className="curved-bg-element"></div>
         </div>
