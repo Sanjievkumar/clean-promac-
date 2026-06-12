@@ -47,7 +47,7 @@ const ServicesProcess = () => {
           <div className="process-svg-line">
             <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
               <path 
-                d="M 0,50 C 15,50 20,30 30,30 C 40,30 40,70 50,70 C 60,70 60,30 70,30 C 80,30 85,50 100,50" 
+                d="M 0,50 C 5,50 5,50 10,50 C 20,50 20,30 30,30 C 40,30 40,70 50,70 C 60,70 60,30 70,30 C 80,30 80,50 90,50 C 95,50 100,50 100,50" 
                 fill="none" 
                 stroke="var(--color-gray-200)" 
                 strokeWidth="0.5" 
