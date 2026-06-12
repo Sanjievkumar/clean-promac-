@@ -27,8 +27,8 @@
   opacity: 0.6;
 }
 
-/* Organic swooping white background using CSS composition */
-.organic-shape-wrapper {
+/* Organic swooping white background using scalable SVG */
+.organic-svg-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -36,40 +36,45 @@
   height: 100%;
   z-index: -1;
   pointer-events: none;
-  /* This drop-shadow outlines the merged silhouette of the children */
-  filter: drop-shadow(0px 20px 40px rgba(8, 12, 22, 0.08));
 }
 
-.left-swoop-panel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 65%;
-  height: 95%;
-  background-color: var(--color-white);
-  /* The massive radius creates the swoop valley */
-  border-bottom-right-radius: 40vw; 
+.precise-swoop-svg {
+  width: 100%;
+  height: 100%;
 }
 
-.globe-circle-panel {
+/* Dotted globe exactly positioned over the SVG bulge */
+.precise-globe-container {
   position: absolute;
-  top: 50%;
-  right: 5%;
-  transform: translateY(-50%);
-  width: 600px;
-  height: 600px;
-  background-color: var(--color-white);
+  /* Center coordinates of the globe bulge based on the 1440x900 SVG viewBox */
+  /* Center is X:1150, Y:500. Radius is 350. */
+  /* We use percentages to ensure it tracks perfectly with the SVG slice scaling */
+  left: calc((1150 - 350) / 1440 * 100%);
+  top: calc((500 - 350) / 900 * 100%);
+  width: calc(700 / 1440 * 100%);
+  height: calc(700 / 900 * 100%);
   border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Dotted pattern using CSS radial gradients to mimic the world map */
+.dotted-globe-pattern {
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(var(--color-gray-300) 2px, transparent 2px);
+  background-size: 15px 15px;
+  opacity: 0.4;
+  mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
 }
 
 .brands-hero-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   align-items: center;
-  gap: 4rem;
   position: relative;
   z-index: 2;
   height: 100%;
+  padding-right: 50%; /* Constrain content to the left side */
 }
 
 .breadcrumbs {
@@ -99,38 +104,6 @@
   font-size: 1.1rem;
   max-width: 80%;
   line-height: 1.7;
-}
-
-/* Right Visual */
-.brands-hero-visual {
-  position: relative;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Container for map */
-.globe-wrapper {
-  position: relative;
-  width: 450px;
-  height: 450px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 60px; /* Shift right to align with circle panel */
-  border-radius: 50%;
-  overflow: hidden;
-  /* We don't need background or shadow here because organic-shape-wrapper provides it */
-}
-
-.world-map-img {
-  width: 130%;
-  height: 130%;
-  object-fit: contain;
-  opacity: 0.15;
-  filter: grayscale(100%);
-  transform: scale(1.1) translateX(-5%);
 }
 
 .map-marker {
@@ -165,10 +138,10 @@
   100% { transform: scale(2.5); opacity: 0; }
 }
 
-/* Approximate locations on the map */
-.loc-usa { top: 40%; left: 25%; }
-.loc-uk { top: 35%; right: 45%; }
-.loc-asia { top: 45%; right: 25%; }
+/* Approximate locations on the dotted map container */
+.loc-usa { top: 40%; left: 30%; }
+.loc-uk { top: 30%; right: 45%; }
+.loc-asia { top: 40%; right: 20%; }
 
 .vertical-trusted-text {
   position: absolute;
