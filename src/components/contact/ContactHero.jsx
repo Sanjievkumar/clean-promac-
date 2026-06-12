@@ -16,13 +16,9 @@ const ContactHero = () => {
               <feDropShadow dx="15" dy="0" stdDeviation="25" floodColor="#080C16" floodOpacity="0.08"/>
             </filter>
           </defs>
-          <path 
-            d="M0,0 L1440,0 L1440,900 L0,900 Z" 
-            fill="var(--color-gray-50)" 
-          />
           {/* The image is actually in the background, the SVG white shape covers the left side */}
           <path 
-            d="M0,0 L700,0 C1000,0 800,450 600,450 C400,450 700,900 1000,900 L0,900 Z" 
+            d="M0,0 L850,0 C1250,0 800,450 650,450 C500,450 800,900 1200,900 L0,900 Z" 
             fill="#FFFFFF" 
             filter="url(#contact-shadow)"
             className="contact-white-swoop"
