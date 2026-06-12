@@ -4,6 +4,28 @@ import './BrandsHero.css';
 const BrandsHero = () => {
   return (
     <section className="brands-hero">
+      
+      {/* Background with concentric circles */}
+      <div className="hero-bg-lines"></div>
+
+      {/* The organic swooping white shape with shadow */}
+      <div className="hero-swoop-bg">
+        <svg viewBox="0 0 1440 700" preserveAspectRatio="xMidYMin slice" className="swoop-svg">
+          <defs>
+            <filter id="hero-shadow" x="-10%" y="-10%" width="130%" height="130%">
+              <feDropShadow dx="0" dy="25" stdDeviation="35" floodColor="#080C16" floodOpacity="0.08"/>
+            </filter>
+          </defs>
+          <path 
+            d="M0,0 L1440,0 L1440,200 
+               C1350,200 1350,650 1050,650 
+               C750,650 700,450 0,450 Z" 
+            fill="#FFFFFF" 
+            filter="url(#hero-shadow)"
+          />
+        </svg>
+      </div>
+
       <div className="container brands-hero-container">
         
         {/* Left Content */}
@@ -24,7 +46,7 @@ const BrandsHero = () => {
           </p>
         </div>
 
-        {/* Right Visual / Globe Map */}
+        {/* Right Visual / Globe Map embedded in the curve */}
         <div className="brands-hero-visual animate-on-scroll">
           <div className="globe-wrapper">
             <div className="world-map-svg">
@@ -46,7 +68,6 @@ const BrandsHero = () => {
             </div>
             
           </div>
-          <div className="curved-bg-element"></div>
         </div>
         
         <div className="vertical-trusted-text">
