@@ -62,15 +62,15 @@
   width: 140%;
   height: 140%;
   object-fit: contain;
-  opacity: 0.15;
+  opacity: 0.35; /* Increased opacity for better visibility */
   filter: grayscale(100%);
   transform: scale(1.1) translateX(-5%);
   
-  /* This brilliantly chops the solid SVG into a dot pattern! */
-  mask-image: radial-gradient(circle, black 2px, transparent 2.5px);
-  mask-size: 10px 10px;
-  -webkit-mask-image: radial-gradient(circle, black 2px, transparent 2.5px);
-  -webkit-mask-size: 10px 10px;
+  /* Denser dot pattern to outline the continents more clearly */
+  mask-image: radial-gradient(circle, black 1.5px, transparent 2px);
+  mask-size: 6px 6px;
+  -webkit-mask-image: radial-gradient(circle, black 1.5px, transparent 2px);
+  -webkit-mask-size: 6px 6px;
 }
 
 .brands-hero-container {
