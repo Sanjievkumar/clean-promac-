@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Brands from './pages/Brands';
 import Services from './pages/Services';
+import Contact from './pages/Contact';
 
 function App() {
   const location = useLocation();
@@ -49,6 +50,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/brands" element={<Brands />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>
