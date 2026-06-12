@@ -10,32 +10,31 @@ import CoreValues from '../components/CoreValues';
 import QuoteBanner from '../components/QuoteBanner';
 import CtaSection from '../components/CtaSection';
 import InsightsSection from '../components/InsightsSection';
-import AboutSection from '../components/AboutSection';
-
-import PageTransition from '../components/PageTransition';
-import HorizontalShowcase from '../components/HorizontalShowcase';
-import VideoTypography from '../components/VideoTypography';
 
 const Home = () => {
   return (
-    <PageTransition>
-      <main>
-        <Hero />
-        <VideoTypography />
-        <BrandsSection />
-        <ProductsSlider />
-        <HorizontalShowcase />
-        <IndustriesGrid />
-        <FeaturesSection />
-        <CoreValues />
-        <QuoteBanner />
-        <StatsBanner />
-        <FeaturedProducts />
-        <CtaSection />
-        <InsightsSection />
-        <AboutSection />
-      </main>
-    </PageTransition>
+    <main>
+      <Hero />
+      <BrandsSection />
+      
+      <CoreValues />
+
+      <FeaturedProducts />
+      
+      <QuoteBanner />
+
+      <ProductsSlider />
+      
+      <FeaturesSection />
+
+      <IndustriesGrid />
+      
+      <StatsBanner />
+      
+      <InsightsSection />
+      
+      <CtaSection />
+    </main>
   );
 };
 

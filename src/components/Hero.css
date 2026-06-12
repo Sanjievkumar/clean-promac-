@@ -8,16 +8,6 @@
   padding-top: 100px;
 }
 
-.hero-parallax-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 150%;
-  background-color: var(--color-navy);
-  z-index: 0;
-}
-
 /* Subtle ambient glow behind the hero */
 .hero::before {
   content: '';
@@ -31,16 +21,6 @@
   z-index: 1;
   pointer-events: none;
   animation: rotateGlow 30s linear infinite;
-}
-
-.hero-3d-wrapper {
-  background: transparent !important;
-  box-shadow: none !important;
-  width: 100%;
-  height: 600px;
-}
-.hero-3d-wrapper:hover {
-  transform: none !important;
 }
 
 .hero-container {
@@ -237,10 +217,6 @@
     height: auto;
     min-height: 400px;
     order: -1;
-  }
-
-  .hero-3d-wrapper {
-    height: 400px;
   }
   
   .title {
