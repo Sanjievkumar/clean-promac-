@@ -28,7 +28,7 @@ const ContactHero = () => {
         {/* The Image sitting behind the white swoop on the right */}
         <div className="contact-image-container">
           <img 
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" 
+            src="https://images.unsplash.com/photo-1556761175-5973dc0f32d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" 
             alt="Office Lobby" 
             className="contact-hero-img"
           />
