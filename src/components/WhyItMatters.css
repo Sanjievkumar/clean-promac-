@@ -1,0 +1,82 @@
+.why-it-matters {
+  padding: 5rem 0;
+  background-color: var(--color-white);
+}
+
+.wim-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.wim-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.wim-desc {
+  font-size: 1.1rem;
+  color: var(--color-gray-700);
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.wim-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.wim-card {
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: var(--shadow-sm);
+}
+
+.wim-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.bg-pink { background-color: #FFF0F2; }
+.bg-blue { background-color: #F0F4FF; }
+.bg-green { background-color: #F0FFF4; }
+.bg-orange { background-color: #FFF8F0; }
+
+.wim-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.wim-card-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.wim-card-desc {
+  font-size: 0.85rem;
+  color: var(--color-gray-700);
+  line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+  .wim-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .wim-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .wim-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

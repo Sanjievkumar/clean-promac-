@@ -1,0 +1,78 @@
+.quote-banner {
+  padding: 0 0 5rem 0;
+  background-color: var(--color-white);
+}
+
+.quote-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  min-height: 350px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  border-left: 6px solid var(--color-red);
+}
+
+.quote-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.quote-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(11, 19, 43, 0.95) 0%, rgba(11, 19, 43, 0.8) 100%);
+}
+
+.quote-content {
+  position: relative;
+  z-index: 2;
+  padding: 4rem;
+  max-width: 800px;
+  color: var(--color-white);
+}
+
+.quote-icon {
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--color-red);
+  font-family: serif;
+  display: block;
+  margin-bottom: -1rem;
+}
+
+.quote-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.quote-subtext {
+  font-size: 1.1rem;
+  color: var(--color-gray-300);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .quote-wrapper {
+    min-height: auto;
+  }
+  .quote-content {
+    padding: 3rem 2rem;
+  }
+  .quote-text {
+    font-size: 1.8rem;
+  }
+}

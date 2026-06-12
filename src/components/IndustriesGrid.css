@@ -1,0 +1,142 @@
+.industries-section {
+  padding: 5rem 0;
+  background-color: var(--color-white);
+}
+
+.left-align {
+  text-align: left;
+}
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1rem;
+}
+
+.industry-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  height: 250px;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.industry-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-2xl);
+}
+
+/* Because there are 8 items and the design shows them in a single row or flex grid. 
+   Wait, the design shows all 8 in a single row? Yes, it looks like a very tight 8-column grid.
+   Let's make it responsive. */
+
+@media (max-width: 1440px) {
+  .industries-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.industry-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.industry-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.industry-placeholder-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1580982335150-13f8ccb85293?auto=format&fit=crop&q=80&w=600');
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+/* Adding unique tints for placeholder differentiation */
+.industry-card:nth-child(even) .industry-placeholder-bg {
+  filter: hue-rotate(45deg);
+}
+.industry-card:nth-child(3n) .industry-placeholder-bg {
+  filter: hue-rotate(90deg);
+}
+
+.industry-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(11, 19, 43, 0.1) 0%, rgba(11, 19, 43, 0.9) 100%);
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.industry-card:hover .industry-placeholder-bg,
+.industry-card:hover .industry-bg-image {
+  transform: scale(1.1);
+}
+
+.industry-card:hover .industry-overlay {
+  background: linear-gradient(to bottom, rgba(230, 57, 70, 0.2) 0%, rgba(11, 19, 43, 0.95) 100%);
+}
+
+.industry-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.industry-icon {
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.industry-card:hover .industry-icon {
+  transform: translateY(-5px);
+  opacity: 1;
+  color: var(--color-red);
+}
+
+.industry-name {
+  color: var(--color-white);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
