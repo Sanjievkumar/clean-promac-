@@ -28,7 +28,7 @@ const ContactHero = () => {
         {/* The Image sitting behind the white swoop on the right */}
         <div className="contact-image-container">
           <img 
-            src="/assets/cleanpromac_lobby.png" 
+            src="/assets/cleanpromac_lobby_right.png" 
             alt="CleanProMac Office Lobby" 
             className="contact-hero-img"
           />
