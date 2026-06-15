@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -46,13 +46,13 @@ const Navbar = () => {
           </Link>
 
           <div className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
-            <Link to="/">Home</Link>
-            <Link to="/about">About Us</Link>
-            <Link to="/brands">Brands</Link>
+            <NavLink to="/" end>Home</NavLink>
+            <NavLink to="/about">About Us</NavLink>
+            <NavLink to="/brands">Brands</NavLink>
             <div className="dropdown">
-              <Link to="/services">Services <span className="caret">▼</span></Link>
+              <NavLink to="/services">Services <span className="caret">▼</span></NavLink>
             </div>
-            <Link to="/contact">Contact Us</Link>
+            <NavLink to="/contact">Contact Us</NavLink>
           </div>
 
           <button 
