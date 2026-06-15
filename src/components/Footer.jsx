@@ -43,8 +43,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          </div>
-
           <div className="footer-col">
             <h4>Services</h4>
             <ul>
