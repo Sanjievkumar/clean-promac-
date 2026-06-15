@@ -37,25 +37,12 @@ const Footer = () => {
             <h4>Quick Links</h4>
             <ul>
               <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/products">Products</Link></li>
               <li><Link to="/brands">Brands</Link></li>
-              <li><Link to="/industries">Industries</Link></li>
               <li><Link to="/services">Services</Link></li>
-              <li><Link to="/resources">Resources</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>
             </ul>
           </div>
 
-          <div className="footer-col">
-            <h4>Products</h4>
-            <ul>
-              <li><Link to="/products/scrubber-dryers">Scrubber Dryers</Link></li>
-              <li><Link to="/products/vacuum-cleaners">Vacuum Cleaners</Link></li>
-              <li><Link to="/products/sweepers">Sweepers</Link></li>
-              <li><Link to="/products/pressure-washers">Pressure Washers</Link></li>
-              <li><Link to="/products/steam-cleaners">Steam Cleaners</Link></li>
-              <li><Link to="/products/chemicals">Chemicals & Accessories</Link></li>
-            </ul>
           </div>
 
           <div className="footer-col">
