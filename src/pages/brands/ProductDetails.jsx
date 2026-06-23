@@ -42,12 +42,29 @@ const ProductDetails = () => {
         <div className="container">
           <div className="product-hero-grid">
 
-            {/* Left: Image */}
+            {/* Left: Image + Gallery */}
             <div className="product-hero-visual">
               <div className="product-hero-img-bg"></div>
               <img src={product.image} alt={product.name} className="product-hero-img" />
               {product.modelCode && (
                 <div className="product-badge">{product.modelCode}</div>
+              )}
+              {/* Gallery thumbnails */}
+              {product.gallery && product.gallery.length > 1 && (
+                <div className="product-gallery-thumbs">
+                  {product.gallery.map((img, i) => (
+                    <img
+                      key={i}
+                      src={img}
+                      alt={`${product.name} view ${i + 1}`}
+                      className="gallery-thumb"
+                      onClick={e => {
+                        const mainImg = e.target.closest('.product-hero-visual').querySelector('.product-hero-img');
+                        mainImg.src = img;
+                      }}
+                    />
+                  ))}
+                </div>
               )}
             </div>
 

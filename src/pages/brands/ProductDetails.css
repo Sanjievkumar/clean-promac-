@@ -99,6 +99,33 @@
   z-index: 2;
 }
 
+/* Gallery thumbnails */
+.product-gallery-thumbs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.gallery-thumb {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--color-gray-200);
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+  background: white;
+}
+
+.gallery-thumb:hover {
+  border-color: #00a8b0;
+  transform: scale(1.08);
+}
+
 .product-category-label {
   font-size: 0.85rem;
   font-weight: 600;
