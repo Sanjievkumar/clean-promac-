@@ -26,7 +26,7 @@ const ProductDetails = () => {
   return (
     <main className="product-details-page">
 
-      {/* Breadcrumb Back button */}
+      {/* Breadcrumb */}
       <div className="product-breadcrumb-bar">
         <div className="container">
           <Link to={`/brands/${brand.id}`} className="breadcrumb-link">{brand.name}</Link>
@@ -56,13 +56,25 @@ const ProductDetails = () => {
               <p className="product-category-label">{category.name}</p>
               <h1 className="product-hero-name">{product.name}</h1>
               {product.tagline && (
-                <p className="product-hero-tagline">{product.tagline}</p>
+                <p className="product-hero-tagline">"{product.tagline}"</p>
               )}
               <p className="product-hero-desc">{product.description}</p>
 
+              {/* Ideal For tags */}
+              {product.idealFor && (
+                <div className="ideal-for-row">
+                  <span className="ideal-for-label">Ideal for:</span>
+                  <div className="ideal-for-tags">
+                    {product.idealFor.map(sector => (
+                      <span key={sector} className="sector-tag">{sector}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               <div className="product-hero-actions">
                 <Link to="/contact" className="btn btn-primary">Request a Quote</Link>
-                <a href="https://www.truvox.com" target="_blank" rel="noopener noreferrer" className="btn btn-outline">Visit Truvox Website</a>
+                <a href={`https://www.truvox.com/product/${productId}/`} target="_blank" rel="noopener noreferrer" className="btn btn-outline">View on Truvox.com ↗</a>
               </div>
             </div>
           </div>
@@ -78,16 +90,22 @@ const ProductDetails = () => {
             <div className="product-features-panel">
               <h2 className="panel-title">Key Features</h2>
               <ul className="features-list">
-                {product.features.map((feature, i) => (
-                  <li key={i} className="feature-item">
-                    <div className="feature-check">
-                      <svg viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <span>{feature}</span>
-                  </li>
-                ))}
+                {product.features.map((feature, i) => {
+                  const [label, ...rest] = feature.split(' — ');
+                  const hasLabel = rest.length > 0;
+                  return (
+                    <li key={i} className="feature-item">
+                      <div className="feature-check">
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <span>
+                        {hasLabel ? <><strong>{label}</strong> — {rest.join(' — ')}</> : feature}
+                      </span>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
 
@@ -105,12 +123,84 @@ const ProductDetails = () => {
                 </tbody>
               </table>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* Other Products in Category */}
+      {/* Floor Types */}
+      {product.floorTypes && (
+        <section className="floor-types-section">
+          <div className="container">
+            <h2 className="panel-title">Compatible Floor Types</h2>
+            <div className="floor-types-grid">
+              {product.floorTypes.map(ft => (
+                <div key={ft} className="floor-type-chip">
+                  <span>✓</span> {ft}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Accessories */}
+      {product.accessories && (
+        <section className="accessories-section">
+          <div className="container">
+            <h2 className="panel-title">Accessories</h2>
+            <div className="accessories-grid">
+              {['Standard', 'Optional'].map(type => {
+                const items = product.accessories.filter(a => a.type === type);
+                if (!items.length) return null;
+                return (
+                  <div key={type} className="accessory-group">
+                    <h4 className="accessory-group-title">{type} Accessories</h4>
+                    <ul className="accessory-list">
+                      {items.map(acc => (
+                        <li key={acc.code} className="accessory-item">
+                          <span className="accessory-code">{acc.code}</span>
+                          <span className="accessory-name">{acc.name}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Video */}
+      {product.videoUrl && (
+        <section className="product-video-section">
+          <div className="container">
+            <h2 className="panel-title">Product Video</h2>
+            <div className="video-wrapper">
+              <iframe
+                src={product.videoUrl}
+                title={`${product.name} video`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Testimonial */}
+      {product.testimonial && (
+        <section className="testimonial-section">
+          <div className="container">
+            <blockquote className="product-testimonial">
+              <p>"{product.testimonial.quote}"</p>
+              <cite>— {product.testimonial.source}</cite>
+            </blockquote>
+          </div>
+        </section>
+      )}
+
+      {/* Other Products */}
       {category.products.length > 1 && (
         <section className="other-products-section">
           <div className="container">
