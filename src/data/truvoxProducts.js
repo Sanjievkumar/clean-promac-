@@ -628,16 +628,163 @@ export const truvoxData = {
       icon: '🧵',
       products: [
         {
+          id: 'hydromist-40-120',
+          name: 'Hydromist 40',
+          modelCode: 'HM40',
+          image: '/assets/HM40-Website.png',
+          tagline: 'A powerful, compact range of carpet cleaners delivering high-performance cleaning, efficient water extraction for reduced drying times, and dependable operation in commercial applications.',
+          heroDescription: 'A powerful, compact range of carpet cleaners delivering high-performance cleaning, efficient water extraction for reduced drying times, and dependable operation in commercial applications.',
+          description: 'A powerful, compact range of carpet cleaners delivering high-performance cleaning, efficient water extraction for reduced drying times, and dependable operation in commercial applications.',
+          idealFor: ['Education', 'Facilities Management', 'Leisure', 'Retail'],
+          floorTypes: ['Carpet', 'Upholstery'],
+          features: [
+            { label: 'SIMPLE', desc: 'Front-mounted power switches for operator convenience', image: '/assets/HM40-Features-Simple.png' },
+            { label: 'DURABLE', desc: 'High density, roto-moulded housing for durability', image: '/assets/HM40-Features-Durable.png' },
+            { label: 'EFFICIENT', desc: 'High performance vacuum motors that provide excellent solution recovery and minimise drying time', image: '/assets/HM40-Features-Efficient.png' },
+            { label: 'EASY', desc: 'Convenient front-mounted drain hose for easy emptying', image: '/assets/HM40-Features-Easy.png' },
+            { label: 'ERGONOMIC', desc: 'Built-in handle, large 10” wheels and handle-mounted transport wheels for ease of transportation', image: '/assets/HM40-Features-Ergonomic.png' },
+            { label: 'VERSATILE', desc: '120psi & 220 psi models available', image: '/assets/HM40-Features-Versatile.png' },
+            { label: 'EFFECTIVE', desc: 'Large 40 litre capacity, ideal for deep cleaning medium to large areas', image: '/assets/HM40-Features-Effective.png' },
+            { label: 'ACCESSORIES', desc: 'Kits available with 6m / 15m hoses and single / dual jet wands', image: '/assets/HM40-Features-Accessories.png' }
+          ],
+          gallery: [
+            '/assets/HM40-Website.png',
+            '/assets/HM40-website-Banner-1.png',
+            '/assets/1-1.png',
+            '/assets/3-1.png',
+            '/assets/4-1.png'
+          ],
+          accessories: [
+            { code: '20-0177-0000', name: 'Wand – single jet stainless steel', type: 'Standard', image: '/assets/20-0177-0000-HR.png' },
+            { code: '20-0178-0000', name: 'Wand – twin jet stainless steel', type: 'Standard', image: '/assets/20-0178-0000-HR.png' },
+            { code: '20-0175-0000', name: '6m hose assembly', type: 'Standard', image: '/assets/20-0175-0000-HR.png' },
+            { code: '20-0176-0000', name: '15m hose assembly', type: 'Standard', image: '/assets/20-0176-0000-HR.png' },
+            { code: '20-0179-0000', name: 'Standard upholstery tool', type: 'Standard', image: '/assets/20-0179-0000-HR.png' },
+            { code: 'PORT-A-HEAT', name: 'Port-a-Heat', type: 'Standard', image: '/assets/PORT-A-HEAT-HR.png' }
+          ],
+          specs: {
+            'Voltage AC (~) / Frequency': '220-240 V / 50/60 Hz',
+            'Vacuum motor power': '2 x 1200 W',
+            'Pump type': 'Rotary Diaphragm',
+            'Pump power': '152 W',
+            'Pump pressure': '8.3 bar / 120 psi',
+            'Airflow rate': '38 m/s',
+            'Solution flow rate': '4.92 l/min',
+            'Vacuum / water lift': '55 kPa / 5600 mmwg',
+            'Sound pressure level': '80 dB(A)',
+            'Sound power level': '90 dB(A)',
+            'Solution tank capacity': '40 Litres',
+            'Recovery tank capacity': '28 Litres',
+            'Dimensions (L x W x H)': '78 x 54 x 90 cm',
+            'Weight': '42.5 kg',
+            'Cable length': '15 m',
+            'Warranty': '1 Year*'
+          }
+        },
+        {
           id: 'hydromist-compact',
           name: 'Hydromist Compact',
-          image: '/assets/product_1.png',
-          description: 'An all-in-one spray extraction machine for carpet and upholstery cleaning. Features a built-in rotary brush that lifts dirt from deep within the carpet pile.',
-          features: ['Built-in rotary brush', 'High pressure spray', 'Powerful vacuum', 'Compact design'],
+          modelCode: 'HC250',
+          image: '/assets/Hydromist-Compact-website.png',
+          tagline: 'A compact all-in-one machine for carpet and upholstery cleaning, with an agitating brush that provides high productivity and excellent cleaning results.',
+          heroDescription: 'A compact all-in-one machine for carpet and upholstery cleaning, with an agitating brush that provides high productivity and excellent cleaning results.',
+          description: 'A compact all-in-one machine for carpet and upholstery cleaning, with an agitating brush that provides high productivity and excellent cleaning results.',
+          idealFor: ['Education', 'Healthcare', 'Hire', 'Leisure', 'Retail'],
+          floorTypes: ['Carpet', 'Upholstery'],
+          features: [
+            { label: 'COMPACT', desc: 'Handle folds down for storage and transportation in vehicles', image: '/assets/HC250-Features-Compact.jpg' },
+            { label: 'CAPACITY', desc: '14 litre solution tank for high productivity', image: '/assets/HC250-Features-Capacity.jpg' },
+            { label: 'EFFECTIVE', desc: '24cm cleaning width, ideal for small to medium carpeted areas', image: '/assets/HC250-Features-Effective.jpg' },
+            { label: 'CONVENIENT', desc: 'Removable recovery tank for easy emptying', image: '/assets/HC250-Features-Convenient.jpg' },
+            { label: 'EASY', desc: 'Simple switches for ease of use', image: '/assets/HC250-Features-Easy.jpg' },
+            { label: 'POWERFUL', desc: 'Rotating brush gives a deep clean and revives carpets. Plus, powerful vacuum allows carpets to dry quicker', image: '/assets/HC250-Features-Powerful.jpg' },
+            { label: 'ACCESSORIES', desc: 'Optional upholstery kit for detailed cleaning', image: '/assets/HC250-Features-Accessories.jpg' }
+          ],
+          gallery: [
+            '/assets/Hydromist-Compact-website.png',
+            '/assets/HC250-in-use.jpg',
+            '/assets/HC250-in-use2.jpg',
+            '/assets/HC250-in-use3.jpg',
+            '/assets/HC250-in-us.jpg'
+          ],
+          accessories: [
+            { code: '05-3679-0500', name: 'Wand (heavy duty)', type: 'Optional', image: '/assets/05-3679-0500.png' },
+            { code: '05-3406-0000', name: 'Accessory kit inc. bag, hose & upholstery kit', type: 'Optional', image: '/assets/05-3406-0000-1.png' }
+          ],
           specs: {
-            'Pump Pressure': '1.5 bar',
-            'Cleaning Width': '250mm',
-            'Solution Tank': '14 Litres',
-            'Weight': '22 kg'
+            'Voltage AC (~) / Frequency': '230 V / 50-60 Hz',
+            'Vacuum motor power': '1200 W',
+            'Pump power': '26 W',
+            'Pump pressure': '1.5 bar / 21.76 psi',
+            'Brush width': '24.5 cm',
+            'Brush speed': '800 - 1000 rpm',
+            'Airflow rate': '56 m/s',
+            'Solution flow rate': '0.8 l/min',
+            'Vacuum / water lift': '22 kPa / 2243 mmwg',
+            'Sound pressure level': '73 dB(A)',
+            'Solution tank capacity': '14 Litres',
+            'Recovery tank capacity': '11.5 Litres',
+            'Dimensions (L x W x H)': '54 x 36 x 87 cm',
+            'Weight': '22.5 kg',
+            'Cable length': '12 m',
+            'Warranty': '1 year*'
+          }
+        },
+        {
+          id: 'hydromist-35',
+          name: 'Hydromist 35',
+          modelCode: 'HM35',
+          image: '/assets/Hydromist-35-Website.png',
+          tagline: 'An all-in-one carpet cleaner with an agitating brush that cleans in a single pass, providing a deep, powerful clean.',
+          heroDescription: 'An all-in-one carpet cleaner with an agitating brush that cleans in a single pass, providing a deep, powerful clean.',
+          description: 'An all-in-one carpet cleaner with an agitating brush that cleans in a single pass, providing a deep, powerful clean.',
+          idealFor: ['Education', 'Healthcare', 'Leisure', 'Retail'],
+          floorTypes: ['Carpet'],
+          features: [
+            { label: 'SIMPLE', desc: 'Separate vacuum, brush and pump switches for greater cleaning flexibility', image: '/assets/HM35-Features-Simple-1.jpg' },
+            { label: 'EFFICIENT', desc: '35 litre capacity and 45cm cleaning path ideal for large carpeted areas', image: '/assets/HM35-Features-Efficent.jpg' },
+            { label: 'EFFECTIVE', desc: 'Solution delivered at 100 psi through two jets for even application and high vacuum power', image: '/assets/HM35-Features-Effective.jpg' },
+            { label: 'POWERFUL', desc: 'Floating brush head maintains contact with the carpet for improved agitation and revives carpet pile', image: '/assets/HM35-Features-Powerful.jpg' },
+            { label: 'ACCESSORIES', desc: 'Optional hose, wand and upholstery tool available for carpet and detail cleaning', image: '/assets/HM35-Features-accessories.jpg' }
+          ],
+          gallery: [
+            '/assets/Hydromist-35-Website.png',
+            '/assets/HM35-in-use.jpg',
+            '/assets/HM35-in-use-12.jpg',
+            '/assets/HM35-in-use-13.jpg',
+            '/assets/HM35-in-use-1.jpg'
+          ],
+          accessories: [
+            { code: '20-0175-0000', name: '6m low pressure hose (up to 100psi)', type: 'Optional', image: '/assets/20-0175-0000.png' },
+            { code: '20-0176-0000', name: '15m low pressure hose (up to 100psi)', type: 'Optional', image: '/assets/20-0176-0000.png' },
+            { code: '20-0179-0000', name: 'Standard upholstery tool', type: 'Optional', image: '/assets/20-0179-0000.png' },
+            { code: '20-0182-0000', name: 'Heavy duty upholstery tool', type: 'Optional', image: '/assets/20-0182-0000.png' },
+            { code: '20-0183-0000', name: 'Upholstery cleaning kit including hose and tool', type: 'Optional', image: '/assets/20-0183-0000.png' },
+            { code: '20-0177-0000', name: 'Wand - single jet stainless steel, up to 400psi', type: 'Optional', image: '/assets/20-0177-0000.png' }
+          ],
+          videos: [
+            { url: 'https://www.youtube.com/embed/Eb1D8khyrgg', title: 'Hydromist 35 - Support Video' },
+            { url: 'https://www.youtube.com/embed/FbgckZreLpY', title: 'Hydromist 35 - User Guide' }
+          ],
+          specs: {
+            'Voltage AC (~) / Frequency': '230 V / 50 Hz',
+            'Vacuum motor power': '1350 W',
+            'Pump type': 'Electrovanne',
+            'Pump power': '180 W',
+            'Pump pressure': '6.9 bar / 100 psi',
+            'Brush width': '45 cm',
+            'Brush speed': '1800 rpm',
+            'Airflow rate': '42.5 m/s',
+            'Solution flow rate': '6.8 l/min',
+            'Vacuum / water lift': '30 kPa / 3059 mmwg',
+            'Brush Adjustment': 'Floating',
+            'Sound pressure level': '78 dB(A)',
+            'Solution tank capacity': '35 Litres',
+            'Recovery tank capacity': '35 Litres',
+            'Dimensions (L x W x H)': '93 x 47 x 88 cm',
+            'Weight': '47 kg',
+            'Cable length': '15 m',
+            'Warranty': '1 year*'
           }
         }
       ]
