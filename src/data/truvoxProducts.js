@@ -509,16 +509,113 @@ export const truvoxData = {
       icon: '💧',
       products: [
         {
-          id: 'hydrolite',
-          name: 'Hydrolite',
-          image: '/assets/product_4.png',
-          description: 'A robust and high-capacity wet and dry vacuum, perfect for demanding industrial and commercial environments where heavy-duty suction is required.',
-          features: ['High suction power', 'Durable polyethylene body', 'Easy emptying', 'Comprehensive tool kit'],
+          id: 'valet-aqua-20',
+          name: 'Valet Aqua 20',
+          modelCode: 'VA20',
+          image: '/assets/VA20-Website.png',
+          tagline: 'A cost-effective wet or dry vacuum delivering powerful, reliable performance and effortless manoeuvrability for small to medium areas.',
+          heroDescription: 'A cost-effective wet or dry vacuum delivering powerful, reliable performance and effortless manoeuvrability for small to medium areas.',
+          description: 'A cost-effective wet or dry vacuum delivering powerful, reliable performance and effortless manoeuvrability for small to medium areas.',
+          idealFor: ['Education', 'Facilities Management', 'Industry', 'Leisure', 'Retail'],
+          floorTypes: ['Carpet', 'Concrete', 'Hard Floors', 'Entrance Matting', 'Non-Slip Safety Floors', 'Tiles', 'Vinyl'],
+          features: [
+            { label: '3-IN-1', desc: 'Wet or dry vacuuming with an integrated blower function for clearing debris from hard-to-reach areas', image: '/assets/VA-Features-3-in-1.png' },
+            { label: 'SIMPLE', desc: 'Single-switch control and a quick-release hose make changing between wet, dry and blower modes effortless', image: '/assets/Simple.png' },
+            { label: 'EASY', desc: 'Tank latches allow for convenient tip-and-pour emptying', image: '/assets/Easy-hinges.png' },
+            { label: 'VERSATILE', desc: 'Available in two sizes and effective on a variety of hard floors and carpets', image: '/assets/Versatile.png' },
+            { label: 'FILTRATION', desc: 'Quickly switch between sponge and HEPA 13 for wet or dry applications', image: '/assets/Filtration.png' },
+            { label: 'DURABLE', desc: 'Robust stainless-steel tank ensures long-lasting reliability', image: '/assets/Durable.png' },
+            { label: 'EFFECTIVE', desc: 'Large capacity and compact size for small to medium cleaning areas', image: '/assets/VA-Features-Effective.png' },
+            { label: 'ACCESSORIES', desc: 'Comes fully equipped with on-board tools and an all-in-one wet/dry floor nozzle', image: '/assets/Accessories-kit.png' }
+          ],
+          gallery: [
+            '/assets/VA20-Website.png',
+            '/assets/VA20-In-Use-website-1.png',
+            '/assets/VA2O-in-use-Website-2.png',
+            '/assets/VA2O-in-use-Website-3.png',
+            '/assets/VA2O-in-use-Website-4.png'
+          ],
+          accessories: [
+            { code: '87-0026-0000', name: 'Hose', type: 'Standard', image: '/assets/87-0026-0000-2.png' },
+            { code: '87-0044-0000', name: 'Two-piece wand', type: 'Standard', image: '/assets/87-0044-0000.png' },
+            { code: 'FB116', name: 'Floor tool', type: 'Standard', image: '/assets/FB116-HR.png' },
+            { code: '87-0029-0000', name: 'Crevice tool & dusting brush', type: 'Standard', image: '/assets/87-0029-0000-1.png' },
+            { code: '87-0153-0000', name: 'Wet pick-up filter', type: 'Standard', image: '/assets/87-0153-0000-HR.png' },
+            { code: '87-0154-0000', name: 'HEPA 13 filter', type: 'Standard', image: '/assets/87-0154-0000-HR.png' }
+          ],
           specs: {
-            'Motor Power': '1200W',
+            'Voltage AC (~) / Frequency': '220-240 V / 50-60 Hz',
+            'Construction Class': 'II',
+            'Vacuum motor power': '1200 W',
+            'Capacity': '20 Litres',
+            'Filtration': 'Sponge / HEPA H13',
+            'Airflow rate': '30 m/s',
+            'Productivity rate': '186 m²/h',
+            'Vacuum / water lift': '20 ± 1.5 kPa / 2039 mmwg',
+            'Sound pressure level': '≤92 dB(A)',
+            'Sound power level': '≤92 dB(A)',
+            'Dimensions (L x W x H)': '34 x 35 x 48 cm',
+            'Weight': '6.13 kg',
+            'Wand length': '468 / 907 mm',
+            'Hose length': '2 m',
+            'Cable length': '8 m',
+            'Ingress protection rating': 'IPX4',
+            'Warranty': '1 year*'
+          }
+        },
+        {
+          id: 'valet-aqua-40',
+          name: 'Valet Aqua 40',
+          modelCode: 'VA40',
+          image: '/assets/VA40-Website.png',
+          tagline: 'A cost-effective range of wet or dry vacuums delivering powerful, reliable performance and effortless manoeuvrability for small to medium areas.',
+          heroDescription: 'A cost-effective range of wet or dry vacuums delivering powerful, reliable performance and effortless manoeuvrability for small to medium areas.',
+          description: 'A cost-effective range of wet or dry vacuums delivering powerful, reliable performance and effortless manoeuvrability for small to medium areas.',
+          idealFor: ['Education', 'Facilities Management', 'Industry', 'Leisure', 'Retail'],
+          floorTypes: ['Carpet', 'Concrete', 'Hard Floors', 'Entrance Matting', 'Non-Slip Safety Floors', 'Tiles', 'Vinyl'],
+          features: [
+            { label: '3-IN-1', desc: 'Wet or dry vacuuming with an integrated blower function for clearing debris from hard-to-reach areas', image: '/assets/VA-Features-3-in-1.png' },
+            { label: 'SIMPLE', desc: 'Single-switch control and a quick-release hose make changing between wet, dry and blower modes effortless', image: '/assets/Simple.png' },
+            { label: 'EASY', desc: 'Tank latches allow for convenient tip-and-pour emptying. Screw-cap drain plug enables clean, controlled draining', image: '/assets/Easy-hinges.png' },
+            { label: 'VERSATILE', desc: 'Available in two sizes and effective on a variety of hard floors and carpets', image: '/assets/Versatile.png' },
+            { label: 'FILTRATION', desc: 'Quickly switch between sponge and HEPA 13 for wet or dry applications', image: '/assets/Filtration.png' },
+            { label: 'DURABLE', desc: 'Robust stainless-steel tank ensures long-lasting reliability, while the push handle improves manoeuvrability', image: '/assets/Durable.png' },
+            { label: 'EFFECTIVE', desc: 'Large capacity and compact size for small to medium cleaning areas', image: '/assets/VA-Features-Effective.png' },
+            { label: 'ACCESSORIES', desc: 'Comes fully equipped with on-board tools and an all-in-one wet/dry floor nozzle', image: '/assets/Accessories-kit.png' }
+          ],
+          gallery: [
+            '/assets/VA40-Website.png',
+            '/assets/VA40-in-use-website.png',
+            '/assets/VA40-in-use-website-1.png',
+            '/assets/VA40-in-use-website-2.png',
+            '/assets/VA40-in-use-website-3.png'
+          ],
+          accessories: [
+            { code: '87-0026-0000', name: 'Hose', type: 'Standard', image: '/assets/87-0026-0000-2.png' },
+            { code: '87-0044-0000', name: 'Two-piece wand', type: 'Standard', image: '/assets/87-0044-0000.png' },
+            { code: 'FB116', name: 'Floor tool', type: 'Standard', image: '/assets/FB116-HR.png' },
+            { code: '87-0029-0000', name: 'Crevice tool & dusting brush', type: 'Standard', image: '/assets/87-0029-0000-1.png' },
+            { code: '87-0153-0000', name: 'Wet pick-up filter', type: 'Standard', image: '/assets/87-0153-0000-HR.png' },
+            { code: '87-0154-0000', name: 'HEPA 13 filter', type: 'Standard', image: '/assets/87-0154-0000-HR.png' }
+          ],
+          specs: {
+            'Voltage AC (~) / Frequency': '220-240 V / 50-60 Hz',
+            'Construction Class': 'II',
+            'Vacuum motor power': '1200 W',
             'Capacity': '40 Litres',
-            'Airflow': '60 L/sec',
-            'Weight': '13 kg'
+            'Filtration': 'Sponge / HEPA H13',
+            'Airflow rate': '30 m/s',
+            'Productivity rate': '186 m²/h',
+            'Vacuum / water lift': '20 ± 1.5 kPa / 2039 mmwg',
+            'Sound pressure level': '≤92 dB(A)',
+            'Sound power level': '≤92 dB(A)',
+            'Dimensions (L x W x H)': '36 x 37 x 72 cm',
+            'Weight': '8.45 kg',
+            'Wand length': '468 / 907 mm',
+            'Hose length': '2 m',
+            'Cable length': '8 m',
+            'Ingress protection rating': 'IPX4',
+            'Warranty': '1 year*'
           }
         }
       ]
