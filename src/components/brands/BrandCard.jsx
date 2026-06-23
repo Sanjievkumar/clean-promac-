@@ -4,6 +4,7 @@ import './BrandCard.css';
 const BrandCard = ({ 
   index, 
   brandName, 
+  logoImageSrc,
   logoText, 
   logoSubtext, 
   title, 
@@ -33,8 +34,16 @@ const BrandCard = ({
           {/* Content Side */}
           <div className="brand-card-content">
             <div className="brand-logo" style={{ color: accentColor }}>
-              <span className="logo-main">{logoText}</span>
-              {logoSubtext && <span className="logo-sub">{logoSubtext}</span>}
+              {logoImageSrc ? (
+                <div className="brand-logo-img-wrapper">
+                  <img src={logoImageSrc} alt={`${brandName} Logo`} className="brand-logo-img" />
+                </div>
+              ) : (
+                <>
+                  <span className="logo-main">{logoText}</span>
+                  {logoSubtext && <span className="logo-sub">{logoSubtext}</span>}
+                </>
+              )}
             </div>
             
             <h3 className="brand-title">

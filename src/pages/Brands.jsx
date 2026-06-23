@@ -14,8 +14,7 @@ const Brands = () => {
       <BrandCard 
         index="01"
         brandName="TRUVOX"
-        logoText="TRUVOX"
-        logoSubtext="GLOBAL FLOORCARE SOLUTIONS"
+        logoImageSrc="/assets/truvox-logo.svg"
         title="Built for Performance."
         titleHighlight="Performance."
         subtitle="Designed for You."
