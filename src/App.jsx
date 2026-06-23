@@ -7,6 +7,8 @@ import About from './pages/About';
 import Brands from './pages/Brands';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
+import BrandDetails from './pages/brands/BrandDetails';
+import CategoryDetails from './pages/brands/CategoryDetails';
 
 function App() {
   const location = useLocation();
@@ -51,6 +53,8 @@ function App() {
         <Route path="/brands" element={<Brands />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/brands/:brandId" element={<BrandDetails />} />
+        <Route path="/brands/:brandId/:categoryId" element={<CategoryDetails />} />
       </Routes>
       <Footer />
     </div>

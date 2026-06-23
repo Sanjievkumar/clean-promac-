@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './BrandCard.css';
 
 const BrandCard = ({ 
@@ -15,6 +16,7 @@ const BrandCard = ({
   imageSrc, 
   imageAlt, 
   buttonText, 
+  exploreLink,
   isReversed,
   accentColor
 }) => {
@@ -73,9 +75,15 @@ const BrandCard = ({
               ))}
             </div>
             
-            <button className="btn btn-outline brand-btn" style={{ '--hover-color': accentColor }}>
-              {buttonText} <span>&rarr;</span>
-            </button>
+            {exploreLink ? (
+              <Link to={exploreLink} className="btn btn-outline brand-btn" style={{ '--hover-color': accentColor }}>
+                {buttonText} <span>&rarr;</span>
+              </Link>
+            ) : (
+              <button className="btn btn-outline brand-btn" style={{ '--hover-color': accentColor }}>
+                {buttonText} <span>&rarr;</span>
+              </button>
+            )}
           </div>
 
           {/* Image Side */}

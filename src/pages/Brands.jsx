@@ -27,6 +27,7 @@ const Brands = () => {
         imageSrc="/assets/product_4.png"
         imageAlt="Truvox Floorcare Machine"
         buttonText="Explore Truvox"
+        exploreLink="/brands/truvox"
         isReversed={false}
         accentColor="#00A8A8"
       />
