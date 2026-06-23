@@ -797,16 +797,56 @@ export const truvoxData = {
       icon: '⚙️',
       products: [
         {
-          id: 'cimex-cyclone',
-          name: 'Cimex Cyclone',
-          image: '/assets/product_2.png',
-          description: 'The Cimex Cyclone features a unique three-brush counter-rotating system that prevents cable snagging and provides incredibly even scrubbing on uneven surfaces.',
-          features: ['Three-brush action', 'No cable snagging', 'Floating brush heads', 'Reversible rotation'],
+          id: 'cimex-encap',
+          name: 'Cimex Encap',
+          modelCode: 'Cimex-Encap',
+          image: '/assets/Cimex-Encap-website.png',
+          tagline: 'A high productivity, cost effective, low moisture carpet cleaning system, which is six times more productive than a single disc rotary when cleaning carpets.',
+          heroDescription: 'A high productivity, cost effective, low moisture carpet cleaning system, which is six times more productive than a single disc rotary when cleaning carpets.',
+          description: 'A high productivity, cost effective, low moisture carpet cleaning system, which is six times more productive than a single disc rotary when cleaning carpets.',
+          idealFor: ['Education', 'Facilities Management', 'Hire', 'Industry', 'Leisure', 'Retail'],
+          floorTypes: ['Carpet'],
+          features: [
+            { label: 'THREE BRUSH', desc: 'CONTRA-ROTATING For unbeatable scrubbing, these scrubber dryers are simple to operate and extremely efficient', image: '/assets/Cimex-encap-features-Three-Brush.jpg' },
+            { label: 'EFFECTIVE', desc: 'Featuring polymer chemistry that encapsulates dirt for cleaner carpets for longer', image: '/assets/Cimex-encap-features-Effective.jpg' },
+            { label: 'PRODUCTIVE', desc: 'Cleans up to 300m2 per hour', image: '/assets/Cimex-encap-features-Productive.jpg' },
+            { label: 'DEEP CLEAN', desc: 'Deep cleaning restores brightness to heavily soiled carpets', image: '/assets/Cimex-encap-features-Deep-clean.jpg' },
+            { label: 'EFFICIENT', desc: 'Eliminates wicking problems – stains do not appear on the surface as carpet dries', image: '/assets/Cimex-encap-features-Efficient.jpg' },
+            { label: 'QUICK DRY', desc: 'Low moisture cleaning so carpets dry quickly', image: '/assets/Cimex-encap-features-Quick-dry.jpg' },
+            { label: 'ACCESSORIES', desc: 'Complimentary accessories available for all your cleaning needs', image: '/assets/Cimex-encap-features-Accessories.jpg' }
+          ],
+          gallery: [
+            '/assets/Cimex-Encap-website.png',
+            '/assets/Cimex-Encap-in-use.jpg',
+            '/assets/Cimex-Encap-in-use2.jpg',
+            '/assets/Cimex-Encap-in-use3.jpg'
+          ],
+          accessories: [
+            { code: '11-2062-0500', name: 'Drive disc (pack of 3)', type: 'Optional', image: '/assets/11-2062-0500-CR48.png' },
+            { code: '06-0309-0000', name: 'Cimex-Encap 8” pads (box of 15)', type: 'Optional', image: '/assets/Cimex-encap-features-Accessories.jpg' },
+            { code: '11-2007-0500', name: 'Shampoo brushes (pack of 3)', type: 'Optional', image: '/assets/11-2007-0500-CR48.png' },
+            { code: '06-0314-0000', name: 'Edging brush', type: 'Optional', image: '/assets/06-0314-0000-CR48.png' },
+            { code: '06-0326-0500', name: 'Cimex-Encap carpet cleaner (2x 5 litres)', type: 'Optional', image: '/assets/06-0326-0500-CR48-ENCAP.png' },
+            { code: '06-0310-0000', name: 'Cimex-Encap trigger spray bottle', type: 'Optional', image: '/assets/06-0310-0000-CR48-ENCAP.png' }
+          ],
           specs: {
-            'Motor': '370W',
-            'Working Width': '380mm',
-            'Brush Speed': '400 rpm',
-            'Weight': '38 kg'
+            'Voltage AC (~) / Frequency': '230 V / 50 / 60 Hz',
+            'Motor power': '750 W',
+            'Pad / brush diameter': '20 cm',
+            'Pad / brush speed': '400 rpm',
+            'Pad / brush pressure': '38 g/cm²',
+            'Working width': '48 cm',
+            'Productivity rate - scrubbing': '1440 m²/h',
+            'Productivity rate - polishing': '2160 m²/h',
+            'Productivity rate - Spray cleaning': '1080 m²/h',
+            'Productivity rate - shampooing': '1440 m²/h',
+            'Sound pressure level': '60 dB(A)',
+            'Solution tank capacity': '25 Litres',
+            'Dimensions (L x W x H)': '80 x 50 x 112 cm',
+            'Weight': '47 kg',
+            'Motor height - clearance': '45 mm',
+            'Cable length': '15 m',
+            'Warranty': '1 year*'
           }
         }
       ]
