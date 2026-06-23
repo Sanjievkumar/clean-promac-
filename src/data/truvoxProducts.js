@@ -859,16 +859,47 @@ export const truvoxData = {
       icon: '🪜',
       products: [
         {
-          id: 'tread-cleaner',
-          name: 'Escalator Tread Cleaner',
-          image: '/assets/product_3.png',
-          description: 'A specialized machine designed to quickly and safely clean the treads of escalators and moving walkways without requiring them to be stopped.',
-          features: ['Cleans while in motion', 'Powerful vacuum', 'Dual brushes', 'Edge-to-edge cleaning'],
+          id: 'cimex-x46',
+          name: 'Cimex X46',
+          modelCode: 'Cimex X46',
+          image: '/assets/X46-website.png',
+          tagline: 'A powerful escalator and travellator cleaner which fully integrates vacuuming and dry scrubbing with hands free operation.',
+          heroDescription: 'A powerful escalator and travellator cleaner which fully integrates vacuuming and dry scrubbing with hands free operation.',
+          description: 'A powerful escalator and travellator cleaner which fully integrates vacuuming and dry scrubbing with hands free operation.',
+          idealFor: ['Leisure', 'Retail'],
+          floorTypes: ['Escalator'],
+          features: [
+            { label: 'EFFICIENT', desc: 'Automatic brush height adjustment for uniform performance', image: '/assets/X46-features-Efficient.jpg' },
+            { label: 'EFFECTIVE', desc: 'Powerful vacuum dust pick-up. Plus, quick-change disposable bags', image: '/assets/X46-features-Effective.jpg' },
+            { label: 'ERGONOMIC', desc: 'Portable for multi-escalator sites', image: '/assets/X46-features-Ergonomic.jpg' },
+            { label: 'SIMPLE', desc: 'Easy to use and minimal training required for increased efficiency. Plus, brush change is quick and easy', image: '/assets/X46-features-simple.jpg' },
+            { label: 'POWERFUL', desc: 'Powered rotating brushes for fast, effective cleaning', image: '/assets/X46-features-Powerful.jpg' },
+            { label: 'ACCESSORIES', desc: 'Inclusive of standard brushes for maintenance cleaning and Tynex brushes for intensive cleaning', image: '/assets/X46-features-Accessories-1.jpg' }
+          ],
+          gallery: [
+            '/assets/X46-website.png',
+            '/assets/X46-in-use.jpg',
+            '/assets/X46-in-use-2.jpg',
+            '/assets/X46-in-use-22.jpg',
+            '/assets/X46-in-use-23.jpg'
+          ],
+          accessories: [
+            { code: '05-4096-0000', name: 'Set of Nylon brushes for routine cleaning', type: 'Standard', image: '/assets/05-4096-0000.png' },
+            { code: '05-4097-0000', name: 'Set of Tynex brushes for occasional deep clean', type: 'Standard', image: '/assets/05-4097-0000.png' },
+            { code: '02-4372-0000', name: 'Pack of 10 disposable bags', type: 'Optional', image: '/assets/02-4372-0000.png' }
+          ],
           specs: {
-            'Motor Power': '900W',
-            'Cleaning Width': '450mm',
-            'Bag Capacity': '10 Litres',
-            'Weight': '24 kg'
+            'Voltage AC (~) / Frequency': '230 V / 50 Hz',
+            'Vacuum motor power': '2 x 750 W',
+            'Brush motor power': '190 W',
+            'Capacity': '5 Litres',
+            'Brush diameter': '15 cm',
+            'Brush speed': '290 rpm',
+            'Sound pressure level': '79 dB(A)',
+            'Dimensions (L x W x H)': '89 x 46 x 23 cm',
+            'Weight': '44 kg',
+            'Cable length': '15 m',
+            'Warranty': '1 year*'
           }
         }
       ]
