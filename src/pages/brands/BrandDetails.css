@@ -1,10 +1,35 @@
 /* Brand Details Hero */
 .brand-details-hero {
   position: relative;
-  padding: 8rem 0 6rem;
+  padding: 6rem 0 6rem;
   background-color: var(--color-gray-50);
   overflow: hidden;
   text-align: center;
+}
+
+/* Back button — pinned to top-left of the section */
+.brand-back-btn {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-gray-500);
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.brand-back-btn:hover {
+  color: var(--color-navy);
+  transform: translateX(-3px);
 }
 
 .brand-hero-bg {
@@ -28,22 +53,21 @@
   align-items: center;
 }
 
-.brand-hero-logo {
+.brand-hero-logo-box {
   background: var(--color-white);
   padding: 2rem 3rem;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   margin-bottom: 2rem;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.brand-hero-logo img {
-  max-width: 250px;
+.brand-hero-logo-svg {
+  width: 260px;
   height: auto;
-}
-
-.brand-hero-title {
-  display: none; /* Hidden visually, logo serves as title */
+  display: block;
 }
 
 .brand-hero-tagline {
