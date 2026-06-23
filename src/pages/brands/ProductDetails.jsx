@@ -250,6 +250,43 @@ const ProductDetails = () => {
         </section>
       )}
 
+      {/* ── SUPPORT VIDEOS ── */}
+      {product.supportVideos && product.supportVideos.length > 0 && (
+        <section className="pd-video-section" style={{ paddingTop: 0 }}>
+          <div className="container">
+            <h2 className="pd-section-title">Support Videos</h2>
+            <div className="pd-gallery-grid">
+              {product.supportVideos.map((sv, i) => (
+                <div key={i} className="pd-support-video-card">
+                  <h3 className="pd-support-video-title">{sv.title}</h3>
+                  <div className="pd-video-wrap" style={{ paddingBottom: '56.25%' }}>
+                    <iframe
+                      src={sv.url}
+                      title={sv.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── TESTIMONIAL ── */}
+      {product.testimonial && (
+        <section className="pd-testimonial-section">
+          <div className="container">
+            <div className="pd-testimonial-card">
+              <span className="pd-testimonial-icon">❝</span>
+              <p className="pd-testimonial-quote">{product.testimonial.quote}</p>
+              <span className="pd-testimonial-source">— {product.testimonial.source}</span>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* ── OTHER MODELS ── */}
       {category.products.length > 1 && (
         <section className="pd-related-section">

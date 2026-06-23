@@ -535,6 +535,17 @@
   margin-bottom: 2rem;
 }
 
+.pd-support-video-card {
+  display: flex;
+  flex-direction: column;
+}
+.pd-support-video-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #445154;
+  margin-bottom: 0.75rem;
+}
+
 .pd-video-wrap {
   position: relative;
   padding-bottom: 56.25%;
@@ -548,6 +559,49 @@
   top: 0; left: 0;
   width: 100%; height: 100%;
   border: none;
+}
+
+/* ── Testimonial ── */
+.pd-testimonial-section {
+  background: #fff;
+  padding: 0 0 4rem;
+}
+
+.pd-testimonial-card {
+  background: #f5f7f9;
+  border-left: 4px solid #00a8b0;
+  padding: 3rem 4rem;
+  border-radius: 0 16px 16px 0;
+  position: relative;
+}
+
+.pd-testimonial-icon {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  font-size: 4rem;
+  color: #e2e8ed;
+  line-height: 1;
+  font-family: Georgia, serif;
+}
+
+.pd-testimonial-quote {
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--color-navy, #1a2b4b);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.pd-testimonial-source {
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #00a8b0;
+  text-transform: uppercase;
 }
 
 /* ── Related Products ── */
