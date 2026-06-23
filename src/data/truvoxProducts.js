@@ -912,16 +912,42 @@ export const truvoxData = {
       icon: '💨',
       products: [
         {
-          id: 'air-mover-3000',
-          name: 'Air Mover 3000',
-          image: '/assets/product_4.png',
-          description: 'A powerful 3-speed air mover designed to significantly reduce the drying time of carpets, hard floors, and freshly painted areas. Features a robust housing.',
-          features: ['3 speed settings', 'Multi-angle positioning', 'High airflow', 'Stackable design'],
+          id: 'am3000',
+          name: 'AM3000',
+          modelCode: 'AM3000',
+          image: '/assets/AM3000-website-1.png',
+          tagline: 'A compact and portable blower that has three speeds for high productivity and to help dry areas after cleaning or water damage.',
+          heroDescription: 'A compact and portable blower that has three speeds for high productivity and to help dry areas after cleaning or water damage.',
+          description: 'A compact and portable blower that has three speeds for high productivity and to help dry areas after cleaning or water damage.',
+          idealFor: ['Facilities Management', 'Hire', 'Leisure', 'Retail'],
+          floorTypes: ['Carpet', 'Upholstery'],
+          features: [
+            { label: 'EFFECTIVE', desc: 'High airflow for rapid drying', image: '/assets/AM3000-features-Effective.jpg' },
+            { label: 'FLEXIBLE', desc: '3 operating positions to help direct airflow to the right areas', image: '/assets/AM3000-features-Flexible.jpg' },
+            { label: 'POWERFUL', desc: 'Three-speed switch to select the optimal airflow for the job', image: '/assets/AM3000-features-Powerful.jpg' },
+            { label: 'DURABLE', desc: 'High density polyethylene house for durability', image: '/assets/AM3000-features-Durable.jpg' },
+            { label: 'RELIABLE', desc: 'Reinforced motor mounting for reliability and long life', image: '/assets/AM3000-in-use-22.jpg' },
+            { label: 'PORTABLE', desc: 'Lightweight and easy-carry handle to help manoeuvre', image: '/assets/AM3000-features-Portable.jpg' }
+          ],
+          gallery: [
+            '/assets/AM3000-website-1.png',
+            '/assets/Air-mover-in-use.jpg',
+            '/assets/AM3000-in-use-2.jpg',
+            '/assets/AM3000-in-use-22-1.jpg',
+            '/assets/AM3000-in-use-23.jpg'
+          ],
+          accessories: [],
           specs: {
-            'Motor Power': '500W',
-            'Airflow': '3000 m³/hr',
+            'Voltage AC (~) / Frequency': '230 V / 50 Hz',
+            'Motor power': '500 W',
+            'Airflow rate': '16 m/s',
             'Speeds': '3',
-            'Weight': '11 kg'
+            'Dimensions (L x W x H)': '38 x 48 x 46 cm',
+            'Weight': '10.2 kg',
+            'Thermal overload': 'Yes',
+            'Kickstand': 'Yes',
+            'Cable length': '6 m',
+            'Warranty': '1 year*'
           }
         }
       ]
