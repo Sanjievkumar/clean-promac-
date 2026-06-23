@@ -1,7 +1,7 @@
 export const truvoxData = {
   id: 'truvox',
   name: 'TRUVOX',
-  logo: '/assets/truvox-logo.svg',
+  logo: '/assets/truvox-logo-v2.svg',
   tagline: 'Global Floorcare Solutions',
   description: 'Truvox International is a leading global manufacturer and supplier of commercial and industrial floorcare machines, based in Southampton, England. With a history dating back to 1960, Truvox has earned a strong reputation for producing innovative and reliable cleaning solutions, becoming the first choice in floorcare equipment in over 70 countries worldwide. Proudly part of the Tacony Corporation, they provide efficient and effective solutions to meet cleaning needs across a wide range of sectors, including facilities management, healthcare, education, retail, and leisure.',
   categories: [

@@ -14,7 +14,7 @@ const Brands = () => {
       <BrandCard 
         index="01"
         brandName="TRUVOX"
-        logoImageSrc="/assets/truvox-logo.svg"
+        logoImageSrc="/assets/truvox-logo-v2.svg"
         title="Built for Performance."
         titleHighlight="Performance."
         subtitle="Designed for You."

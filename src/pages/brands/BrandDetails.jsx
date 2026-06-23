@@ -28,6 +28,7 @@ const BrandDetails = () => {
       {/* Brand Hero */}
       <section className="brand-details-hero">
         <div className="container">
+          <Link to="/brands" className="back-link brand-back-link" style={{ marginBottom: '2rem' }}>&larr; Back to Brands</Link>
           <div className="brand-hero-content">
             <div className="brand-hero-logo">
               <img src={brand.logo} alt={brand.name} />
