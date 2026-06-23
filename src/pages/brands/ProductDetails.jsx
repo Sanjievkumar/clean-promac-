@@ -6,14 +6,14 @@ import './ProductDetails.css';
 const TABS = ['FEATURES', 'SPECIFICATIONS', 'ACCESSORIES', 'GALLERY', 'FLOOR TYPES'];
 
 const floorTypeIcons = {
-  'Carpet': '🟫',
-  'Concrete': '🔲',
-  'Hard Floors': '🪵',
-  'Entrance Matting': '🚪',
-  'Studded Rubber': '⚫',
-  'Non-Slip Safety Floors': '⚠️',
-  'Tiles': '🔷',
-  'Escalator': '🪜',
+  'Carpet': '/assets/carpet.jpg',
+  'Concrete': '/assets/concrete.jpg',
+  'Hard Floors': '/assets/hard-floors.jpg',
+  'Entrance Matting': '/assets/matting.jpg',
+  'Studded Rubber': '/assets/studded-rubber.jpg',
+  'Non-Slip Safety Floors': '/assets/non-slip.jpg',
+  'Tiles': '/assets/Tiles.jpg',
+  'Escalator': '/assets/carpet.jpg', // fallback if needed
 };
 
 const ProductDetails = () => {
@@ -219,7 +219,11 @@ const ProductDetails = () => {
             <div className="pd-floor-grid">
               {product.floorTypes?.map(ft => (
                 <div key={ft} className="pd-floor-card">
-                  <span className="pd-floor-icon">{floorTypeIcons[ft] || '✓'}</span>
+                  {floorTypeIcons[ft] ? (
+                    <img src={floorTypeIcons[ft]} alt={ft} className="pd-floor-img" />
+                  ) : (
+                    <span className="pd-floor-icon">✓</span>
+                  )}
                   <span className="pd-floor-name">{ft}</span>
                 </div>
               ))}
