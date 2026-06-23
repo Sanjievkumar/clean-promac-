@@ -401,7 +401,7 @@ export const truvoxData = {
           id: 'vbpiie',
           name: 'VBPIIe',
           modelCode: 'VBPIIE',
-          image: '/assets/product_3.png',
+          image: '/assets/vbpiie_main.png',
           tagline: 'A compact and lightweight backpack vacuum that is ideal for working in confined areas.',
           heroDescription: 'A compact and lightweight backpack vacuum that is ideal for working in confined areas.',
           description: 'A compact and lightweight backpack vacuum that is ideal for working in confined areas. Features a 4-stage HEPA 10 filtration system and ergonomic back support.',
@@ -409,23 +409,23 @@ export const truvoxData = {
           floorTypes: ['Carpet', 'Hard Floors'],
           features: [
             { label: 'LIGHTWEIGHT', desc: 'Lightweight, at only 5kg, for operator comfort and reduces fatigue', image: '/assets/VBUII-features-lightweight.jpg' },
-            { label: 'COMFORTABLE', desc: 'Adjustable harness and waist straps. Plus, ergonomic back support allowing for comfort, support and airflow', image: '/assets/product_3.png' },
-            { label: 'POWERFUL', desc: '850W powerful motor', image: '/assets/product_3.png' },
+            { label: 'COMFORTABLE', desc: 'Adjustable harness and waist straps. Plus, ergonomic back support allowing for comfort, support and airflow', image: '/assets/vbpiie_main.png' },
+            { label: 'POWERFUL', desc: '850W powerful motor', image: '/assets/vbpiie_main.png' },
             { label: 'SIMPLE', desc: 'Single handed tool operation allows for simultaneous surface dusting and litter collection', image: '/assets/VBUII-features-Simple.jpg' },
             { label: 'EFFECTIVE', desc: '4-stage filtration for exceptional filtration performance', image: '/assets/VBUII-features-Effective.jpg' },
             { label: 'EASY', desc: 'Quick and easy to replace the power cord', image: '/assets/VBUII-features-Easy.jpg' },
-            { label: 'ACCESSORIES', desc: 'Inclusive of on boarding tools for detailed cleaning and hard to reach areas', image: '/assets/product_3.png' },
+            { label: 'ACCESSORIES', desc: 'Inclusive of on boarding tools for detailed cleaning and hard to reach areas', image: '/assets/vbpiie_accessory_kit.png' },
           ],
           gallery: [
-            '/assets/product_3.png'
+            '/assets/vbpiie_main.png'
           ],
           accessories: [
-            { code: 'U2-U11-085', name: 'Hose', type: 'Standard', image: '/assets/product_3.png' },
-            { code: '89-0010-0000', name: 'Telescopic wand', type: 'Standard', image: '/assets/product_3.png' },
-            { code: 'HB15C', name: 'ECO floor tool', type: 'Standard', image: '/assets/product_3.png' },
-            { code: '89-0016-0000', name: 'Small accessory tool set', type: 'Standard', image: '/assets/product_3.png' },
-            { code: 'U2-U11-078', name: 'Pack of 10 paper dust bags', type: 'Standard', image: '/assets/product_3.png' },
-            { code: '89-0037-0000', name: 'Pack of 10 microfibre dust bags', type: 'Optional', image: '/assets/product_3.png' },
+            { code: 'U2-U11-085', name: 'Hose', type: 'Standard', image: '/assets/vbpiie_hose.png' },
+            { code: '89-0010-0000', name: 'Telescopic wand', type: 'Standard', image: '/assets/vbpiie_wand.png' },
+            { code: 'HB15C', name: 'ECO floor tool', type: 'Standard', image: '/assets/vbpiie_floor_tool.png' },
+            { code: '89-0016-0000', name: 'Small accessory tool set', type: 'Standard', image: '/assets/vbpiie_accessory_kit.png' },
+            { code: 'U2-U11-078', name: 'Pack of 10 paper dust bags', type: 'Standard', image: '/assets/vbpiie_paper_bags.png' },
+            { code: '89-0037-0000', name: 'Pack of 10 microfibre dust bags', type: 'Optional', image: '/assets/vbpiie_microfibre_bags.png' },
           ],
           specs: {
             'Voltage AC (~) / Frequency': '230 V / 50 Hz',
