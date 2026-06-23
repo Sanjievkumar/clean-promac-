@@ -1,10 +1,26 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { truvoxData } from '../../data/truvoxProducts';
 import './ProductDetails.css';
 
+const TABS = ['FEATURES', 'SPECIFICATIONS', 'ACCESSORIES', 'GALLERY', 'FLOOR TYPES'];
+
+const floorTypeIcons = {
+  'Carpet': '🟫',
+  'Concrete': '🔲',
+  'Hard Floors': '🪵',
+  'Entrance Matting': '🚪',
+  'Studded Rubber': '⚫',
+  'Non-Slip Safety Floors': '⚠️',
+  'Tiles': '🔷',
+  'Escalator': '🪜',
+};
+
 const ProductDetails = () => {
   const { brandId, categoryId, productId } = useParams();
+  const [activeTab, setActiveTab] = useState('FEATURES');
+  const [lightboxImg, setLightboxImg] = useState(null);
+  const [mainImg, setMainImg] = useState(null);
 
   const brand = brandId === 'truvox' ? truvoxData : null;
   const category = brand ? brand.categories.find(c => c.id === categoryId) : null;
@@ -12,233 +28,252 @@ const ProductDetails = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [productId]);
+    if (product) setMainImg(product.image);
+  }, [productId, product]);
 
   if (!brand || !category || !product) {
     return (
       <div className="container" style={{ padding: '10rem 0', textAlign: 'center' }}>
         <h2>Product not found</h2>
-        <Link to={`/brands/${brandId}/${categoryId}`} className="btn btn-primary mt-4">Back to {category?.name || 'Category'}</Link>
+        <Link to={`/brands/${brandId}/${categoryId}`} className="btn btn-primary">Back to {category?.name || 'Category'}</Link>
       </div>
     );
   }
 
-  return (
-    <main className="product-details-page">
+  // Detect if features are objects (with image) or plain strings
+  const featuresAreObjects = product.features?.length > 0 && typeof product.features[0] === 'object';
 
-      {/* Breadcrumb */}
-      <div className="product-breadcrumb-bar">
+  return (
+    <main className="pd-page">
+
+      {/* ── BREADCRUMB ── */}
+      <div className="pd-breadcrumb">
         <div className="container">
-          <Link to={`/brands/${brand.id}`} className="breadcrumb-link">{brand.name}</Link>
-          <span className="breadcrumb-sep">/</span>
-          <Link to={`/brands/${brand.id}/${category.id}`} className="breadcrumb-link">{category.name}</Link>
-          <span className="breadcrumb-sep">/</span>
-          <span className="breadcrumb-current">{product.name}</span>
+          <Link to={`/brands/${brand.id}`} className="pd-bc-link">{brand.name}</Link>
+          <span className="pd-bc-sep"> / </span>
+          <Link to={`/brands/${brand.id}/${category.id}`} className="pd-bc-link">{category.name}</Link>
+          <span className="pd-bc-sep"> / </span>
+          <span className="pd-bc-cur">{product.name}</span>
         </div>
       </div>
 
-      {/* Product Hero */}
-      <section className="product-hero-section">
+      {/* ── HERO ── */}
+      <section className="pd-hero">
         <div className="container">
-          <div className="product-hero-grid">
+          <div className="pd-hero-inner">
 
-            {/* Left: Image + Gallery */}
-            <div className="product-hero-visual">
-              <div className="product-hero-img-bg"></div>
-              <img src={product.image} alt={product.name} className="product-hero-img" />
-              {product.modelCode && (
-                <div className="product-badge">{product.modelCode}</div>
-              )}
-              {/* Gallery thumbnails */}
+            {/* LEFT – image + thumbs */}
+            <div className="pd-hero-left">
+              <div className="pd-main-img-wrap">
+                {product.modelCode && <span className="pd-badge">{product.modelCode}</span>}
+                <img src={mainImg || product.image} alt={product.name} className="pd-main-img" />
+              </div>
               {product.gallery && product.gallery.length > 1 && (
-                <div className="product-gallery-thumbs">
+                <div className="pd-thumbs">
                   {product.gallery.map((img, i) => (
-                    <img
+                    <button
                       key={i}
-                      src={img}
-                      alt={`${product.name} view ${i + 1}`}
-                      className="gallery-thumb"
-                      onClick={e => {
-                        const mainImg = e.target.closest('.product-hero-visual').querySelector('.product-hero-img');
-                        mainImg.src = img;
-                      }}
-                    />
+                      className={`pd-thumb-btn ${mainImg === img ? 'active' : ''}`}
+                      onClick={() => setMainImg(img)}
+                    >
+                      <img src={img} alt={`View ${i + 1}`} />
+                    </button>
                   ))}
                 </div>
               )}
             </div>
 
-            {/* Right: Info */}
-            <div className="product-hero-info">
-              <p className="product-category-label">{category.name}</p>
-              <h1 className="product-hero-name">{product.name}</h1>
-              {product.tagline && (
-                <p className="product-hero-tagline">"{product.tagline}"</p>
-              )}
-              <p className="product-hero-desc">{product.description}</p>
+            {/* RIGHT – info */}
+            <div className="pd-hero-right">
+              <p className="pd-category-label">{category.name}</p>
+              <h1 className="pd-product-name">{product.name}</h1>
+              <p className="pd-hero-desc">{product.heroDescription || product.description}</p>
 
-              {/* Ideal For tags */}
+              {/* Ideal For */}
               {product.idealFor && (
-                <div className="ideal-for-row">
-                  <span className="ideal-for-label">Ideal for:</span>
-                  <div className="ideal-for-tags">
-                    {product.idealFor.map(sector => (
-                      <span key={sector} className="sector-tag">{sector}</span>
-                    ))}
+                <div className="pd-ideal-row">
+                  <span className="pd-ideal-label">IDEAL FOR:</span>
+                  <div className="pd-ideal-tags">
+                    {product.idealFor.map(s => <span key={s} className="pd-ideal-tag">{s}</span>)}
                   </div>
                 </div>
               )}
 
-              <div className="product-hero-actions">
-                <Link to="/contact" className="btn btn-primary">Request a Quote</Link>
-                <a href={`https://www.truvox.com/product/${productId}/`} target="_blank" rel="noopener noreferrer" className="btn btn-outline">View on Truvox.com ↗</a>
+              <div className="pd-hero-actions">
+                <Link to="/contact" className="pd-btn-primary">Enquire Here</Link>
+                <a href={`https://www.truvox.com/product/${productId}/`} target="_blank" rel="noopener noreferrer" className="pd-btn-outline">
+                  View on Truvox.com ↗
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features & Specs */}
-      <section className="product-details-section">
+      {/* ── TAB BAR ── */}
+      <div className="pd-tab-bar">
         <div className="container">
-          <div className="product-details-grid">
+          <div className="pd-tabs">
+            {TABS.map(tab => (
+              <button
+                key={tab}
+                className={`pd-tab ${activeTab === tab ? 'active' : ''}`}
+                onClick={() => setActiveTab(tab)}
+              >
+                {tab}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
 
-            {/* Features */}
-            <div className="product-features-panel">
-              <h2 className="panel-title">Key Features</h2>
-              <ul className="features-list">
-                {product.features.map((feature, i) => {
-                  const [label, ...rest] = feature.split(' — ');
-                  const hasLabel = rest.length > 0;
-                  return (
-                    <li key={i} className="feature-item">
-                      <div className="feature-check">
-                        <svg viewBox="0 0 20 20" fill="currentColor">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <span>
-                        {hasLabel ? <><strong>{label}</strong> — {rest.join(' — ')}</> : feature}
-                      </span>
-                    </li>
-                  );
-                })}
-              </ul>
+      {/* ── TAB CONTENT ── */}
+      <div className="pd-tab-content">
+        <div className="container">
+
+          {/* FEATURES */}
+          {activeTab === 'FEATURES' && (
+            <div className="pd-features-grid">
+              {product.features?.map((feat, i) => {
+                const isObj = typeof feat === 'object';
+                const label = isObj ? feat.label : feat.split(' — ')[0];
+                const desc = isObj ? feat.desc : feat.split(' — ').slice(1).join(' — ');
+                const img = isObj ? feat.image : null;
+                return (
+                  <div key={i} className="pd-feature-card">
+                    {img && <img src={img} alt={label} className="pd-feature-img" />}
+                    <div className="pd-feature-body">
+                      <h3 className="pd-feature-label">{label}</h3>
+                      <p className="pd-feature-desc">{desc}</p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
+          )}
 
-            {/* Specifications */}
-            <div className="product-specs-panel">
-              <h2 className="panel-title">Technical Specifications</h2>
-              <table className="specs-table-full">
+          {/* SPECIFICATIONS */}
+          {activeTab === 'SPECIFICATIONS' && (
+            <div className="pd-specs-wrap">
+              <table className="pd-specs-table">
                 <tbody>
-                  {Object.entries(product.specs).map(([key, value]) => (
-                    <tr key={key}>
-                      <td className="spec-key">{key}</td>
-                      <td className="spec-value">{value}</td>
+                  {Object.entries(product.specs || {}).map(([k, v]) => (
+                    <tr key={k}>
+                      <td className="pd-spec-key">{k}</td>
+                      <td className="pd-spec-val">{v}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
+              <p className="pd-spec-note">*Subject to conditions</p>
+            </div>
+          )}
+
+          {/* ACCESSORIES */}
+          {activeTab === 'ACCESSORIES' && (
+            <div className="pd-acc-section">
+              {['Standard', 'Optional'].map(type => {
+                const items = product.accessories?.filter(a => a.type === type) || [];
+                if (!items.length) return null;
+                return (
+                  <div key={type} className="pd-acc-group">
+                    <h3 className="pd-acc-group-title">{type.toUpperCase()} ACCESSORIES</h3>
+                    <div className="pd-acc-grid">
+                      {items.map(acc => (
+                        <div key={acc.code} className="pd-acc-card">
+                          <div className="pd-acc-img-wrap">
+                            {acc.image
+                              ? <img src={acc.image} alt={acc.name} className="pd-acc-img" />
+                              : <div className="pd-acc-no-img">No Image</div>
+                            }
+                          </div>
+                          <div className="pd-acc-info">
+                            <span className="pd-acc-code">{acc.code}</span>
+                            <p className="pd-acc-name">{acc.name}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+          {/* GALLERY */}
+          {activeTab === 'GALLERY' && (
+            <div className="pd-gallery-grid">
+              {(product.gallery || [product.image]).map((img, i) => (
+                <div key={i} className="pd-gallery-item" onClick={() => setLightboxImg(img)}>
+                  <img src={img} alt={`${product.name} gallery ${i + 1}`} />
+                  <div className="pd-gallery-overlay">
+                    <span>🔍</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* FLOOR TYPES */}
+          {activeTab === 'FLOOR TYPES' && (
+            <div className="pd-floor-grid">
+              {product.floorTypes?.map(ft => (
+                <div key={ft} className="pd-floor-card">
+                  <span className="pd-floor-icon">{floorTypeIcons[ft] || '✓'}</span>
+                  <span className="pd-floor-name">{ft}</span>
+                </div>
+              ))}
+            </div>
+          )}
+
+        </div>
+      </div>
+
+      {/* ── VIDEO ── */}
+      {product.videoUrl && (
+        <section className="pd-video-section">
+          <div className="container">
+            <h2 className="pd-section-title">Product Video</h2>
+            <div className="pd-video-wrap">
+              <iframe
+                src={product.videoUrl}
+                title={`${product.name} product video`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
-      {/* Floor Types */}
-      {product.floorTypes && (
-        <section className="floor-types-section">
+      {/* ── OTHER MODELS ── */}
+      {category.products.length > 1 && (
+        <section className="pd-related-section">
           <div className="container">
-            <h2 className="panel-title">Compatible Floor Types</h2>
-            <div className="floor-types-grid">
-              {product.floorTypes.map(ft => (
-                <div key={ft} className="floor-type-chip">
-                  <span>✓</span> {ft}
-                </div>
+            <h2 className="pd-section-title">Other {category.name} Models</h2>
+            <div className="pd-related-grid">
+              {category.products.filter(p => p.id !== product.id).map(p => (
+                <Link key={p.id} to={`/brands/${brand.id}/${category.id}/${p.id}`} className="pd-related-card">
+                  <img src={p.image} alt={p.name} className="pd-related-img" />
+                  <div className="pd-related-body">
+                    {p.modelCode && <span className="pd-related-code">{p.modelCode}</span>}
+                    <h3>{p.name}</h3>
+                    <p>{p.tagline}</p>
+                    <span className="pd-related-link">Explore →</span>
+                  </div>
+                </Link>
               ))}
             </div>
           </div>
         </section>
       )}
 
-      {/* Accessories */}
-      {product.accessories && (
-        <section className="accessories-section">
-          <div className="container">
-            <h2 className="panel-title">Accessories</h2>
-            <div className="accessories-grid">
-              {['Standard', 'Optional'].map(type => {
-                const items = product.accessories.filter(a => a.type === type);
-                if (!items.length) return null;
-                return (
-                  <div key={type} className="accessory-group">
-                    <h4 className="accessory-group-title">{type} Accessories</h4>
-                    <ul className="accessory-list">
-                      {items.map(acc => (
-                        <li key={acc.code} className="accessory-item">
-                          <span className="accessory-code">{acc.code}</span>
-                          <span className="accessory-name">{acc.name}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Video */}
-      {product.videoUrl && (
-        <section className="product-video-section">
-          <div className="container">
-            <h2 className="panel-title">Product Video</h2>
-            <div className="video-wrapper">
-              <iframe
-                src={product.videoUrl}
-                title={`${product.name} video`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Testimonial */}
-      {product.testimonial && (
-        <section className="testimonial-section">
-          <div className="container">
-            <blockquote className="product-testimonial">
-              <p>"{product.testimonial.quote}"</p>
-              <cite>— {product.testimonial.source}</cite>
-            </blockquote>
-          </div>
-        </section>
-      )}
-
-      {/* Other Products */}
-      {category.products.length > 1 && (
-        <section className="other-products-section">
-          <div className="container">
-            <h2 className="section-title">Other <span>{category.name}</span> Models</h2>
-            <div className="other-products-grid">
-              {category.products
-                .filter(p => p.id !== product.id)
-                .map(p => (
-                  <Link to={`/brands/${brand.id}/${category.id}/${p.id}`} key={p.id} className="other-product-card">
-                    <img src={p.image} alt={p.name} className="other-product-img" />
-                    <div className="other-product-body">
-                      {p.modelCode && <span className="product-model-code">{p.modelCode}</span>}
-                      <h3>{p.name}</h3>
-                      <p>{p.tagline}</p>
-                      <span className="category-link-text">View Details &rarr;</span>
-                    </div>
-                  </Link>
-                ))}
-            </div>
-          </div>
-        </section>
+      {/* ── LIGHTBOX ── */}
+      {lightboxImg && (
+        <div className="pd-lightbox" onClick={() => setLightboxImg(null)}>
+          <button className="pd-lightbox-close" onClick={() => setLightboxImg(null)}>✕</button>
+          <img src={lightboxImg} alt="Full view" onClick={e => e.stopPropagation()} />
+        </div>
       )}
 
     </main>
