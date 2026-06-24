@@ -1167,7 +1167,120 @@ export const klencoData = {
       shortDesc: 'Unmatched Power for Commercial Cleaning.',
       image: '/assets/product_3.png', // Fallback image for now
       icon: '💦',
-      products: []
+      products: [
+  {
+    "id": "monsoon-336",
+    "name": "MONSOON 336",
+    "subcategory": null,
+    "modelCode": "MONSOON336",
+    "image": "/assets/klenco-monsoon-336-0.png",
+    "tagline": "COLD-WATER HIGH-PRESSURE CLEANER MONSOON 336 is a powerful, highly compact, and versatile high-pressure cleaner.",
+    "heroDescription": "COLD-WATER HIGH-PRESSURE CLEANER MONSOON 336 is a powerful, highly compact, and versatile high-pressure cleaner.",
+    "description": "COLD-WATER HIGH-PRESSURE CLEANER MONSOON 336 is a powerful, highly compact, and versatile high-pressure cleaner. It can be configured as a portable unit, a trolley-mounted or wall-mounted kit. This flexibility makes it extremely suitable for washing in workshop, kitchen, and food preparation area. Features: Low noise motor with auto total stop upon trigger release Brass plunger pump head with ceramic pistons Low pressure chemical spray function",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-monsoon-336-0.png",
+      "/assets/klenco-monsoon-336-1.png",
+      "/assets/klenco-monsoon-336-2.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "monsoon-444",
+    "name": "MONSOON 444",
+    "subcategory": null,
+    "modelCode": "MONSOON444",
+    "image": "/assets/klenco-monsoon-444-0.png",
+    "tagline": "COMMERICAL COLD-WATER HIGH-PRESSURE CLEANER MONSOON 444 is a compact, ergonomic, and lightweight.",
+    "heroDescription": "COMMERICAL COLD-WATER HIGH-PRESSURE CLEANER MONSOON 444 is a compact, ergonomic, and lightweight.",
+    "description": "COMMERICAL COLD-WATER HIGH-PRESSURE CLEANER MONSOON 444 is a compact, ergonomic, and lightweight. Features high pressure and adequate waterflow and loaded with convenience features like integrated accessory holders. It is ideal for removing stubborn dirt in kitchens, on automobiles and for general use at outdoor areas. The 4-pole motor with low speed 1450rpm and auto total stop provides a longer pump life. Features: Ergonomic Handle Pressure Regulator Glycerin Pressure Gauge Hose Holder Power Cable Holder Detergent Tank Large Wheels for greater mobility",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-monsoon-444-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "monsoon-525",
+    "name": "MONSOON 525",
+    "subcategory": null,
+    "modelCode": "MONSOON525",
+    "image": "/assets/klenco-monsoon-525-528-828-0.png",
+    "tagline": "HEAVY-DUTY COLD-WATER HIGH-PRESSURE CLEANER The Explorer Line consists of the MONSOON 500 series single-phase and Monsoon 800 series three-phase commercial and industrial cold-water high-pressure cleaners which balance performance, reliability, and economy.",
+    "heroDescription": "HEAVY-DUTY COLD-WATER HIGH-PRESSURE CLEANER The Explorer Line consists of the MONSOON 500 series single-phase and Monsoon 800 series three-phase commercial and industrial cold-water high-pressure cleaners which balance performance, reliability, and economy.",
+    "description": "HEAVY-DUTY COLD-WATER HIGH-PRESSURE CLEANER The Explorer Line consists of the MONSOON 500 series single-phase and Monsoon 800 series three-phase commercial and industrial cold-water high-pressure cleaners which balance performance, reliability, and economy. Designed for medium to heavier duty long running applications, they are the reliable workhorse for most commercial and basic industrial cleaning jobs. They effortlessly handle a wide range of industrial applications for heavy duty cleaning especially for the commercial and industrial premises. The range of strong maximum flow rate and performance caters to many requirements.",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-monsoon-525-528-828-0.png",
+      "/assets/klenco-monsoon-525-528-828-1.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "monsoon-828",
+    "name": "MONSOON 828",
+    "subcategory": null,
+    "modelCode": "MONSOON828",
+    "image": "/assets/klenco-monsoon-525-528-828-0.png",
+    "tagline": "HEAVY-DUTY COLD-WATER HIGH-PRESSURE CLEANER The Explorer Line consists of the MONSOON 500 series single-phase and Monsoon 800 series three-phase commercial and industrial cold-water high-pressure cleaners which balance performance, reliability, and economy.",
+    "heroDescription": "HEAVY-DUTY COLD-WATER HIGH-PRESSURE CLEANER The Explorer Line consists of the MONSOON 500 series single-phase and Monsoon 800 series three-phase commercial and industrial cold-water high-pressure cleaners which balance performance, reliability, and economy.",
+    "description": "HEAVY-DUTY COLD-WATER HIGH-PRESSURE CLEANER The Explorer Line consists of the MONSOON 500 series single-phase and Monsoon 800 series three-phase commercial and industrial cold-water high-pressure cleaners which balance performance, reliability, and economy. Designed for medium to heavier duty long running applications, they are the reliable workhorse for most commercial and basic industrial cleaning jobs. They effortlessly handle a wide range of industrial applications for heavy duty cleaning especially for the commercial and industrial premises. The range of strong maximum flow rate and performance caters to many requirements.",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-monsoon-525-528-828-0.png",
+      "/assets/klenco-monsoon-525-528-828-1.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  }
+]
     },
     {
       id: 'cold-water-cleaners',
