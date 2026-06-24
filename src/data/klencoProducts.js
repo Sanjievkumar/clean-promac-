@@ -1288,7 +1288,63 @@ export const klencoData = {
       shortDesc: 'Industrial Strength for Heavy-Duty Cleaning.',
       image: '/assets/product_4.png', // Fallback image for now
       icon: '🌊',
-      products: []
+      products: [
+  {
+    "id": "monsoon-528",
+    "name": "MONSOON 528",
+    "subcategory": null,
+    "modelCode": "MONSOON528",
+    "image": "/assets/klenco-monsoon-525-528-828-0.png",
+    "tagline": "HEAVY-DUTY COLD-WATER HIGH-PRESSURE CLEANER The Explorer Line consists of the MONSOON 500 series single-phase and Monsoon 800 series three-phase commercial and industrial cold-water high-pressure cleaners which balance performance, reliability, and economy.",
+    "heroDescription": "HEAVY-DUTY COLD-WATER HIGH-PRESSURE CLEANER The Explorer Line consists of the MONSOON 500 series single-phase and Monsoon 800 series three-phase commercial and industrial cold-water high-pressure cleaners which balance performance, reliability, and economy.",
+    "description": "HEAVY-DUTY COLD-WATER HIGH-PRESSURE CLEANER The Explorer Line consists of the MONSOON 500 series single-phase and Monsoon 800 series three-phase commercial and industrial cold-water high-pressure cleaners which balance performance, reliability, and economy. Designed for medium to heavier duty long running applications, they are the reliable workhorse for most commercial and basic industrial cleaning jobs. They effortlessly handle a wide range of industrial applications for heavy duty cleaning especially for the commercial and industrial premises. The range of strong maximum flow rate and performance caters to many requirements.",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-monsoon-525-528-828-0.png",
+      "/assets/klenco-monsoon-525-528-828-1.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "monsoon-848",
+    "name": "MONSOON 848",
+    "subcategory": null,
+    "modelCode": "MONSOON848",
+    "image": "/assets/klenco-monsoon-848-0.png",
+    "tagline": "HEAVY-DUTY COLD-WATER HIGH-PRESSURE CLEANER The MONSOON 848 is a heavy duty three-phase industrial cold-water high-pressure cleaners which provide high performance and superior reliability.",
+    "heroDescription": "HEAVY-DUTY COLD-WATER HIGH-PRESSURE CLEANER The MONSOON 848 is a heavy duty three-phase industrial cold-water high-pressure cleaners which provide high performance and superior reliability.",
+    "description": "HEAVY-DUTY COLD-WATER HIGH-PRESSURE CLEANER The MONSOON 848 is a heavy duty three-phase industrial cold-water high-pressure cleaners which provide high performance and superior reliability. Designed for long running and difficult applications, they are the reliable long-term tool for commercial and industrial cleaning jobs handling the most demanding applications. The strong maximum flow rate and high-pressure performance caters to many industrial requirements. Due to the electrophoresis treated all steel construction, structural durability for use in rugged and harsh environments is well assured.",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-monsoon-848-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  }
+]
     }
   ]
 };

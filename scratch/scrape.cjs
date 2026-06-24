@@ -4,10 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const targets = [
-  { url: 'https://www.klenco-asia.com/product/monsoon-336/', subcategory: null },
-  { url: 'https://www.klenco-asia.com/product/monsoon-444/', subcategory: null },
-  { url: 'https://www.klenco-asia.com/product/monsoon-525/', subcategory: null },
-  { url: 'https://www.klenco-asia.com/product/monsoon-828/', subcategory: null }
+  { url: 'https://www.klenco-asia.com/product/monsoon-848/', subcategory: null }
 ];
 
 async function downloadImage(url, filename) {
@@ -122,7 +119,9 @@ async function main() {
     }
   }
   
-  fs.writeFileSync(path.join(__dirname, 'scraped-vacuums.json'), JSON.stringify(products, null, 2));
+  const existing = JSON.parse(fs.readFileSync(path.join(__dirname, 'scraped-vacuums.json'), 'utf8'));
+  existing.push(...products);
+  fs.writeFileSync(path.join(__dirname, 'scraped-vacuums.json'), JSON.stringify(existing, null, 2));
   console.log('Done!');
 }
 
