@@ -15,7 +15,11 @@ const BrandsSection = () => {
           <div className="brands-logos">
             {brandsData.map(brand => (
               <div key={brand.id} className="brand-logo-wrapper">
-                <span className="brand-name-placeholder">{brand.name}</span>
+                {brand.logoUrl ? (
+                  <img src={brand.logoUrl} alt={`${brand.name} Logo`} className="brand-logo-img" />
+                ) : (
+                  <span className="brand-name-placeholder">{brand.name}</span>
+                )}
               </div>
             ))}
             <div className="brand-logo-wrapper more-brands">

@@ -12,9 +12,9 @@ const AboutBrands = () => {
         <div className="about-brands-marquee">
           <div className="about-brands-strip">
             {/* Set 1 */}
-            <div className="brand-logo-item"><h2>KLENCO</h2></div>
+            <div className="brand-logo-item"><img src="/assets/klenco-logo-horizontal.png" alt="Klenco" className="marquee-logo" /></div>
             <div className="brand-separator"></div>
-            <div className="brand-logo-item"><h2>TRUVOX</h2></div>
+            <div className="brand-logo-item"><img src="/assets/truvox-logo-v2.svg" alt="Truvox" className="marquee-logo" /></div>
             <div className="brand-separator"></div>
             <div className="brand-logo-item"><h2>PROMAC</h2></div>
             <div className="brand-separator"></div>
@@ -25,9 +25,9 @@ const AboutBrands = () => {
             <div className="brand-separator"></div>
 
             {/* Set 2 (Duplicate for seamless loop) */}
-            <div className="brand-logo-item"><h2>KLENCO</h2></div>
+            <div className="brand-logo-item"><img src="/assets/klenco-logo-horizontal.png" alt="Klenco" className="marquee-logo" /></div>
             <div className="brand-separator"></div>
-            <div className="brand-logo-item"><h2>TRUVOX</h2></div>
+            <div className="brand-logo-item"><img src="/assets/truvox-logo-v2.svg" alt="Truvox" className="marquee-logo" /></div>
             <div className="brand-separator"></div>
             <div className="brand-logo-item"><h2>PROMAC</h2></div>
             <div className="brand-separator"></div>

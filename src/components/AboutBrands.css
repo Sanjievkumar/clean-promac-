@@ -95,3 +95,16 @@
     display: none;
   }
 }
+
+.marquee-logo {
+  max-width: 160px;
+  max-height: 80px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.brand-logo-item:hover .marquee-logo {
+  opacity: 1;
+}
+
