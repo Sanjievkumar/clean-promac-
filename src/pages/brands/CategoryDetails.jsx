@@ -97,11 +97,11 @@ const CategoryDetails = () => {
     if (activeSubcat === 'other') {
       displayProducts = ungroupedProducts;
       pageTitle = 'Other Models';
-      pageDesc = `Other products in ${category.name}`;
+      pageDesc = `Explore other products in the ${category.name} range.`;
     } else if (groupedProducts[activeSubcat]) {
       displayProducts = groupedProducts[activeSubcat];
       pageTitle = activeSubcat;
-      pageDesc = `${activeSubcat} within ${category.name}`;
+      pageDesc = `Explore our range of ${activeSubcat.toLowerCase()}.`;
     }
   }
 
@@ -119,7 +119,7 @@ const CategoryDetails = () => {
           <div className="category-hero-content">
             <span className="category-icon-large">{category.icon}</span>
             <h1 className="category-title-main">{pageTitle}</h1>
-            <p className="category-hero-desc">{pageDesc}</p>
+            <p className="category-hero-desc" style={{ textTransform: 'capitalize' }}>{pageDesc}</p>
           </div>
         </div>
       </section>
@@ -134,14 +134,16 @@ const CategoryDetails = () => {
                 className="product-card"
                 key={product.id}
               >
-                <div className="product-card-img-wrap">
-                  <img src={product.image} alt={product.name} />
+                <div className="product-card-img-wrapper">
+                  <img src={product.image} alt={product.name} className="product-card-img" />
                 </div>
                 <div className="product-card-body">
-                  {product.modelCode && <span className="product-code-badge">{product.modelCode}</span>}
-                  <h3 className="product-card-title">{product.name}</h3>
-                  <p className="product-card-desc">{product.tagline}</p>
-                  <span className="product-card-link">View Details &rarr;</span>
+                  {product.modelCode && <span className="product-model-code">{product.modelCode}</span>}
+                  <h3 className="product-card-name">{product.name}</h3>
+                  <p className="product-card-desc" style={{ fontSize: '0.85rem', color: '#666', marginBottom: '1rem', flex: 1 }}>{product.tagline}</p>
+                  <div className="product-card-actions">
+                    <span className="product-card-cta">Explore</span>
+                  </div>
                 </div>
               </Link>
             ))}
