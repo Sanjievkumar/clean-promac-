@@ -1,18 +1,21 @@
 import React, { useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import { truvoxData } from '../../data/truvoxProducts';
 import { klencoData } from '../../data/klencoProducts';
 import './CategoryDetails.css';
 
 const CategoryDetails = () => {
   const { brandId, categoryId } = useParams();
+  const { search } = useLocation();
+  const queryParams = new URLSearchParams(search);
+  const activeSubcat = queryParams.get('sub');
 
   const brand = brandId === 'truvox' ? truvoxData : brandId === 'klenco' ? klencoData : null;
   const category = brand ? brand.categories.find(c => c.id === categoryId) : null;
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [categoryId]);
+  }, [categoryId, activeSubcat]);
 
   if (!brand || !category) {
     return (
@@ -39,17 +42,84 @@ const CategoryDetails = () => {
 
   const hasSubcategories = Object.keys(groupedProducts).length > 0;
 
+  // Render Subcategory Cards view
+  if (hasSubcategories && !activeSubcat) {
+    return (
+      <main className="category-details-page">
+        {/* Category Hero */}
+        <section className="category-hero">
+          <Link to={`/brands/${brand.id}`} className="brand-back-btn">&larr; Back to {brand.name}</Link>
+          <div className="container">
+            <div className="category-hero-content">
+              <span className="category-icon-large">{category.icon}</span>
+              <h1 className="category-title-main">{category.name}</h1>
+              <p className="category-hero-desc">Please select a subcategory below.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Subcategories Grid */}
+        <section className="products-section">
+          <div className="container">
+            <div className="subcategories-grid">
+              {Object.keys(groupedProducts).map(subcat => (
+                <Link
+                  key={subcat}
+                  to={`/brands/${brand.id}/${category.id}?sub=${encodeURIComponent(subcat)}`}
+                  className="subcategory-card"
+                >
+                  <h3 className="subcategory-title">{subcat}</h3>
+                  <span className="subcategory-link-text">Explore Products &rarr;</span>
+                </Link>
+              ))}
+              {ungroupedProducts.length > 0 && (
+                <Link
+                  to={`/brands/${brand.id}/${category.id}?sub=other`}
+                  className="subcategory-card"
+                >
+                  <h3 className="subcategory-title">Other Models</h3>
+                  <span className="subcategory-link-text">Explore Products &rarr;</span>
+                </Link>
+              )}
+            </div>
+          </div>
+        </section>
+      </main>
+    );
+  }
+
+  // Determine which products to show
+  let displayProducts = category.products;
+  let pageTitle = category.name;
+  let pageDesc = category.shortDesc;
+
+  if (activeSubcat) {
+    if (activeSubcat === 'other') {
+      displayProducts = ungroupedProducts;
+      pageTitle = 'Other Models';
+      pageDesc = `Other products in ${category.name}`;
+    } else if (groupedProducts[activeSubcat]) {
+      displayProducts = groupedProducts[activeSubcat];
+      pageTitle = activeSubcat;
+      pageDesc = `${activeSubcat} within ${category.name}`;
+    }
+  }
+
   return (
     <main className="category-details-page">
 
       {/* Category Hero */}
       <section className="category-hero">
-        <Link to={`/brands/${brand.id}`} className="brand-back-btn">&larr; Back to {brand.name}</Link>
+        {activeSubcat ? (
+          <Link to={`/brands/${brand.id}/${category.id}`} className="brand-back-btn">&larr; Back to {category.name}</Link>
+        ) : (
+          <Link to={`/brands/${brand.id}`} className="brand-back-btn">&larr; Back to {brand.name}</Link>
+        )}
         <div className="container">
           <div className="category-hero-content">
             <span className="category-icon-large">{category.icon}</span>
-            <h1 className="category-title-main">{category.name}</h1>
-            <p className="category-hero-desc">{category.shortDesc}</p>
+            <h1 className="category-title-main">{pageTitle}</h1>
+            <p className="category-hero-desc">{pageDesc}</p>
           </div>
         </div>
       </section>
@@ -57,82 +127,25 @@ const CategoryDetails = () => {
       {/* Product Cards Grid */}
       <section className="products-section">
         <div className="container">
-          {hasSubcategories ? (
-            <div className="subcategories-wrap">
-              {Object.entries(groupedProducts).map(([subcat, prods]) => (
-                <div key={subcat} className="subcategory-group" style={{ marginBottom: '4rem' }}>
-                  <h2 className="subcategory-title" style={{ borderBottom: '2px solid #00a8b0', paddingBottom: '0.5rem', marginBottom: '2rem', color: '#1a2b4b' }}>
-                    {subcat}
-                  </h2>
-                  <div className="product-cards-grid">
-                    {prods.map((product) => (
-                      <Link
-                        to={`/brands/${brand.id}/${category.id}/${product.id}`}
-                        className="product-card"
-                        key={product.id}
-                      >
-                        <div className="product-card-img-wrap">
-                          <img src={product.image} alt={product.name} />
-                        </div>
-                        <div className="product-card-body">
-                          {product.modelCode && <span className="product-code-badge">{product.modelCode}</span>}
-                          <h3 className="product-card-title">{product.name}</h3>
-                          <p className="product-card-desc">{product.tagline}</p>
-                          <span className="product-card-link">View Details &rarr;</span>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
+          <div className="product-cards-grid">
+            {displayProducts.map((product) => (
+              <Link
+                to={`/brands/${brand.id}/${category.id}/${product.id}`}
+                className="product-card"
+                key={product.id}
+              >
+                <div className="product-card-img-wrap">
+                  <img src={product.image} alt={product.name} />
                 </div>
-              ))}
-              {ungroupedProducts.length > 0 && (
-                <div className="subcategory-group" style={{ marginBottom: '4rem' }}>
-                  <h2 className="subcategory-title" style={{ borderBottom: '2px solid #00a8b0', paddingBottom: '0.5rem', marginBottom: '2rem', color: '#1a2b4b' }}>
-                    Other Models
-                  </h2>
-                  <div className="product-cards-grid">
-                    {ungroupedProducts.map((product) => (
-                      <Link
-                        to={`/brands/${brand.id}/${category.id}/${product.id}`}
-                        className="product-card"
-                        key={product.id}
-                      >
-                        <div className="product-card-img-wrap">
-                          <img src={product.image} alt={product.name} />
-                        </div>
-                        <div className="product-card-body">
-                          {product.modelCode && <span className="product-code-badge">{product.modelCode}</span>}
-                          <h3 className="product-card-title">{product.name}</h3>
-                          <p className="product-card-desc">{product.tagline}</p>
-                          <span className="product-card-link">View Details &rarr;</span>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
+                <div className="product-card-body">
+                  {product.modelCode && <span className="product-code-badge">{product.modelCode}</span>}
+                  <h3 className="product-card-title">{product.name}</h3>
+                  <p className="product-card-desc">{product.tagline}</p>
+                  <span className="product-card-link">View Details &rarr;</span>
                 </div>
-              )}
-            </div>
-          ) : (
-            <div className="product-cards-grid">
-              {category.products.map((product) => (
-                <Link
-                  to={`/brands/${brand.id}/${category.id}/${product.id}`}
-                  className="product-card"
-                  key={product.id}
-                >
-                  <div className="product-card-img-wrap">
-                    <img src={product.image} alt={product.name} />
-                  </div>
-                  <div className="product-card-body">
-                    {product.modelCode && <span className="product-code-badge">{product.modelCode}</span>}
-                    <h3 className="product-card-title">{product.name}</h3>
-                    <p className="product-card-desc">{product.tagline}</p>
-                    <span className="product-card-link">View Details &rarr;</span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          )}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
