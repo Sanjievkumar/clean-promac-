@@ -35,7 +35,7 @@ const Brands = () => {
       <BrandCard 
         index="02"
         brandName="KLENCO"
-        logoImageSrc="/assets/klenco-logo-horizontal.png"
+        logoImageSrc="/assets/klenco-logo.png"
         title="Clean Spaces."
         titleHighlight="Better"
         subtitle="Better Places."

@@ -127,7 +127,7 @@ export const industriesData = [
 
 // 3. Brands Logo Data (For the "Trusted Global Brands" strip)
 export const brandsData = [
-  { id: 'brand-1', name: 'KLENCO', logoUrl: '/assets/klenco-logo-horizontal.png' },
+  { id: 'brand-1', name: 'KLENCO', logoUrl: '/assets/klenco-logo.png' },
   { id: 'brand-2', name: 'TRUVOX', logoUrl: '/assets/truvox-logo-v2.svg' },
-  { id: 'brand-3', name: 'PROMAC', logoUrl: null }
+  { id: 'brand-3', name: 'PROMAC', logoUrl: '/assets/promac-logo.png' }
 ];

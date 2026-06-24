@@ -9,7 +9,7 @@ const BrandLogo = ({ brandId }) => {
     return <img src="/assets/truvox-logo-v2.svg" alt="Truvox Logo" style={{ width: '200px' }} />;
   }
   if (brandId === 'klenco') {
-    return <img src="/assets/klenco-logo-horizontal.png" alt="Klenco Logo" style={{ width: '200px' }} />;
+    return <img src="/assets/klenco-logo.png" alt="Klenco Logo" style={{ width: '200px' }} />;
   }
   return <h1>{brandId.toUpperCase()}</h1>;
 };
