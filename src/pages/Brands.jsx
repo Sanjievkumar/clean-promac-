@@ -35,8 +35,7 @@ const Brands = () => {
       <BrandCard 
         index="02"
         brandName="KLENCO"
-        logoText="KLENCO"
-        logoSubtext="CLEANING SYSTEMS"
+        logoImageSrc="/assets/klenco-logo-horizontal.png"
         title="Clean Spaces."
         titleHighlight="Better"
         subtitle="Better Places."
@@ -49,6 +48,7 @@ const Brands = () => {
         imageSrc="/assets/product_2.png"
         imageAlt="Klenco Cleaning Cart"
         buttonText="Explore Klenco"
+        exploreLink="/brands/klenco"
         isReversed={true}
         accentColor="#0A2540"
       />

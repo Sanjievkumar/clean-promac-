@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { truvoxData } from '../../data/truvoxProducts';
+import { klencoData } from '../../data/klencoProducts';
 import './CategoryDetails.css';
 
 const CategoryDetails = () => {
   const { brandId, categoryId } = useParams();
 
-  const brand = brandId === 'truvox' ? truvoxData : null;
+  const brand = brandId === 'truvox' ? truvoxData : brandId === 'klenco' ? klencoData : null;
   const category = brand ? brand.categories.find(c => c.id === categoryId) : null;
 
   useEffect(() => {

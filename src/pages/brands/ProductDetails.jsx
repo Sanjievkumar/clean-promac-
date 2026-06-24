@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { truvoxData } from '../../data/truvoxProducts';
+import { klencoData } from '../../data/klencoProducts';
+import { AnimatePresence, motion } from 'framer-motion';
 import './ProductDetails.css';
 
 const TABS = ['FEATURES', 'SPECIFICATIONS', 'ACCESSORIES', 'GALLERY', 'FLOOR TYPES'];
@@ -22,7 +24,7 @@ const ProductDetails = () => {
   const [lightboxImg, setLightboxImg] = useState(null);
   const [mainImg, setMainImg] = useState(null);
 
-  const brand = brandId === 'truvox' ? truvoxData : null;
+  const brand = brandId === 'truvox' ? truvoxData : brandId === 'klenco' ? klencoData : null;
   const category = brand ? brand.categories.find(c => c.id === categoryId) : null;
   const product = category ? category.products.find(p => p.id === productId) : null;
 
