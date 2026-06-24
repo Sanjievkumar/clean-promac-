@@ -4,15 +4,11 @@ const fs = require('fs');
 const path = require('path');
 
 const urls = [
-  'https://www.klenco-asia.com/product/typhoon-hardy/',
-  'https://www.klenco-asia.com/product/typhoon-nova-q/',
-  'https://www.klenco-asia.com/product/typhoon-r327/',
-  'https://www.klenco-asia.com/product/typhoon-r337/',
-  'https://www.klenco-asia.com/product/typhoon-r590/',
-  'https://www.klenco-asia.com/product/typhoon-678/',
-  'https://www.klenco-asia.com/product/typhoon-432/',
-  'https://www.klenco-asia.com/product/typhoon-480p/',
-  'https://www.klenco-asia.com/product/typhoon-463/'
+  'https://www.klenco-asia.com/product/typhoon-se20/',
+  'https://www.klenco-asia.com/product/typhoon-se30/',
+  'https://www.klenco-asia.com/product/typhoon-se60/',
+  'https://www.klenco-asia.com/product/typhoon-se70/',
+  'https://www.klenco-asia.com/product/typhoon-se35-d/'
 ];
 
 async function downloadImage(url, filename) {

@@ -266,7 +266,138 @@ export const klencoData = {
       shortDesc: 'Deep cleaning and fast drying for carpets and upholstery surfaces.',
       image: '/assets/product_2.png',
       icon: '🛋️',
-      products: []
+      products: [
+  {
+    "id": "typhoon-se20",
+    "name": "TYPHOON SE20",
+    "modelCode": "TYPHOONSE2",
+    "image": "/assets/klenco-typhoon-se20-0.png",
+    "tagline": "COMPACT SPRAY EXTRACTION CARPET/ UPHOLSTERY CLEANER TYPHOON SE20 is a compact and easy to carry spray extraction carpet/ upholstery cleaner which specially designed for small and medium areas of carpets and floors.",
+    "heroDescription": "COMPACT SPRAY EXTRACTION CARPET/ UPHOLSTERY CLEANER TYPHOON SE20 is a compact and easy to carry spray extraction carpet/ upholstery cleaner which specially designed for small and medium areas of carpets and floors.",
+    "description": "COMPACT SPRAY EXTRACTION CARPET/ UPHOLSTERY CLEANER TYPHOON SE20 is a compact and easy to carry spray extraction carpet/ upholstery cleaner which specially designed for small and medium areas of carpets and floors. Features: Extremely portable despite its reasonably-sized tank. Cleans both carpet and hard floor using the same tool in a single pass! S-shaped wand allows easy access under tables or low heights. High density polyethylene tanks, die-cast aluminium vacuum head & stainless-steel vacuum tubes for enhanced machine life. Adjustable handle height of cleaning tool allows worker to manage it with little effort. Transparent cover enables monitoring suction of dirty water when machine is in operation. Vacuum motor filter can be easily removed for cleaning. Water pump with bypass regulates the optimal water flow automatically according to the tool used, thereby improving the pump s performance reliability.",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-typhoon-se20-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "typhoon-se30",
+    "name": "TYPHOON SE30",
+    "modelCode": "TYPHOONSE3",
+    "image": "/assets/klenco-typhoon-se30-0.png",
+    "tagline": "COMPACT SPRAY EXTRACTION CARPET/ UPHOLSTERY CLEANER TYPHOON SE30 is a compact and highly maneuverable, making it ideal for cleaning offices or retails stores with narrow aisles, cinemas and even transport vehicles.",
+    "heroDescription": "COMPACT SPRAY EXTRACTION CARPET/ UPHOLSTERY CLEANER TYPHOON SE30 is a compact and highly maneuverable, making it ideal for cleaning offices or retails stores with narrow aisles, cinemas and even transport vehicles.",
+    "description": "COMPACT SPRAY EXTRACTION CARPET/ UPHOLSTERY CLEANER TYPHOON SE30 is a compact and highly maneuverable, making it ideal for cleaning offices or retails stores with narrow aisles, cinemas and even transport vehicles. It can be converted into a hot water unit quickly when attached with the optional HT1800 heater.",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-typhoon-se30-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "typhoon-se60",
+    "name": "TYPHOON SE60",
+    "modelCode": "TYPHOONSE6",
+    "image": "/assets/klenco-typhoon-se60-0.png",
+    "tagline": "CARPET EXTRACTOR WITH INSTANT HEATER TYPHOON SE60 comes with a 1800W instant heater.",
+    "heroDescription": "CARPET EXTRACTOR WITH INSTANT HEATER TYPHOON SE60 comes with a 1800W instant heater.",
+    "description": "CARPET EXTRACTOR WITH INSTANT HEATER TYPHOON SE60 comes with a 1800W instant heater. The hot water it produces effectively breaks down food stains and heavy soils which the quiet but powerful suction quickly removes. This machine is ideal for hotels, restaurants and other demanding applications.",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-typhoon-se60-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "typhoon-se70",
+    "name": "TYPHOON SE70",
+    "modelCode": "TYPHOONSE7",
+    "image": "/assets/klenco-typhoon-se70-0.png",
+    "tagline": "INSTANT HOT WATER CARPET EXTRACTOR TYPHOON SE70 is a professional instant hot water carpet extractor with 2 vacuum motors for fast cleaning of big areas of carpet.",
+    "heroDescription": "INSTANT HOT WATER CARPET EXTRACTOR TYPHOON SE70 is a professional instant hot water carpet extractor with 2 vacuum motors for fast cleaning of big areas of carpet.",
+    "description": "INSTANT HOT WATER CARPET EXTRACTOR TYPHOON SE70 is a professional instant hot water carpet extractor with 2 vacuum motors for fast cleaning of big areas of carpet. It comes with bigger tank capacity for large area. Features: Large heavy-duty rotationally moulded polyethylene solution and recovery tanks against rust, dent, or crack. Instant hot water heater makes cleaning even more effective and fast. Two 3 stages vacuum motors enable short drying time. Carpet cleaning tool with indestructible aluminium vacuum head and stainless-steel tubes with adjustable grip for operator comfort. Recovery tank with drain hose for easy emptying of dirt solution.",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-typhoon-se70-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "typhoon-se35-d",
+    "name": "TYPHOON SE35-D",
+    "modelCode": "TYPHOONSE3",
+    "image": "/assets/klenco-typhoon-se35-d-0.png",
+    "tagline": "SELF-CONTAINED CARPET SPRAY EXTRACTOR TYPHOON SE35-D is a self-contained machine, with double rotating brush, designed for professional cleaning of medium size carpeted areas.",
+    "heroDescription": "SELF-CONTAINED CARPET SPRAY EXTRACTOR TYPHOON SE35-D is a self-contained machine, with double rotating brush, designed for professional cleaning of medium size carpeted areas.",
+    "description": "SELF-CONTAINED CARPET SPRAY EXTRACTOR TYPHOON SE35-D is a self-contained machine, with double rotating brush, designed for professional cleaning of medium size carpeted areas. It washes, brushes and dries a stripe of 40 cm of carpet perfectly, removing the dirt form the base of carpet fibres. Main application fields: hotels, conference halls, banks and big offices, shopping centres, airports and all places with vast carpet surfaces. Special Features: Able to deep pre-brushing of carpet before extraction cleaning, for a deep mechanical brushing action. Very silent working, that allows to use the machine with no discomfort for the worker and for other people Small dimensions for easy storage, transport, and mobility",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-typhoon-se35-d-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  }
+]
     },
     {
       id: 'single-disc-machines',
