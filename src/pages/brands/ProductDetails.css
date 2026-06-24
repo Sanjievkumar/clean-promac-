@@ -690,3 +690,35 @@
   .pd-hero-actions .pd-btn-primary,
   .pd-hero-actions .pd-btn-outline { width: 100%; text-align: center; }
 }
+
+.pd-feature-img-wrap {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.pd-feature-img-wrap .pd-feature-img {
+  transition: transform 0.4s ease;
+}
+
+.pd-feature-img-wrap:hover .pd-feature-img {
+  transform: scale(1.06);
+}
+
+.pd-feature-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.pd-feature-img-wrap:hover .pd-feature-overlay {
+  opacity: 1;
+}
+

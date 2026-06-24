@@ -141,7 +141,16 @@ const ProductDetails = () => {
                 const img = isObj ? feat.image : null;
                 return (
                   <div key={i} className="pd-feature-card">
-                    {img && <img src={img} alt={label} className="pd-feature-img" />}
+                    {img && (
+                      <div className="pd-feature-img-wrap" onClick={() => setLightboxImg(img)}>
+                        <img src={img} alt={label} className="pd-feature-img" />
+                        <div className="pd-feature-overlay">
+                          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" strokeWidth="2">
+                            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                          </svg>
+                        </div>
+                      </div>
+                    )}
                     <div className="pd-feature-body">
                       <h3 className="pd-feature-label">{label}</h3>
                       <p className="pd-feature-desc">{desc}</p>
