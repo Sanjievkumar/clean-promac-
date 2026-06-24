@@ -89,7 +89,9 @@ const ProductDetails = () => {
             <div className="pd-hero-right">
               <p className="pd-category-label">{category.name}</p>
               <h1 className="pd-product-name">{product.name}</h1>
-              <p className="pd-hero-desc">{product.heroDescription || product.description}</p>
+              <p className="pd-hero-desc">
+                {brand.id === 'klenco' ? product.description : (product.heroDescription || product.description)}
+              </p>
 
               {/* Ideal For */}
               {product.idealFor && (
@@ -103,9 +105,16 @@ const ProductDetails = () => {
 
               <div className="pd-hero-actions">
                 <Link to="/contact" className="pd-btn-primary">Enquire Here</Link>
-                <a href={`https://www.truvox.com/product/${productId}/`} target="_blank" rel="noopener noreferrer" className="pd-btn-outline">
-                  View on Truvox.com ↗
-                </a>
+                {brand.id === 'truvox' && (
+                  <a href={`https://www.truvox.com/product/${productId}/`} target="_blank" rel="noopener noreferrer" className="pd-btn-outline">
+                    View on Truvox.com ↗
+                  </a>
+                )}
+                {brand.id === 'klenco' && (
+                  <a href={`https://www.klenco-asia.com/`} target="_blank" rel="noopener noreferrer" className="pd-btn-outline">
+                    View on Klenco.com ↗
+                  </a>
+                )}
               </div>
             </div>
           </div>
@@ -113,6 +122,7 @@ const ProductDetails = () => {
       </section>
 
       {/* ── TAB BAR ── */}
+      {brand.id === 'truvox' && (
       <div className="pd-tab-bar">
         <div className="container">
           <div className="pd-tabs">
@@ -128,8 +138,10 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
+      )}
 
       {/* ── TAB CONTENT ── */}
+      {brand.id === 'truvox' && (
       <div className="pd-tab-content">
         <div className="container">
 
@@ -243,6 +255,7 @@ const ProductDetails = () => {
 
         </div>
       </div>
+      )}
 
       {/* ── VIDEO ── */}
       {product.videoUrl && (
