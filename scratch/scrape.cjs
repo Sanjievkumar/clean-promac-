@@ -4,18 +4,9 @@ const fs = require('fs');
 const path = require('path');
 
 const targets = [
-  { url: 'https://www.klenco-asia.com/product/hooray/', subcategory: 'UPRIGHT & MINI SCRUBBER DRYERS' },
-  { url: 'https://www.klenco-asia.com/product/lava-280b/', subcategory: 'UPRIGHT & MINI SCRUBBER DRYERS' },
-  { url: 'https://www.klenco-asia.com/product/lava-351/', subcategory: 'UPRIGHT & MINI SCRUBBER DRYERS' },
-  
-  { url: 'https://www.klenco-asia.com/product/lava-501/', subcategory: 'WALK BEHIND AUTO SCRUBBERS' },
-  { url: 'https://www.klenco-asia.com/product/lava-520b/', subcategory: 'WALK BEHIND AUTO SCRUBBERS' },
-  { url: 'https://www.klenco-asia.com/product/lava-flow/', subcategory: 'WALK BEHIND AUTO SCRUBBERS' },
-  { url: 'https://www.klenco-asia.com/product/lava-650-655r/', subcategory: 'WALK BEHIND AUTO SCRUBBERS' },
-  
-  { url: 'https://www.klenco-asia.com/product/lava-rx2-55-rx2-60/', subcategory: 'RIDE ON SCRUBBER DRYERS' },
-  { url: 'https://www.klenco-asia.com/product/lava-2060b/', subcategory: 'RIDE ON SCRUBBER DRYERS' },
-  { url: 'https://www.klenco-asia.com/product/lava-3085b/', subcategory: 'RIDE ON SCRUBBER DRYERS' }
+  { url: 'https://www.klenco-asia.com/product/tempest-ms700/', subcategory: null },
+  { url: 'https://www.klenco-asia.com/product/tempest-ms900/', subcategory: null },
+  { url: 'https://www.klenco-asia.com/product/tempest-460b/', subcategory: null }
 ];
 
 async function downloadImage(url, filename) {

@@ -890,7 +890,95 @@ export const klencoData = {
       shortDesc: 'Efficient Cleaning for Every Surface.',
       image: '/assets/product_5.png',
       icon: '🍂',
-      products: []
+      products: [
+  {
+    "id": "tempest-ms700",
+    "name": "TEMPEST MS700",
+    "subcategory": null,
+    "modelCode": "TEMPESTMS7",
+    "image": "/assets/klenco-tempest-ms700-0.png",
+    "tagline": "INDUSTRIAL MECHANICAL PUSH SWEEPER TEMPEST MS700 Industrial Mechanical Push Sweeper replaces the tiresome use of manual brooms with effortless mechanical sweeping.",
+    "heroDescription": "INDUSTRIAL MECHANICAL PUSH SWEEPER TEMPEST MS700 Industrial Mechanical Push Sweeper replaces the tiresome use of manual brooms with effortless mechanical sweeping.",
+    "description": "INDUSTRIAL MECHANICAL PUSH SWEEPER TEMPEST MS700 Industrial Mechanical Push Sweeper replaces the tiresome use of manual brooms with effortless mechanical sweeping. It eliminates the problem of dust clouds caused by conventional sweeping methods, while its innovative feature of forward and backward sweeping enables cleaning closer to wall edges and difficult corners. With increased efficiency in sweeping, MS 700 improves performance and saves labour. Features: Sweeper moves forward and backward for effective sweeping. Adjustable sweeping brush height to suit different floor conditions. Side brush enhances sweeping efficiency at wall edges. Dirt bins easily removable for emptying of debris. Foldable handle enables easy manoeuvring and storage. Non-motorized mechanism for virtually zero maintenance",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-tempest-ms700-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "tempest-ms900",
+    "name": "TEMPEST MS900",
+    "subcategory": null,
+    "modelCode": "TEMPESTMS9",
+    "image": "/assets/klenco-tempest-ms900-0.png",
+    "tagline": "INDUSTRIAL MECHANICAL PUSH SWEEPER Being a versatile and cost effective mechanical sweeper, Tempest MS900 offers impressive performance for both outdoor and indoor spaces.",
+    "heroDescription": "INDUSTRIAL MECHANICAL PUSH SWEEPER Being a versatile and cost effective mechanical sweeper, Tempest MS900 offers impressive performance for both outdoor and indoor spaces.",
+    "description": "INDUSTRIAL MECHANICAL PUSH SWEEPER Being a versatile and cost effective mechanical sweeper, Tempest MS900 offers impressive performance for both outdoor and indoor spaces. With its powerful side brushes, Tempest MS900 can effortlessly sweep areas up to 3,000m /h and the long bristles ensure thorough cleanliness right to the edges. Tempest MS900 is an ideal choice for cleaning factories, car parks, malls, schools, workshops as well as outdoor areas. Features: Adjustable sweeping brush height to suit different floor conditions Side brush enhances sweeping efficiency at wall edges and difficult corners Dirt bins can be easily removed for emptying of debris Foldable handle enables space saving storage and easy transportation",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-tempest-ms900-0.png",
+      "/assets/klenco-tempest-ms900-1.png",
+      "/assets/klenco-tempest-ms900-2.png",
+      "/assets/klenco-tempest-ms900-3.png",
+      "/assets/klenco-tempest-ms900-4.png",
+      "/assets/klenco-tempest-ms900-5.png",
+      "/assets/klenco-tempest-ms900-6.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "tempest-460b",
+    "name": "TEMPEST 460B",
+    "subcategory": null,
+    "modelCode": "TEMPEST460",
+    "image": "/assets/klenco-tempest-460b-0.png",
+    "tagline": "SMALLEST MOTORISED SWEEPER Light and compact, TEMPEST 460B is the smallest motorised sweeper, perfect to clean small and medium sized surfaces both indoors and outdoors.",
+    "heroDescription": "SMALLEST MOTORISED SWEEPER Light and compact, TEMPEST 460B is the smallest motorised sweeper, perfect to clean small and medium sized surfaces both indoors and outdoors.",
+    "description": "SMALLEST MOTORISED SWEEPER Light and compact, TEMPEST 460B is the smallest motorised sweeper, perfect to clean small and medium sized surfaces both indoors and outdoors. Experience the effortless cleaning as it sweeps the carpet and hard floor. The strong point of this machine is its simplicity easy to use and easy to program. The TEMPEST 460B programs itself at the touch of a button! Features: Easy to use thanks to the two preset work programmes. Display with self-diagnosis data, battery charge status, hour counter. Perfect cleaning thanks to the self-levelling brushes which adapt to even the most irregular floors and carpet. Main brush special V shape design. Assures debris collection towards the centre of the hopper and avoids leaving dirt lines on the side of the machine. Self-cleaning dust filter with cleaning frequency linked to the selected work programme. Light weight high density polypropylene hopper completes with handle for easy discharge.",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-tempest-460b-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  }
+]
     },
     {
       id: 'ride-on-sweepers',
