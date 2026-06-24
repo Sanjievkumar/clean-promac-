@@ -64,25 +64,46 @@ const ProductDetails = () => {
         <div className="container">
           <div className="pd-hero-inner">
 
-            {/* LEFT – image + thumbs */}
+            {/* LEFT – image + slideshow */}
             <div className="pd-hero-left">
-              <div className="pd-main-img-wrap">
+              <div className="pd-main-img-wrap pd-slideshow">
                 {product.modelCode && <span className="pd-badge">{product.modelCode}</span>}
                 <img src={mainImg || product.image} alt={product.name} className="pd-main-img" />
-              </div>
-              {product.gallery && product.gallery.length > 1 && (
-                <div className="pd-thumbs">
-                  {product.gallery.map((img, i) => (
-                    <button
-                      key={i}
-                      className={`pd-thumb-btn ${mainImg === img ? 'active' : ''}`}
-                      onClick={() => setMainImg(img)}
+                
+                {product.gallery && product.gallery.length > 1 && (
+                  <>
+                    <button 
+                      className="pd-slide-btn prev"
+                      onClick={() => {
+                        const currentIndex = product.gallery.indexOf(mainImg || product.image);
+                        const newIndex = currentIndex <= 0 ? product.gallery.length - 1 : currentIndex - 1;
+                        setMainImg(product.gallery[newIndex]);
+                      }}
                     >
-                      <img src={img} alt={`View ${i + 1}`} />
+                      ‹
                     </button>
-                  ))}
-                </div>
-              )}
+                    <button 
+                      className="pd-slide-btn next"
+                      onClick={() => {
+                        const currentIndex = product.gallery.indexOf(mainImg || product.image);
+                        const newIndex = currentIndex >= product.gallery.length - 1 ? 0 : currentIndex + 1;
+                        setMainImg(product.gallery[newIndex]);
+                      }}
+                    >
+                      ›
+                    </button>
+                    <div className="pd-slide-dots">
+                      {product.gallery.map((img, i) => (
+                        <span 
+                          key={i} 
+                          className={`pd-dot ${mainImg === img ? 'active' : (!mainImg && i === 0 ? 'active' : '')}`}
+                          onClick={() => setMainImg(img)}
+                        />
+                      ))}
+                    </div>
+                  </>
+                )}
+              </div>
             </div>
 
             {/* RIGHT – info */}

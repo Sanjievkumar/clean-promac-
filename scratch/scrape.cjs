@@ -52,40 +52,45 @@ async function scrapeProduct(url) {
     const id = name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
     const modelCode = name.replace(/[^A-Z0-9]/gi, '').substring(0, 10).toUpperCase();
     
-    // Description
     let descText = cleanText($('.woocommerce-product-details__short-description').text() || $('#tab-description').text());
     const description = descText;
     const tagline = descText.split('.')[0] + '.';
 
-    // Features
     const features = [];
     $('#tab-description ul li').each((i, el) => {
-      features.push({
-        title: cleanText($(el).text()),
-        desc: ''
-      });
+      features.push({ title: cleanText($(el).text()), desc: '' });
     });
 
-    // Image
-    let imgUrl = $('.woocommerce-product-gallery__image a').attr('href');
-    if (!imgUrl) {
-      imgUrl = $('.wp-post-image').attr('src');
+    // Gallery
+    const galleryUrls = [];
+    $('.woocommerce-product-gallery__image a').each((i, el) => {
+      const href = $(el).attr('href');
+      if (href) galleryUrls.push(href);
+    });
+
+    if (galleryUrls.length === 0) {
+      const imgUrl = $('.wp-post-image').attr('src');
+      if (imgUrl) galleryUrls.push(imgUrl);
     }
     
     let localImage = '/assets/placeholder-machine.png';
-    if (imgUrl) {
-      const filename = `klenco-${id}.png`;
-      localImage = await downloadImage(imgUrl, filename) || localImage;
+    const localGallery = [];
+
+    // Important: Wait for downloads one by one to avoid overwhelming or creating errors
+    for (let i = 0; i < galleryUrls.length; i++) {
+      const filename = `klenco-${id}-${i}.png`;
+      const localPath = await downloadImage(galleryUrls[i], filename);
+      if (localPath) {
+        localGallery.push(localPath);
+        if (i === 0) localImage = localPath;
+      }
     }
 
-    // Specifications
     const specifications = [];
     $('table.shop_attributes tr').each((i, el) => {
       const label = cleanText($(el).find('th').text());
       const value = cleanText($(el).find('td').text());
-      if (label && value) {
-        specifications.push({ label, value });
-      }
+      if (label && value) specifications.push({ label, value });
     });
 
     return {
@@ -101,7 +106,7 @@ async function scrapeProduct(url) {
       features,
       benefits: [],
       specifications,
-      gallery: [],
+      gallery: localGallery,
       brochureUrl: null,
       manualUrl: null
     };

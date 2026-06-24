@@ -17,7 +17,7 @@ export const klencoData = {
     "id": "typhoon-hardy",
     "name": "TYPHOON HARDY",
     "modelCode": "TYPHOONHAR",
-    "image": "/assets/klenco-typhoon-hardy.png",
+    "image": "/assets/klenco-typhoon-hardy-0.png",
     "tagline": "A COMPACT PROFESSIONAL DRY VACUUM CLEANER TYPHOON Hardy is a compact professional dry vacuum cleaner with 900 watts motor, 12 litres heavy duty tank, large rear wheels for easy manoeuvring, ergonomic handle with integrated cable wrap, bumpers for side protection, equipped with double parking position design and comes with standard accessories.",
     "heroDescription": "A COMPACT PROFESSIONAL DRY VACUUM CLEANER TYPHOON Hardy is a compact professional dry vacuum cleaner with 900 watts motor, 12 litres heavy duty tank, large rear wheels for easy manoeuvring, ergonomic handle with integrated cable wrap, bumpers for side protection, equipped with double parking position design and comes with standard accessories.",
     "description": "A COMPACT PROFESSIONAL DRY VACUUM CLEANER TYPHOON Hardy is a compact professional dry vacuum cleaner with 900 watts motor, 12 litres heavy duty tank, large rear wheels for easy manoeuvring, ergonomic handle with integrated cable wrap, bumpers for side protection, equipped with double parking position design and comes with standard accessories. Extremely silent, ideal for Hotels, Retail outlets and Office environment.",
@@ -33,7 +33,12 @@ export const klencoData = {
     "features": [],
     "benefits": [],
     "specifications": [],
-    "gallery": [],
+    "gallery": [
+      "/assets/klenco-typhoon-hardy-0.png",
+      "/assets/klenco-typhoon-hardy-1.png",
+      "/assets/klenco-typhoon-hardy-2.png",
+      "/assets/klenco-typhoon-hardy-3.png"
+    ],
     "brochureUrl": null,
     "manualUrl": null
   },
@@ -41,7 +46,7 @@ export const klencoData = {
     "id": "typhoon-nova-q",
     "name": "TYPHOON NOVA-Q",
     "modelCode": "TYPHOONNOV",
-    "image": "/assets/klenco-typhoon-nova-q.png",
+    "image": "/assets/klenco-typhoon-nova-q-0.png",
     "tagline": "DRY VACUUM CLEANER TYPHOON Nova-Q is a compact, yet powerful professional dry vacuum cleaner designed to work efficiently on all types of surfaces.",
     "heroDescription": "DRY VACUUM CLEANER TYPHOON Nova-Q is a compact, yet powerful professional dry vacuum cleaner designed to work efficiently on all types of surfaces.",
     "description": "DRY VACUUM CLEANER TYPHOON Nova-Q is a compact, yet powerful professional dry vacuum cleaner designed to work efficiently on all types of surfaces. Featuring ergonomic handle and built-in tool holder, it organises storage, making every cleaning task faster and more convenient. Features: Versatile Cleaning: Delivers superior performance on all floor types, from carpets to hard surfaces. Smart Storage: Integrated tool holder keeps nozzles and brushes organised and within easy reach, streamlining workflow. Effortless Transport: Lightweight design and sturdy large rear wheels make moving from room to room a breeze. Ultra-Quiet Operation: Enjoy quiet cleaning ideal for hotels, retail spaces, healthcare, education centers and office environments where discretion is essential.",
@@ -57,7 +62,11 @@ export const klencoData = {
     "features": [],
     "benefits": [],
     "specifications": [],
-    "gallery": [],
+    "gallery": [
+      "/assets/klenco-typhoon-nova-q-0.png",
+      "/assets/klenco-typhoon-nova-q-1.png",
+      "/assets/klenco-typhoon-nova-q-2.png"
+    ],
     "brochureUrl": null,
     "manualUrl": null
   },
@@ -65,7 +74,7 @@ export const klencoData = {
     "id": "typhoon-r327",
     "name": "TYPHOON R327",
     "modelCode": "TYPHOONR32",
-    "image": "/assets/klenco-typhoon-r327.png",
+    "image": "/assets/klenco-typhoon-r327-0.png",
     "tagline": "PROFESSIONAL VACUUM CLEANER MADE WITH RECYCLED MATERIALS TYPHOON 327 is a highly versatile multi-purpose cleaner that is small but functional.",
     "heroDescription": "PROFESSIONAL VACUUM CLEANER MADE WITH RECYCLED MATERIALS TYPHOON 327 is a highly versatile multi-purpose cleaner that is small but functional.",
     "description": "PROFESSIONAL VACUUM CLEANER MADE WITH RECYCLED MATERIALS TYPHOON 327 is a highly versatile multi-purpose cleaner that is small but functional. Manufactured using up to 70% recycled plastic materials to reduce wastage and protect the environment. It comes with full accessories and antimicrobial polyester filters for added hygiene, high performance motors and low energy usage which helps to reduce and conserve the environment. Features: Environmentally Friendly: Low noise levels keep working conditions pleasant, while highly efficient multi-stage filters effectively separate dust from air before discharge. High Powered Performance: With 1200 watts, it sucks up practically all dirt. Maximum Reliability: High quality materials and construction ensure long lasting durability. Purpose-Matched Accessories: Comprehensive standard accessories and wide range of additional options allow for tackling of any cleaning job.",
@@ -81,7 +90,11 @@ export const klencoData = {
     "features": [],
     "benefits": [],
     "specifications": [],
-    "gallery": [],
+    "gallery": [
+      "/assets/klenco-typhoon-r327-0.png",
+      "/assets/klenco-typhoon-r327-1.png",
+      "/assets/klenco-typhoon-r327-2.png"
+    ],
     "brochureUrl": null,
     "manualUrl": null
   },
@@ -89,7 +102,7 @@ export const klencoData = {
     "id": "typhoon-r337",
     "name": "TYPHOON R337",
     "modelCode": "TYPHOONR33",
-    "image": "/assets/klenco-typhoon-r337.png",
+    "image": "/assets/klenco-typhoon-r337-0.png",
     "tagline": "PROFESSIONAL VACUUM CLEANER MADE WITH RECYCLED MATERIALS TYPHOON R337 is a highly versatile multi-purpose cleaner that is small but functional.",
     "heroDescription": "PROFESSIONAL VACUUM CLEANER MADE WITH RECYCLED MATERIALS TYPHOON R337 is a highly versatile multi-purpose cleaner that is small but functional.",
     "description": "PROFESSIONAL VACUUM CLEANER MADE WITH RECYCLED MATERIALS TYPHOON R337 is a highly versatile multi-purpose cleaner that is small but functional. Manufactured using up to 70% recycled plastic materials to reduce wastage and protect the environment. It comes with full accessories and antimicrobial polyester filters for added hygiene. high performance motors and low energy usage which reduces wastage and conserve the environment. It is compact and mobile yet with sufficient capacity for dusts and liquids suction for a wide variety of jobs. With its larger height, it will be able to handle a larger capacity than it s smaller counterpart, the Typhoon R337 Features: Environmentally Friendly: Low noise levels keep working conditions pleasant, while highly efficient multi-stage filters effectively separate dust from air before discharge. High Powered Performance: With 1200 watts, Typhoon sucks up practically all dirt. Maximum Reliability: High quality materials and construction ensure long lasting durability. Purpose-Matched Accessories: Comprehensive standard accessories and wide range of additional options allow for tackling of any cleaning job.",
@@ -105,7 +118,10 @@ export const klencoData = {
     "features": [],
     "benefits": [],
     "specifications": [],
-    "gallery": [],
+    "gallery": [
+      "/assets/klenco-typhoon-r337-0.png",
+      "/assets/klenco-typhoon-r337-1.png"
+    ],
     "brochureUrl": null,
     "manualUrl": null
   },
@@ -113,7 +129,7 @@ export const klencoData = {
     "id": "typhoon-r590",
     "name": "TYPHOON R590",
     "modelCode": "TYPHOONR59",
-    "image": "/assets/klenco-typhoon-r590.png",
+    "image": "/assets/klenco-typhoon-r590-0.png",
     "tagline": "PROFESSIONAL VACUUM CLEANER MADE WITH RECYCLED MATERIALS TYPHOON R590 is a highly versatile multi-purpose cleaner that are powerful and able to handle bigger jobs.",
     "heroDescription": "PROFESSIONAL VACUUM CLEANER MADE WITH RECYCLED MATERIALS TYPHOON R590 is a highly versatile multi-purpose cleaner that are powerful and able to handle bigger jobs.",
     "description": "PROFESSIONAL VACUUM CLEANER MADE WITH RECYCLED MATERIALS TYPHOON R590 is a highly versatile multi-purpose cleaner that are powerful and able to handle bigger jobs. Manufactured using up to 70% recycled plastic materials to reduce wastage and protect the environment. it comes with full accessories and antimicrobial polyester filters for added hygiene. high performance motors with low energy usage helps reduce wastage and conserve the environment. Typhoon R590 is suitable for bigger jobs with two motors for powerful suction, a large and sturdy 90 litre tank and a discharge hose that allows effortless emptying of liquids. A steel handle and large wheels provides easy handling in wide spaces. Perfect for more demanding tasks. Features: Industrial vacuum cleaners with injected moulded recycled plastic tanks provide excellent cleaning results for both wet and dry use. Designed with user-friendly ergonomics, incorporating high-powered motors, and built with quality materials and workmanship. These machines guarantee superb performance, provide maximum reliability, and ensure long service life. Their advanced specifications and purpose matched accessories make them particularly suitable for any cleaning and water removal jobs in the most demanding environments such as workshops, factories, and construction sites.",
@@ -129,7 +145,12 @@ export const klencoData = {
     "features": [],
     "benefits": [],
     "specifications": [],
-    "gallery": [],
+    "gallery": [
+      "/assets/klenco-typhoon-r590-0.png",
+      "/assets/klenco-typhoon-r590-1.png",
+      "/assets/klenco-typhoon-r590-2.png",
+      "/assets/klenco-typhoon-r590-3.png"
+    ],
     "brochureUrl": null,
     "manualUrl": null
   },
@@ -137,7 +158,7 @@ export const klencoData = {
     "id": "typhoon-678",
     "name": "TYPHOON 678",
     "modelCode": "TYPHOON678",
-    "image": "/assets/klenco-typhoon-678.png",
+    "image": "/assets/klenco-typhoon-678-0.png",
     "tagline": "VACUUM CLEANER When absolute power is called for, reach out for TYPHOON 678.",
     "heroDescription": "VACUUM CLEANER When absolute power is called for, reach out for TYPHOON 678.",
     "description": "VACUUM CLEANER When absolute power is called for, reach out for TYPHOON 678. Its 3 vacuum motors deliver the maximum suction power for the heaviest, most demanding applications. ln addition, its 78 litres tank capacity allows for the removal of large volumes of dirt and liquid at one go. Despite its top-of-the-line performance, this machine still incorporates the ergonomics and water discharge hose of the Typhoon 463 for great manoeuvrability and general ease of use. Features: Industrial vacuum cleaners with classic polished stainless-steel tanks provide excellent cleaning results for both wet and dry use. Designed with user-friendly ergonomics, incorporating high-powered motors, and built with quality materials and workmanship. These machines guarantee superb performance, provide maximum reliability, and ensure long service life. Their advanced specifications and purpose matched accessories make them particularly suitable for any cleaning and water removal jobs in the most demanding environments such as workshops, factories, and construction sites.",
@@ -153,7 +174,9 @@ export const klencoData = {
     "features": [],
     "benefits": [],
     "specifications": [],
-    "gallery": [],
+    "gallery": [
+      "/assets/klenco-typhoon-678-0.png"
+    ],
     "brochureUrl": null,
     "manualUrl": null
   },
@@ -161,7 +184,7 @@ export const klencoData = {
     "id": "typhoon-432",
     "name": "TYPHOON 432",
     "modelCode": "TYPHOON432",
-    "image": "/assets/klenco-typhoon-432.png",
+    "image": "/assets/klenco-typhoon-432-0.png",
     "tagline": "LIGHTWEIGHT VACUUM CLEANER TYPHOON 432 is a compact, lightweight unit on castors for easy pushing or even carrying around, making it ideal for small commercial or light industrial applications.",
     "heroDescription": "LIGHTWEIGHT VACUUM CLEANER TYPHOON 432 is a compact, lightweight unit on castors for easy pushing or even carrying around, making it ideal for small commercial or light industrial applications.",
     "description": "LIGHTWEIGHT VACUUM CLEANER TYPHOON 432 is a compact, lightweight unit on castors for easy pushing or even carrying around, making it ideal for small commercial or light industrial applications. Despite the small size, its powerful motor is suitable for sucking up most materials such as dirt, grease, and soiled water, while its steel tank is highly resistant to abrasion and external aggression. Features: Industrial vacuum cleaners with classic polished stainless-steel tanks provide excellent cleaning results for both wet and dry use. Designed with user-friendly ergonomics, incorporating high-powered motors, and built with quality materials and workmanship. These machines guarantee superb performance, provide maximum reliability, and ensure long service life. Their advanced specifications and purpose matched accessories make them particularly suitable for any cleaning and water removal jobs in the most demanding environments such as workshops, factories, and construction sites.",
@@ -177,7 +200,9 @@ export const klencoData = {
     "features": [],
     "benefits": [],
     "specifications": [],
-    "gallery": [],
+    "gallery": [
+      "/assets/klenco-typhoon-432-0.png"
+    ],
     "brochureUrl": null,
     "manualUrl": null
   },
@@ -185,7 +210,7 @@ export const klencoData = {
     "id": "typhoon-480p",
     "name": "TYPHOON 480P",
     "modelCode": "TYPHOON480",
-    "image": "/assets/klenco-typhoon-480p.png",
+    "image": "/assets/klenco-typhoon-480p-0.png",
     "tagline": "WET VACUUM CLEANER TYPHOON 480P is the perfect solution for removing particularly large deposits of water.",
     "heroDescription": "WET VACUUM CLEANER TYPHOON 480P is the perfect solution for removing particularly large deposits of water.",
     "description": "WET VACUUM CLEANER TYPHOON 480P is the perfect solution for removing particularly large deposits of water. It is equipped with an integrated immersion pump that allows simultaneous discharge of tank while vacuuming. Typhoon 480P is thus ideal for removal of extremely large or accumulating amounts of water caused by heavy rain or broken pipes. Features: Industrial vacuum cleaners with classic polished stainless-steel tanks provide excellent cleaning results for both wet and dry use. Designed with user-friendly ergonomics, incorporating high-powered motors, and built with quality materials and workmanship. These machines guarantee superb performance, provide maximum reliability, and ensure long service life. Their advanced specifications and purpose matched accessories make them particularly suitable for any cleaning and water removal jobs in the most demanding environments such as workshops, factories, and construction sites.",
@@ -201,7 +226,9 @@ export const klencoData = {
     "features": [],
     "benefits": [],
     "specifications": [],
-    "gallery": [],
+    "gallery": [
+      "/assets/klenco-typhoon-480p-0.png"
+    ],
     "brochureUrl": null,
     "manualUrl": null
   },
@@ -209,7 +236,7 @@ export const klencoData = {
     "id": "typhoon-463",
     "name": "TYPHOON 463",
     "modelCode": "TYPHOON463",
-    "image": "/assets/klenco-typhoon-463.png",
+    "image": "/assets/klenco-typhoon-463-0.png",
     "tagline": "INDUSTRIAL VACUUM CLEANER To meet the heavy demands of contracting work, use the workhorse 2-motor TYPHOON 463.",
     "heroDescription": "INDUSTRIAL VACUUM CLEANER To meet the heavy demands of contracting work, use the workhorse 2-motor TYPHOON 463.",
     "description": "INDUSTRIAL VACUUM CLEANER To meet the heavy demands of contracting work, use the workhorse 2-motor TYPHOON 463. It is mounted on an ergonomically designed chassis with sturdy and well positioned handles, rotating front castors and large rear wheels for easy transportation, even over kerbs and steps, while its discharge hose provides effortless, no-spill emptying of tanks. Features: Industrial vacuum cleaners with classic polished stainless-steel tanks provide excellent cleaning results for both wet and dry use. Designed with user-friendly ergonomics, incorporating high-powered motors, and built with quality materials and workmanship. These machines guarantee superb performance, provide maximum reliability, and ensure long service life. Their advanced specifications and purpose matched accessories make them particularly suitable for any cleaning and water removal jobs in the most demanding environments such as workshops, factories, and construction sites.",
@@ -225,7 +252,9 @@ export const klencoData = {
     "features": [],
     "benefits": [],
     "specifications": [],
-    "gallery": [],
+    "gallery": [
+      "/assets/klenco-typhoon-463-0.png"
+    ],
     "brochureUrl": null,
     "manualUrl": null
   }
