@@ -405,7 +405,138 @@ export const klencoData = {
       shortDesc: 'Precision and Power for Perfect Floors.',
       image: '/assets/product_3.png',
       icon: '✨',
-      products: []
+      products: [
+  {
+    "id": "cyclone-s401",
+    "name": "CYCLONE S401",
+    "modelCode": "CYCLONES40",
+    "image": "/assets/klenco-cyclone-s401-0.png",
+    "tagline": "HEAVY DUTY FLOOR SCRUBBERS These mainstay low speed scrubbers, Cyclone S401 is all you need for most cleaning, scrubbing and regular stripping tasks.",
+    "heroDescription": "HEAVY DUTY FLOOR SCRUBBERS These mainstay low speed scrubbers, Cyclone S401 is all you need for most cleaning, scrubbing and regular stripping tasks.",
+    "description": "HEAVY DUTY FLOOR SCRUBBERS These mainstay low speed scrubbers, Cyclone S401 is all you need for most cleaning, scrubbing and regular stripping tasks. As for heavy duty tasks, rest assure that S401 will be fully capable of taking care of them too. Both models effectively remove non-permanent floor coatings and stains like rubber marks and ingrained oils. They feature a low-profile motor and scrub deck to clean under furniture and fittings. This unit is great for: Wet scrubbing hard floors, Spray cleaning Stripping floor finish Carpet shampooing and bonnet cleaning",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-cyclone-s401-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "cyclone-s510",
+    "name": "CYCLONE S510",
+    "modelCode": "CYCLONES51",
+    "image": "/assets/klenco-cyclone-s510-0.png",
+    "tagline": "HEAVY DUTY INDUSTRIAL FLOOR SCRUBBER/SANDER This is a heavy-duty workhorse that not only weighs more but has a stronger motor to drive and sustain the increased weight.",
+    "heroDescription": "HEAVY DUTY INDUSTRIAL FLOOR SCRUBBER/SANDER This is a heavy-duty workhorse that not only weighs more but has a stronger motor to drive and sustain the increased weight.",
+    "description": "HEAVY DUTY INDUSTRIAL FLOOR SCRUBBER/SANDER This is a heavy-duty workhorse that not only weighs more but has a stronger motor to drive and sustain the increased weight. The CYCLONE S510 does almost everything that regular scrubbers do, only faster. This is due to the simple principle that more pressure produces better and quicker cleaning results. Applications: Breaking up permanent floor coatings Sanding and smoothing new cement floors Sanding used wood flooring Crystallization of marble floors Stripping old, multi-layered floor finish",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-cyclone-s510-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "cyclone-g680",
+    "name": "CYCLONE G680",
+    "modelCode": "CYCLONEG68",
+    "image": "/assets/klenco-cyclone-g680-0.png",
+    "tagline": "FLOOR GRINDING / CRYSTALLIZING MACHINE CYCLONE G680 are heavyweight industrial floor machines.",
+    "heroDescription": "FLOOR GRINDING / CRYSTALLIZING MACHINE CYCLONE G680 are heavyweight industrial floor machines.",
+    "description": "FLOOR GRINDING / CRYSTALLIZING MACHINE CYCLONE G680 are heavyweight industrial floor machines. They are also ultra-efficient for regular hard floor jobs like scrubbing, stripping and sanding. The low noise level makes them most suitable for hospitals, office buildings and other noise sensitive environments. Cyclone G680 is the perfect machine for diamond grinding of granite, marble and other stone floors. Ideal for: Crystallization of marble and terrazzo floors Sanding and smoothing of new cement floors Breaking up permanent floor coating Recommended Chemicals For Marble: MK2 Crystallization Solution MK3 Maintenance Crystallizer MF Premium Marble Finishing Powder For Granite: GF Powder Granite Finishing Powder GF Solution Granite Finishing Solution",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-cyclone-g680-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "cyclone-u420",
+    "name": "CYCLONE U420",
+    "modelCode": "CYCLONEU42",
+    "image": "/assets/klenco-cyclone-u420-0.png",
+    "tagline": "HIGH SPEED BURNISHER CYCLONE U420 High-Speed Burnisher is a product of our years of experience in the industries.",
+    "heroDescription": "HIGH SPEED BURNISHER CYCLONE U420 High-Speed Burnisher is a product of our years of experience in the industries.",
+    "description": "HIGH SPEED BURNISHER CYCLONE U420 High-Speed Burnisher is a product of our years of experience in the industries. It can burnish every surface in wide-open spaces to tight, congested areas with great ease. Features: Class H motor, that is rated to 180-degree Celsius or better performance and longer lifetime. Fiberglass reinforced PVC handle with specially designed safety button to prevent accidental activation. Floating mounting of the motor to ensure the best polishing result. Adjustment lever on handle for easy operation. Equipped with pad pressure indication meter for fine and accurate pad pressure adjustment. Powerful dust control system captures dust and provides a healthy working environment. Filter compartment in the front that is easily accessible. Equipped with a back panel that allows optional connection to an upright vacuum mounted on the handle. A power plug is provided on the handle for power connection for this vacuum unit.",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-cyclone-u420-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "motorscrubber-m3",
+    "name": "MOTORSCRUBBER M3",
+    "modelCode": "MOTORSCRUB",
+    "image": "/assets/klenco-motorscrubber-m3-0.png",
+    "tagline": "BATTERY OPERATED SCRUBBER MOTORSCRUBBER M3 quickly and effortlessly cleans your washrooms, showers, stairs, skirting / base boards, windows, swimming pools, motor vehicles and other hard to clean areas.",
+    "heroDescription": "BATTERY OPERATED SCRUBBER MOTORSCRUBBER M3 quickly and effortlessly cleans your washrooms, showers, stairs, skirting / base boards, windows, swimming pools, motor vehicles and other hard to clean areas.",
+    "description": "BATTERY OPERATED SCRUBBER MOTORSCRUBBER M3 quickly and effortlessly cleans your washrooms, showers, stairs, skirting / base boards, windows, swimming pools, motor vehicles and other hard to clean areas. Features: CORDLESS Super portable, you can use it anywhere; stairs, swimming pools, motor vehicles, it s ideal for all hard to reach areas. 4 HOURS RUNTIME A real workhorse with an impressive 4 hours runtime from one charge. Taking only 8 hours to fully re-charge. LIGHTWEIGHT Weighing only 2kg (4.5kg with the harness). It its extremely lightweight to use yet heavy duty in its construction. 100% WATERPROOF The MotorScrubber is 100% waterproof and submersible in water with no shock risk due to its extra low safe voltage. EFFECTIVE CLEANING The reliable high torque motor allows for fantastic washing, polishing, and cleaning results up to 4 metres high. UK MANUFACTURED Using the highest quality, durable components every MotorScrubber is proudly manufactured in the UK.",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-motorscrubber-m3-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  }
+]
     },
     {
       id: 'automatic-scrubbers',

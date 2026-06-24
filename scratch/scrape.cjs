@@ -4,11 +4,11 @@ const fs = require('fs');
 const path = require('path');
 
 const urls = [
-  'https://www.klenco-asia.com/product/typhoon-se20/',
-  'https://www.klenco-asia.com/product/typhoon-se30/',
-  'https://www.klenco-asia.com/product/typhoon-se60/',
-  'https://www.klenco-asia.com/product/typhoon-se70/',
-  'https://www.klenco-asia.com/product/typhoon-se35-d/'
+  'https://www.klenco-asia.com/product/cyclone-s380-s401/',
+  'https://www.klenco-asia.com/product/cyclone-s510/',
+  'https://www.klenco-asia.com/product/cyclone-g680/',
+  'https://www.klenco-asia.com/product/cyclone-u420/',
+  'https://www.klenco-asia.com/product/motorscrubber-m3/'
 ];
 
 async function downloadImage(url, filename) {
