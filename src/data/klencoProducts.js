@@ -986,7 +986,62 @@ export const klencoData = {
       shortDesc: 'High-Performance Cleaning for Large Areas.',
       image: '/assets/product_1.png', // Fallback image for now
       icon: '🚜',
-      products: []
+      products: [
+  {
+    "id": "tempest-1050b",
+    "name": "TEMPEST 1050B",
+    "subcategory": null,
+    "modelCode": "TEMPEST105",
+    "image": "/assets/klenco-tempest-1050b-0.png",
+    "tagline": "COMPACT RIDER SWEEPER The TEMPEST 1050B is an innovative, practical, and manoeuvrable ride-on motorized sweeper with three different cleaning programmes to guarantee deep-down and efficient cleaning of surfaces.",
+    "heroDescription": "COMPACT RIDER SWEEPER The TEMPEST 1050B is an innovative, practical, and manoeuvrable ride-on motorized sweeper with three different cleaning programmes to guarantee deep-down and efficient cleaning of surfaces.",
+    "description": "COMPACT RIDER SWEEPER The TEMPEST 1050B is an innovative, practical, and manoeuvrable ride-on motorized sweeper with three different cleaning programmes to guarantee deep-down and efficient cleaning of surfaces. All at the touch of a button! High productivity and low maintenance make this the most advantageous product for cleaning professionals. Features: Side brushes retract against impact Side brush speed adjustment Easy to use, innovative preset cleaning system with three different work levels Perfect cleaning thanks to the self-levelling brushes which adapt to even the most irregular floors Automatic brush lift in reverse Dust flap for large debris collection, controlled from the operator position Main brush special V shape design. Assures debris collection towards the centre of the hopper and avoids leaving dirt lines on the side of the machine Light weight high density polypropylene hopper completes with handles and wheels for easy transportation and dumping Main brush and filter replacement without tools",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-tempest-1050b-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "tempest-1250p",
+    "name": "TEMPEST 1250P",
+    "subcategory": null,
+    "modelCode": "TEMPEST125",
+    "image": "/assets/klenco-tempest-1250p-0.png",
+    "tagline": "RIDE-ON MECHANICAL SWEEPER TEMPEST 1250P is a user-friendly, petrol-driven ride-on mechanical sweeper with 7800 sqm/hr maximum cleaning capacity.",
+    "heroDescription": "RIDE-ON MECHANICAL SWEEPER TEMPEST 1250P is a user-friendly, petrol-driven ride-on mechanical sweeper with 7800 sqm/hr maximum cleaning capacity.",
+    "description": "RIDE-ON MECHANICAL SWEEPER TEMPEST 1250P is a user-friendly, petrol-driven ride-on mechanical sweeper with 7800 sqm/hr maximum cleaning capacity. Brushes with special V shape bristles, enhances and maximizes cleaning performance, with up to 3-micron dust microfiltration. Features: Debris hopper of great capacity, easily removable sections for discharge operations Protected and waterproof controls, large multilingual display with hour counter. E/DP version with filter shaker activation menu and programmed service menu",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-tempest-1250p-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  }
+]
     },
     {
       id: 'steam-cleaners',
