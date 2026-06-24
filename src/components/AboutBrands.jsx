@@ -16,8 +16,6 @@ const AboutBrands = () => {
             <div className="brand-separator"></div>
             <div className="brand-logo-item"><img src="/assets/truvox-logo-v2.svg" alt="Truvox" className="marquee-logo" /></div>
             <div className="brand-separator"></div>
-            <div className="brand-logo-item"><img src="/assets/promac-logo.png" alt="Promac" className="marquee-logo" /></div>
-            <div className="brand-separator"></div>
             <div className="brand-logo-item future-brands">
               <strong>Future<br/>Brands</strong>
               <small>Driven by innovation</small>
@@ -28,8 +26,6 @@ const AboutBrands = () => {
             <div className="brand-logo-item"><img src="/assets/klenco-logo.png" alt="Klenco" className="marquee-logo" /></div>
             <div className="brand-separator"></div>
             <div className="brand-logo-item"><img src="/assets/truvox-logo-v2.svg" alt="Truvox" className="marquee-logo" /></div>
-            <div className="brand-separator"></div>
-            <div className="brand-logo-item"><img src="/assets/promac-logo.png" alt="Promac" className="marquee-logo" /></div>
             <div className="brand-separator"></div>
             <div className="brand-logo-item future-brands">
               <strong>Future<br/>Brands</strong>
