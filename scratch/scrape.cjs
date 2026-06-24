@@ -3,12 +3,19 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
-const urls = [
-  'https://www.klenco-asia.com/product/cyclone-s380-s401/',
-  'https://www.klenco-asia.com/product/cyclone-s510/',
-  'https://www.klenco-asia.com/product/cyclone-g680/',
-  'https://www.klenco-asia.com/product/cyclone-u420/',
-  'https://www.klenco-asia.com/product/motorscrubber-m3/'
+const targets = [
+  { url: 'https://www.klenco-asia.com/product/hooray/', subcategory: 'UPRIGHT & MINI SCRUBBER DRYERS' },
+  { url: 'https://www.klenco-asia.com/product/lava-280b/', subcategory: 'UPRIGHT & MINI SCRUBBER DRYERS' },
+  { url: 'https://www.klenco-asia.com/product/lava-351/', subcategory: 'UPRIGHT & MINI SCRUBBER DRYERS' },
+  
+  { url: 'https://www.klenco-asia.com/product/lava-501/', subcategory: 'WALK BEHIND AUTO SCRUBBERS' },
+  { url: 'https://www.klenco-asia.com/product/lava-520b/', subcategory: 'WALK BEHIND AUTO SCRUBBERS' },
+  { url: 'https://www.klenco-asia.com/product/lava-flow/', subcategory: 'WALK BEHIND AUTO SCRUBBERS' },
+  { url: 'https://www.klenco-asia.com/product/lava-650-655r/', subcategory: 'WALK BEHIND AUTO SCRUBBERS' },
+  
+  { url: 'https://www.klenco-asia.com/product/lava-rx2-55-rx2-60/', subcategory: 'RIDE ON SCRUBBER DRYERS' },
+  { url: 'https://www.klenco-asia.com/product/lava-2060b/', subcategory: 'RIDE ON SCRUBBER DRYERS' },
+  { url: 'https://www.klenco-asia.com/product/lava-3085b/', subcategory: 'RIDE ON SCRUBBER DRYERS' }
 ];
 
 async function downloadImage(url, filename) {
@@ -31,7 +38,7 @@ function cleanText(str) {
   return str.replace(/[^\x20-\x7E]/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
-async function scrapeProduct(url) {
+async function scrapeProduct(url, subcategory) {
   try {
     const { data } = await axios.get(url);
     const $ = cheerio.load(data);
@@ -92,6 +99,7 @@ async function scrapeProduct(url) {
     return {
       id,
       name,
+      subcategory,
       modelCode,
       image: localImage,
       tagline,
@@ -114,9 +122,9 @@ async function scrapeProduct(url) {
 
 async function main() {
   const products = [];
-  for (const url of urls) {
-    console.log(`Scraping ${url}...`);
-    const p = await scrapeProduct(url);
+  for (const t of targets) {
+    console.log(`Scraping ${t.url}...`);
+    const p = await scrapeProduct(t.url, t.subcategory);
     if (p) {
       products.push(p);
     }

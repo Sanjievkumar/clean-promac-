@@ -1,8 +1,8 @@
 const fs = require('fs');
 let js = fs.readFileSync('src/data/klencoProducts.js', 'utf8');
 const products = fs.readFileSync('scratch/scraped-vacuums.json', 'utf8');
-const startStr = "id: 'single-disc-machines',";
-const endStr = "id: 'automatic-scrubbers',";
+const startStr = "id: 'automatic-scrubbers',";
+const endStr = "id: 'sweepers',";
 const startIdx = js.indexOf(startStr);
 const endIdx = js.indexOf(endStr);
 if (startIdx > -1 && endIdx > -1) {

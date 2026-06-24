@@ -544,7 +544,345 @@ export const klencoData = {
       shortDesc: 'Ultimate Cleaning Solutions for Every Space.',
       image: '/assets/product_4.png',
       icon: '🧼',
-      products: []
+      products: [
+  {
+    "id": "hooray",
+    "name": "HOORAY",
+    "subcategory": "UPRIGHT & MINI SCRUBBER DRYERS",
+    "modelCode": "HOORAY",
+    "image": "/assets/klenco-hooray-0.png",
+    "tagline": "REVOLUTIONARY FLOOR SCRUBBER We are excited to present HOORAY, our professional compact floor scrubber.",
+    "heroDescription": "REVOLUTIONARY FLOOR SCRUBBER We are excited to present HOORAY, our professional compact floor scrubber.",
+    "description": "REVOLUTIONARY FLOOR SCRUBBER We are excited to present HOORAY, our professional compact floor scrubber. Outstanding maneuverability with full swivelling handle, to easily and effectively clean small areas and around & under obstructions. This is truly a revolutionary machine, as high performance, and heavy duty as it is versatile and ergonomic. It incorporates an extensive number of unique features, providing an abundance of benefits to you, the user. Features: All-around, up and down pivoted handle with low profile scrub deck allows easy and comfortable cleaning anywhere (Almost!) 28kg scrubbing down-force, it REALLY cleans! Raise the squeegee to deep scrub like a rotary floor machine for tough stains Various brushes and full surface pads available for different applications Powerful 2-stage vac motor and parabolic squeegee with premium Linatex blade provides superior floor drying Control panel provides usage data & battery status, provides 3 different scrub speeds and eco-mode vac setting for lower noise Lithium-ion battery provides an hour of use, longer if on eco-mode Sturdy battery connection points, easy battery change removes the need to move machine to a charging point and allows longer operation time #304 stainless steel chassis solid, corrosion free and long lasting",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-hooray-0.png",
+      "/assets/klenco-hooray-1.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "lava-280b",
+    "name": "LAVA 280B",
+    "subcategory": "UPRIGHT & MINI SCRUBBER DRYERS",
+    "modelCode": "LAVA280B",
+    "image": "/assets/klenco-lava-280b-0.png",
+    "tagline": "BATTERY-OPERATED MINI FLOOR SCRUBBER DRYER LAVA 280B is the mini scrubber with great performance.",
+    "heroDescription": "BATTERY-OPERATED MINI FLOOR SCRUBBER DRYER LAVA 280B is the mini scrubber with great performance.",
+    "description": "BATTERY-OPERATED MINI FLOOR SCRUBBER DRYER LAVA 280B is the mini scrubber with great performance. Its special feature, the Reverse Dry System (RDS) allows the LAVA 280B to clean and easily dry areas other machines just cannot reach. Thanks to an innovative system of soundproofing, it allows the operator to work in sensitive areas because the ECOSELECT function reduces the noise level of 1dB. Light and easy to handle. It is designed to meet the needs of daily cleaning especially in hard to reach spaces. Perfect for HORECA, cleaning contractor, and for all areas where it is necessary to clean up to 1000 m . Features: Ergonomic and innovative control panel and adjustable handlebar Easy emptying operation and tank cleaning thanks to its large opening Manoeuvrable and compact design; machine can be stored, transported, and parked in just few seconds and in any space Rechargeable battery in 1 hr optimises working time",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-lava-280b-0.png",
+      "/assets/klenco-lava-280b-1.png",
+      "/assets/klenco-lava-280b-2.png",
+      "/assets/klenco-lava-280b-3.png",
+      "/assets/klenco-lava-280b-4.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "lava-351",
+    "name": "LAVA 351",
+    "subcategory": "UPRIGHT & MINI SCRUBBER DRYERS",
+    "modelCode": "LAVA351",
+    "image": "/assets/klenco-lava-351-0.png",
+    "tagline": "COMPACT AUTOSCRUBBER Other than having a sleek and compact design that improves maneuverability in tight areas and a height adjustable handle that folds down remarkably for easy storage, LAVA 351 scrubs and dries the floor at one go without any hassle.",
+    "heroDescription": "COMPACT AUTOSCRUBBER Other than having a sleek and compact design that improves maneuverability in tight areas and a height adjustable handle that folds down remarkably for easy storage, LAVA 351 scrubs and dries the floor at one go without any hassle.",
+    "description": "COMPACT AUTOSCRUBBER Other than having a sleek and compact design that improves maneuverability in tight areas and a height adjustable handle that folds down remarkably for easy storage, LAVA 351 scrubs and dries the floor at one go without any hassle. Being versatile, high productivity and superb quality, this machine is the answer to all your cleaning needs in canteens, food court, restaurant, cafeterias, hawker centres and any dining areas.",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-lava-351-0.png",
+      "/assets/klenco-lava-351-1.png",
+      "/assets/klenco-lava-351-2.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "lava-501",
+    "name": "LAVA 501",
+    "subcategory": "WALK BEHIND AUTO SCRUBBERS",
+    "modelCode": "LAVA501",
+    "image": "/assets/klenco-lava-501-0.png",
+    "tagline": "WALK-BEHIND SCRUBBER DRYER LAVA 501B & C are workhorses for small to mid-sized commercial applications.",
+    "heroDescription": "WALK-BEHIND SCRUBBER DRYER LAVA 501B & C are workhorses for small to mid-sized commercial applications.",
+    "description": "WALK-BEHIND SCRUBBER DRYER LAVA 501B & C are workhorses for small to mid-sized commercial applications. Thorough cleaning is achieved with up to 30kg brush down pressure, while the floating V-type squeegee effectively dries tiled and uneven floors. Hands-free latching/ release of brush or pad holder and tool-free change of squeegee blades all add up to simple maintenance and maximum productivity.",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-lava-501-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "lava-520b",
+    "name": "LAVA 520B",
+    "subcategory": "WALK BEHIND AUTO SCRUBBERS",
+    "modelCode": "LAVA520B",
+    "image": "/assets/klenco-lava-520b-0.png",
+    "tagline": "WALK-BEHIND SCRUBBER DRYER Large capacity solution and recovery tanks with ideal specifications for productive cleaning.",
+    "heroDescription": "WALK-BEHIND SCRUBBER DRYER Large capacity solution and recovery tanks with ideal specifications for productive cleaning.",
+    "description": "WALK-BEHIND SCRUBBER DRYER Large capacity solution and recovery tanks with ideal specifications for productive cleaning. It is fully equipped with all the necessary features for enhanced convenience, making it a versatile and cost effective cleaner for a wide range of premises and establishments. Enjoy the ease of use and unmatched cleaning performance with the affordable Lava 520B. Features: User friendly control panel with LCD display Solution tank emptied LED light with warning alarm Recovery tank full LED light with warning alarm Large solution/recovery tanks reduce frequency of refilling and discharging operation Double filtration system for dirty water recovery Large opening recovery tank for easy cleaning Silent motors with noise reduction suitable for hospital cleaning Heavy duty non marking wheels",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-lava-520b-0.png",
+      "/assets/klenco-lava-520b-1.png",
+      "/assets/klenco-lava-520b-2.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "lava-flow",
+    "name": "LAVA FLOW",
+    "subcategory": "WALK BEHIND AUTO SCRUBBERS",
+    "modelCode": "LAVAFLOW",
+    "image": "/assets/klenco-lava-flow-0.png",
+    "tagline": "WALK BEHIND SCRUBBER/DRYER Lava-Flow will help to increase your productivity as it is designed to tackle even the toughest dirt and grime with minimum effort.",
+    "heroDescription": "WALK BEHIND SCRUBBER/DRYER Lava-Flow will help to increase your productivity as it is designed to tackle even the toughest dirt and grime with minimum effort.",
+    "description": "WALK BEHIND SCRUBBER/DRYER Lava-Flow will help to increase your productivity as it is designed to tackle even the toughest dirt and grime with minimum effort. With consistent brush pressure and great vacuum system, this powerful scrubber dryer provides clean and dry results at the same time! You can enjoy the freedom of cordless operation with Lava-Flow and being compact, it will allow you to maneuver in narrow spaces easily. Key Features Vacuum motor with low decibel suitable for hospitals, supermarkets and commercial buildings High quality maintenance-free batteries for 3-4 hour operations Battery capacity/voltage indicator Circuit breakers to protect brush and vacuum motors from overloading Front LED light got night operations Operation hour counting meter",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-lava-flow-0.png",
+      "/assets/klenco-lava-flow-1.png",
+      "/assets/klenco-lava-flow-2.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "lava-650",
+    "name": "LAVA 650",
+    "subcategory": "WALK BEHIND AUTO SCRUBBERS",
+    "modelCode": "LAVA650",
+    "image": "/assets/klenco-lava-650-655r-0.png",
+    "tagline": "WALK-BEHIND SCRUBBER DRYER LAVA 650 & LAVA 655R are heavy duty battery-operated autoscrubbers that deliver professional floor cleaning, boosting productivity and operator ease as they clean floors in a single pass.",
+    "heroDescription": "WALK-BEHIND SCRUBBER DRYER LAVA 650 & LAVA 655R are heavy duty battery-operated autoscrubbers that deliver professional floor cleaning, boosting productivity and operator ease as they clean floors in a single pass.",
+    "description": "WALK-BEHIND SCRUBBER DRYER LAVA 650 & LAVA 655R are heavy duty battery-operated autoscrubbers that deliver professional floor cleaning, boosting productivity and operator ease as they clean floors in a single pass. With their innovative design and numerous unique features, floor cleaning of large areas is now made simple. Features: Electronic key to turn on and off machine with full control using an intuitive central knob Two preset programs with advance noise control of 54dB in Eco mode Energy and water savings, up to 20%, in Eco mode Up to 3.5hrs battery running time Self-levelling system allows brush to auto adjust to any floor unevenness while cleaning Constant weight system ensures maximum scrubbing results Drive Lever with innovative design allows the user to comfortably push/ pull the operating lever from any position (Cylindrical version)",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-lava-650-655r-0.png",
+      "/assets/klenco-lava-650-655r-1.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "lava-655r",
+    "name": "LAVA 655R",
+    "subcategory": "WALK BEHIND AUTO SCRUBBERS",
+    "modelCode": "LAVA655R",
+    "image": "/assets/klenco-lava-650-655r-0.png",
+    "tagline": "WALK-BEHIND SCRUBBER DRYER LAVA 650 & LAVA 655R are heavy duty battery-operated autoscrubbers that deliver professional floor cleaning, boosting productivity and operator ease as they clean floors in a single pass.",
+    "heroDescription": "WALK-BEHIND SCRUBBER DRYER LAVA 650 & LAVA 655R are heavy duty battery-operated autoscrubbers that deliver professional floor cleaning, boosting productivity and operator ease as they clean floors in a single pass.",
+    "description": "WALK-BEHIND SCRUBBER DRYER LAVA 650 & LAVA 655R are heavy duty battery-operated autoscrubbers that deliver professional floor cleaning, boosting productivity and operator ease as they clean floors in a single pass. With their innovative design and numerous unique features, floor cleaning of large areas is now made simple. Features: Electronic key to turn on and off machine with full control using an intuitive central knob Two preset programs with advance noise control of 54dB in Eco mode Energy and water savings, up to 20%, in Eco mode Up to 3.5hrs battery running time Self-levelling system allows brush to auto adjust to any floor unevenness while cleaning Constant weight system ensures maximum scrubbing results Drive Lever with innovative design allows the user to comfortably push/ pull the operating lever from any position (Cylindrical version)",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-lava-650-655r-0.png",
+      "/assets/klenco-lava-650-655r-1.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "lava-rx2-55",
+    "name": "LAVA RX2-55",
+    "subcategory": "RIDE ON SCRUBBER DRYERS",
+    "modelCode": "LAVARX255",
+    "image": "/assets/klenco-lava-rx2-55-rx2-60-0.png",
+    "tagline": "MICRORIDER AUTOSCRUBBER LAVA RX2 is equipped with the Advanced Productivity Control (APCTM) device, a water-control system that enables precise and constant water flow from start to finish and provides instant visual feedback of remaining time and square footage, optimising the work.",
+    "heroDescription": "MICRORIDER AUTOSCRUBBER LAVA RX2 is equipped with the Advanced Productivity Control (APCTM) device, a water-control system that enables precise and constant water flow from start to finish and provides instant visual feedback of remaining time and square footage, optimising the work.",
+    "description": "MICRORIDER AUTOSCRUBBER LAVA RX2 is equipped with the Advanced Productivity Control (APCTM) device, a water-control system that enables precise and constant water flow from start to finish and provides instant visual feedback of remaining time and square footage, optimising the work. The silent, < 62dB in Eco mode, compact machine features a small turning radius and able to reach into corners. Features: Constant savings in Eco mode Brushes and suction motors adjustment Anti-foam system with special electromechanical suction motor protection Automatic suction stops when the tank is full Tank can be easily tilted to check the internal areas of the machine Motor gear box, suction motor, and electric components of high quality Solution distribution from brush center avoids solution wastes Self-levelling mechanical system for an always perfect adherence between brush and floor Brush, blades and suction hoses replacement without tools Deactivation and re-start of working function simply with a command on pedal. It includes brush and suction delayed stop for irregular working stages",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-lava-rx2-55-rx2-60-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "lava-rx2-60",
+    "name": "LAVA RX2-60",
+    "subcategory": "RIDE ON SCRUBBER DRYERS",
+    "modelCode": "LAVARX260",
+    "image": "/assets/klenco-lava-rx2-55-rx2-60-0.png",
+    "tagline": "MICRORIDER AUTOSCRUBBER LAVA RX2 is equipped with the Advanced Productivity Control (APCTM) device, a water-control system that enables precise and constant water flow from start to finish and provides instant visual feedback of remaining time and square footage, optimising the work.",
+    "heroDescription": "MICRORIDER AUTOSCRUBBER LAVA RX2 is equipped with the Advanced Productivity Control (APCTM) device, a water-control system that enables precise and constant water flow from start to finish and provides instant visual feedback of remaining time and square footage, optimising the work.",
+    "description": "MICRORIDER AUTOSCRUBBER LAVA RX2 is equipped with the Advanced Productivity Control (APCTM) device, a water-control system that enables precise and constant water flow from start to finish and provides instant visual feedback of remaining time and square footage, optimising the work. The silent, < 62dB in Eco mode, compact machine features a small turning radius and able to reach into corners. Features: Constant savings in Eco mode Brushes and suction motors adjustment Anti-foam system with special electromechanical suction motor protection Automatic suction stops when the tank is full Tank can be easily tilted to check the internal areas of the machine Motor gear box, suction motor, and electric components of high quality Solution distribution from brush center avoids solution wastes Self-levelling mechanical system for an always perfect adherence between brush and floor Brush, blades and suction hoses replacement without tools Deactivation and re-start of working function simply with a command on pedal. It includes brush and suction delayed stop for irregular working stages",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-lava-rx2-55-rx2-60-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "lava-2060b",
+    "name": "LAVA 2060B",
+    "subcategory": "RIDE ON SCRUBBER DRYERS",
+    "modelCode": "LAVA2060B",
+    "image": "/assets/klenco-lava-2060b-0.png",
+    "tagline": "RIDE-ON AUTOSCRUBBER Tireless for the enormous quantity of work it manages to perform, the LAVA 2060B ride on autoscrubber is constructed to tackle the most extreme washing project, thanks to the considerable capacity of the tanks and batteries.",
+    "heroDescription": "RIDE-ON AUTOSCRUBBER Tireless for the enormous quantity of work it manages to perform, the LAVA 2060B ride on autoscrubber is constructed to tackle the most extreme washing project, thanks to the considerable capacity of the tanks and batteries.",
+    "description": "RIDE-ON AUTOSCRUBBER Tireless for the enormous quantity of work it manages to perform, the LAVA 2060B ride on autoscrubber is constructed to tackle the most extreme washing project, thanks to the considerable capacity of the tanks and batteries. Compact and manoeuvrable, the LAVA 2060B is also solid and tough. Features: Self-levelling System: uniform washing guaranteed by the washing head which adapts instantly to even the most irregular surfaces Independent brush motors with oil bath reduction gear box provides soft start mechanism for maximum motor protection Brush head designed to absorb harsh impact Brush attachment and release system without tools Solution delivery varies according to speed. The quantity can also be regulated from the control panel Flow of the solution and brushes stop when the drive is turned off Outlet filter for maximum solution tank protection AFS (anti-foam system) protects vacuum motor perfectly against foam",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-lava-2060b-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "lava-3085b",
+    "name": "LAVA 3085B",
+    "subcategory": "RIDE ON SCRUBBER DRYERS",
+    "modelCode": "LAVA3085B",
+    "image": "/assets/klenco-lava-3085b-0.png",
+    "tagline": "RIDE-ON AUTOSCRUBBER Tireless for the enormous quantity of work it manages to perform, the LAVA 3085B ride-on autoscrubber is constructed to tackle the most extreme washing project, thanks to the considerable capacity of the tanks and batteries.",
+    "heroDescription": "RIDE-ON AUTOSCRUBBER Tireless for the enormous quantity of work it manages to perform, the LAVA 3085B ride-on autoscrubber is constructed to tackle the most extreme washing project, thanks to the considerable capacity of the tanks and batteries.",
+    "description": "RIDE-ON AUTOSCRUBBER Tireless for the enormous quantity of work it manages to perform, the LAVA 3085B ride-on autoscrubber is constructed to tackle the most extreme washing project, thanks to the considerable capacity of the tanks and batteries. Compact and manoeuvrable, the LAVA 3085B is also solid and tough. Features: Solution from brush centre avoids solution waste Solution delivery varies according to speed. The quantity can also be regulated from the control panel. Flow of the solution and brushes stop when the drive is turned off Brushes, squeegee blades and hoses are replaceable without the use of tools Anti-foam system with special electromechanical suction motor protection Automatic suction stops when the tank is full Impact resistant large capacity solution tank equipped with solution empty indicator and recovery tank equipped with recovery tank full indicator. The recovery tank can be lifted and washed easily",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-lava-3085b-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  }
+]
     },
     {
       id: 'sweepers',
