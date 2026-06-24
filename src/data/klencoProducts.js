@@ -1049,7 +1049,117 @@ export const klencoData = {
       shortDesc: 'Eco-Friendly Power for Deep Cleaning.',
       image: '/assets/product_2.png', // Fallback image for now
       icon: '💨',
-      products: []
+      products: [
+  {
+    "id": "monsoon-st6",
+    "name": "MONSOON ST6",
+    "subcategory": null,
+    "modelCode": "MONSOONST6",
+    "image": "/assets/klenco-monsoon-st6-0.png",
+    "tagline": "DRY STEAM CLEANER The MONSOON ST6 incorporates a hot water injection system to flush out dirt from hard to reach areas at the push of a button, this dry steam cleaner cleans, sanitizes and reduces contamination and bacteria on a wide variety of surfaces and is particularly useful in the healthcare, hospitality, food manufacturing and processing industries.",
+    "heroDescription": "DRY STEAM CLEANER The MONSOON ST6 incorporates a hot water injection system to flush out dirt from hard to reach areas at the push of a button, this dry steam cleaner cleans, sanitizes and reduces contamination and bacteria on a wide variety of surfaces and is particularly useful in the healthcare, hospitality, food manufacturing and processing industries.",
+    "description": "DRY STEAM CLEANER The MONSOON ST6 incorporates a hot water injection system to flush out dirt from hard to reach areas at the push of a button, this dry steam cleaner cleans, sanitizes and reduces contamination and bacteria on a wide variety of surfaces and is particularly useful in the healthcare, hospitality, food manufacturing and processing industries. Features: Instantly cleans and dries surfaces Improves infection controls, higher bacteria elimination Cost effective Environmentally friendly cleaning Reduced water and chemical usage Reduced cleaning time Saves time and money Includes standard accessory kit",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-monsoon-st6-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "monsoon-st7",
+    "name": "MONSOON ST7",
+    "subcategory": null,
+    "modelCode": "MONSOONST7",
+    "image": "/assets/klenco-monsoon-st7-0.png",
+    "tagline": "COMMERCIAL STEAM CLEANERS MONSOON ST7 combines steam cleaning and detergent spraying functions.",
+    "heroDescription": "COMMERCIAL STEAM CLEANERS MONSOON ST7 combines steam cleaning and detergent spraying functions.",
+    "description": "COMMERCIAL STEAM CLEANERS MONSOON ST7 combines steam cleaning and detergent spraying functions. It allows you choose the most effective function for all cleaning jobs, such as with steam only, water only, steam and water, or steam and detergent. Monsoon ST7 is competent to suck up dissolved dirt, liquids and dry dust.",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-monsoon-st7-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "monsoon-st12-uv",
+    "name": "MONSOON ST12-UV",
+    "subcategory": null,
+    "modelCode": "MONSOONST1",
+    "image": "/assets/klenco-monsoon-st12-uv-0.png",
+    "tagline": "STEAM / VACUUM CLEANER MONSOON ST12-UV is kinder to the environment than almost any other cleaning system.",
+    "heroDescription": "STEAM / VACUUM CLEANER MONSOON ST12-UV is kinder to the environment than almost any other cleaning system.",
+    "description": "STEAM / VACUUM CLEANER MONSOON ST12-UV is kinder to the environment than almost any other cleaning system. It is only filled with clear water and minimises water consumption thanks to the steam pressure. There is no need for any harmful or aggressive chemicals. The applications of Monsoon ST12-UV are practically limitless. This machine really comes into its own in areas of high public traffic. Even large areas can be cleaned efficiently and quickly with little effort. The BlueEvolution is certified for use in the HACCP environment, guaranteeing results that are hygienically clean. Pathogens don t stand a chance! Features: HACCP-Certified, recommended for professional cleaning in the HACCP environment Enhance hygiene by providing deep cleaning and sanitization with only steam produced by water Environmentally friendly equipment that leaves no chemical residue and prevents irritation on end users with skin sensitivity 93% less water used as compared to conventional cleaning Steam cleaning with 170oC @ 8 bar pressure reduces germs and bacteria by up to 99.9% Built in UV LED sterilizer; air exhaust from Monsoon Steam Cleaner are thoroughly filtered and released as pure clean air back to the environment",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-monsoon-st12-uv-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "monsoon-st15-uv",
+    "name": "MONSOON ST15-UV",
+    "subcategory": null,
+    "modelCode": "MONSOONST1",
+    "image": "/assets/klenco-monsoon-st15-uv-0.png",
+    "tagline": "STEAM / VACUUM CLEANER MONSOON ST15-UV is kinder to the environment than almost any other cleaning system.",
+    "heroDescription": "STEAM / VACUUM CLEANER MONSOON ST15-UV is kinder to the environment than almost any other cleaning system.",
+    "description": "STEAM / VACUUM CLEANER MONSOON ST15-UV is kinder to the environment than almost any other cleaning system. It is only filled with clear water and minimises water consumption thanks to the steam pressure. There is no need for any harmful or aggressive chemicals. The applications of Monsoon ST15-UV are practically limitless. This machine really comes into its own in areas of high public traffic. Even large areas can be cleaned efficiently and quickly with little effort. The BlueEvolution is certified for use in the HACCP environment, guaranteeing results that are hygienically clean. Pathogens don t stand a chance! Features: HACCP-Certified, recommended for professional cleaning in the HACCP environment Enhance hygiene by providing deep cleaning and sanitization with only steam produced by water Environmentally friendly equipment that leaves no chemical residue and prevents irritation on end users with skin sensitivity 93% less water used as compared to conventional cleaning Steam cleaning with 170oC @ 8 bar pressure reduces germs and bacteria by up to 99.9% Built in UV LED sterilizer; air exhaust from Monsoon Steam Cleaner are thoroughly filtered and released as pure clean air back to the environment",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-monsoon-st15-uv-0.png",
+      "/assets/klenco-monsoon-st15-uv-1.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  }
+]
     },
     {
       id: 'high-pressure-cleaners',

@@ -4,8 +4,10 @@ const fs = require('fs');
 const path = require('path');
 
 const targets = [
-  { url: 'https://www.klenco-asia.com/product/tempest-1050b/', subcategory: null },
-  { url: 'https://www.klenco-asia.com/product/tempest-1250p/', subcategory: null }
+  { url: 'https://www.klenco-asia.com/product/gaiser-qv6/', subcategory: null },
+  { url: 'https://www.klenco-asia.com/product/monsoon-st7/', subcategory: null },
+  { url: 'https://www.klenco-asia.com/product/monsoon-st12-uv/', subcategory: null },
+  { url: 'https://www.klenco-asia.com/product/monsoon-st15-uv/', subcategory: null }
 ];
 
 async function downloadImage(url, filename) {

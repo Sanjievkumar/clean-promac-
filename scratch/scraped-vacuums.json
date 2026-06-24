@@ -1,13 +1,13 @@
 [
   {
-    "id": "tempest-1050b",
-    "name": "TEMPEST 1050B",
+    "id": "monsoon-st6",
+    "name": "MONSOON ST6",
     "subcategory": null,
-    "modelCode": "TEMPEST105",
-    "image": "/assets/klenco-tempest-1050b-0.png",
-    "tagline": "COMPACT RIDER SWEEPER The TEMPEST 1050B is an innovative, practical, and manoeuvrable ride-on motorized sweeper with three different cleaning programmes to guarantee deep-down and efficient cleaning of surfaces.",
-    "heroDescription": "COMPACT RIDER SWEEPER The TEMPEST 1050B is an innovative, practical, and manoeuvrable ride-on motorized sweeper with three different cleaning programmes to guarantee deep-down and efficient cleaning of surfaces.",
-    "description": "COMPACT RIDER SWEEPER The TEMPEST 1050B is an innovative, practical, and manoeuvrable ride-on motorized sweeper with three different cleaning programmes to guarantee deep-down and efficient cleaning of surfaces. All at the touch of a button! High productivity and low maintenance make this the most advantageous product for cleaning professionals. Features: Side brushes retract against impact Side brush speed adjustment Easy to use, innovative preset cleaning system with three different work levels Perfect cleaning thanks to the self-levelling brushes which adapt to even the most irregular floors Automatic brush lift in reverse Dust flap for large debris collection, controlled from the operator position Main brush special V shape design. Assures debris collection towards the centre of the hopper and avoids leaving dirt lines on the side of the machine Light weight high density polypropylene hopper completes with handles and wheels for easy transportation and dumping Main brush and filter replacement without tools",
+    "modelCode": "MONSOONST6",
+    "image": "/assets/klenco-monsoon-st6-0.png",
+    "tagline": "DRY STEAM CLEANER The MONSOON ST6 incorporates a hot water injection system to flush out dirt from hard to reach areas at the push of a button, this dry steam cleaner cleans, sanitizes and reduces contamination and bacteria on a wide variety of surfaces and is particularly useful in the healthcare, hospitality, food manufacturing and processing industries.",
+    "heroDescription": "DRY STEAM CLEANER The MONSOON ST6 incorporates a hot water injection system to flush out dirt from hard to reach areas at the push of a button, this dry steam cleaner cleans, sanitizes and reduces contamination and bacteria on a wide variety of surfaces and is particularly useful in the healthcare, hospitality, food manufacturing and processing industries.",
+    "description": "DRY STEAM CLEANER The MONSOON ST6 incorporates a hot water injection system to flush out dirt from hard to reach areas at the push of a button, this dry steam cleaner cleans, sanitizes and reduces contamination and bacteria on a wide variety of surfaces and is particularly useful in the healthcare, hospitality, food manufacturing and processing industries. Features: Instantly cleans and dries surfaces Improves infection controls, higher bacteria elimination Cost effective Environmentally friendly cleaning Reduced water and chemical usage Reduced cleaning time Saves time and money Includes standard accessory kit",
     "idealFor": [
       "Commercial",
       "Industrial",
@@ -21,20 +21,20 @@
     "benefits": [],
     "specifications": [],
     "gallery": [
-      "/assets/klenco-tempest-1050b-0.png"
+      "/assets/klenco-monsoon-st6-0.png"
     ],
     "brochureUrl": null,
     "manualUrl": null
   },
   {
-    "id": "tempest-1250p",
-    "name": "TEMPEST 1250P",
+    "id": "monsoon-st7",
+    "name": "MONSOON ST7",
     "subcategory": null,
-    "modelCode": "TEMPEST125",
-    "image": "/assets/klenco-tempest-1250p-0.png",
-    "tagline": "RIDE-ON MECHANICAL SWEEPER TEMPEST 1250P is a user-friendly, petrol-driven ride-on mechanical sweeper with 7800 sqm/hr maximum cleaning capacity.",
-    "heroDescription": "RIDE-ON MECHANICAL SWEEPER TEMPEST 1250P is a user-friendly, petrol-driven ride-on mechanical sweeper with 7800 sqm/hr maximum cleaning capacity.",
-    "description": "RIDE-ON MECHANICAL SWEEPER TEMPEST 1250P is a user-friendly, petrol-driven ride-on mechanical sweeper with 7800 sqm/hr maximum cleaning capacity. Brushes with special V shape bristles, enhances and maximizes cleaning performance, with up to 3-micron dust microfiltration. Features: Debris hopper of great capacity, easily removable sections for discharge operations Protected and waterproof controls, large multilingual display with hour counter. E/DP version with filter shaker activation menu and programmed service menu",
+    "modelCode": "MONSOONST7",
+    "image": "/assets/klenco-monsoon-st7-0.png",
+    "tagline": "COMMERCIAL STEAM CLEANERS MONSOON ST7 combines steam cleaning and detergent spraying functions.",
+    "heroDescription": "COMMERCIAL STEAM CLEANERS MONSOON ST7 combines steam cleaning and detergent spraying functions.",
+    "description": "COMMERCIAL STEAM CLEANERS MONSOON ST7 combines steam cleaning and detergent spraying functions. It allows you choose the most effective function for all cleaning jobs, such as with steam only, water only, steam and water, or steam and detergent. Monsoon ST7 is competent to suck up dissolved dirt, liquids and dry dust.",
     "idealFor": [
       "Commercial",
       "Industrial",
@@ -48,7 +48,62 @@
     "benefits": [],
     "specifications": [],
     "gallery": [
-      "/assets/klenco-tempest-1250p-0.png"
+      "/assets/klenco-monsoon-st7-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "monsoon-st12-uv",
+    "name": "MONSOON ST12-UV",
+    "subcategory": null,
+    "modelCode": "MONSOONST1",
+    "image": "/assets/klenco-monsoon-st12-uv-0.png",
+    "tagline": "STEAM / VACUUM CLEANER MONSOON ST12-UV is kinder to the environment than almost any other cleaning system.",
+    "heroDescription": "STEAM / VACUUM CLEANER MONSOON ST12-UV is kinder to the environment than almost any other cleaning system.",
+    "description": "STEAM / VACUUM CLEANER MONSOON ST12-UV is kinder to the environment than almost any other cleaning system. It is only filled with clear water and minimises water consumption thanks to the steam pressure. There is no need for any harmful or aggressive chemicals. The applications of Monsoon ST12-UV are practically limitless. This machine really comes into its own in areas of high public traffic. Even large areas can be cleaned efficiently and quickly with little effort. The BlueEvolution is certified for use in the HACCP environment, guaranteeing results that are hygienically clean. Pathogens don t stand a chance! Features: HACCP-Certified, recommended for professional cleaning in the HACCP environment Enhance hygiene by providing deep cleaning and sanitization with only steam produced by water Environmentally friendly equipment that leaves no chemical residue and prevents irritation on end users with skin sensitivity 93% less water used as compared to conventional cleaning Steam cleaning with 170oC @ 8 bar pressure reduces germs and bacteria by up to 99.9% Built in UV LED sterilizer; air exhaust from Monsoon Steam Cleaner are thoroughly filtered and released as pure clean air back to the environment",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-monsoon-st12-uv-0.png"
+    ],
+    "brochureUrl": null,
+    "manualUrl": null
+  },
+  {
+    "id": "monsoon-st15-uv",
+    "name": "MONSOON ST15-UV",
+    "subcategory": null,
+    "modelCode": "MONSOONST1",
+    "image": "/assets/klenco-monsoon-st15-uv-0.png",
+    "tagline": "STEAM / VACUUM CLEANER MONSOON ST15-UV is kinder to the environment than almost any other cleaning system.",
+    "heroDescription": "STEAM / VACUUM CLEANER MONSOON ST15-UV is kinder to the environment than almost any other cleaning system.",
+    "description": "STEAM / VACUUM CLEANER MONSOON ST15-UV is kinder to the environment than almost any other cleaning system. It is only filled with clear water and minimises water consumption thanks to the steam pressure. There is no need for any harmful or aggressive chemicals. The applications of Monsoon ST15-UV are practically limitless. This machine really comes into its own in areas of high public traffic. Even large areas can be cleaned efficiently and quickly with little effort. The BlueEvolution is certified for use in the HACCP environment, guaranteeing results that are hygienically clean. Pathogens don t stand a chance! Features: HACCP-Certified, recommended for professional cleaning in the HACCP environment Enhance hygiene by providing deep cleaning and sanitization with only steam produced by water Environmentally friendly equipment that leaves no chemical residue and prevents irritation on end users with skin sensitivity 93% less water used as compared to conventional cleaning Steam cleaning with 170oC @ 8 bar pressure reduces germs and bacteria by up to 99.9% Built in UV LED sterilizer; air exhaust from Monsoon Steam Cleaner are thoroughly filtered and released as pure clean air back to the environment",
+    "idealFor": [
+      "Commercial",
+      "Industrial",
+      "Retail"
+    ],
+    "floorTypes": [
+      "Hard Floors",
+      "Carpets"
+    ],
+    "features": [],
+    "benefits": [],
+    "specifications": [],
+    "gallery": [
+      "/assets/klenco-monsoon-st15-uv-0.png",
+      "/assets/klenco-monsoon-st15-uv-1.png"
     ],
     "brochureUrl": null,
     "manualUrl": null
