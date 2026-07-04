@@ -153,16 +153,6 @@ const ProductDetails = () => {
 
               <div className="pd-hero-actions">
                 <Link to="/contact" className="pd-btn-primary">Enquire Here</Link>
-                {brand.id === 'truvox' && (
-                  <a href={`https://www.truvox.com/product/${productId}/`} target="_blank" rel="noopener noreferrer" className="pd-btn-outline">
-                    View on Truvox.com ↗
-                  </a>
-                )}
-                {brand.id === 'klenco' && (
-                  <a href={`https://www.klenco-asia.com/`} target="_blank" rel="noopener noreferrer" className="pd-btn-outline">
-                    View on Klenco.com ↗
-                  </a>
-                )}
               </div>
             </div>
           </div>
