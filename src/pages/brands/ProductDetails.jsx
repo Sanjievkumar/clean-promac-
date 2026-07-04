@@ -18,6 +18,33 @@ const floorTypeIcons = {
   'Escalator': '/assets/carpet.jpg', // fallback if needed
 };
 
+const FormattedDescription = ({ text }) => {
+  if (!text) return null;
+  const parts = text.split(/features:/i);
+  if (parts.length === 2) {
+    const mainDesc = parts[0];
+    const featuresText = parts[1];
+    // Split sentences into bullets
+    const bullets = featuresText.trim().split(/(?<=[.!?])\s+(?=[A-Z0-9])/);
+    return (
+      <div className="pd-formatted-desc">
+        <p style={{ marginBottom: '1rem' }}>{mainDesc.trim()}</p>
+        {bullets.length > 0 && (
+          <>
+            <strong style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--color-navy)' }}>Features:</strong>
+            <ul style={{ paddingLeft: '1.2rem', listStyleType: 'disc', margin: 0 }}>
+              {bullets.map((b, i) => (
+                <li key={i} style={{ marginBottom: '0.4rem' }}>{b}</li>
+              ))}
+            </ul>
+          </>
+        )}
+      </div>
+    );
+  }
+  return <p>{text}</p>;
+};
+
 const ProductDetails = () => {
   const { brandId, categoryId, productId } = useParams();
   const [activeTab, setActiveTab] = useState('FEATURES');
@@ -110,9 +137,9 @@ const ProductDetails = () => {
             <div className="pd-hero-right">
               <p className="pd-category-label">{category.name}</p>
               <h1 className="pd-product-name">{product.name}</h1>
-              <p className="pd-hero-desc">
-                {brand.id === 'klenco' ? product.description : (product.heroDescription || product.description)}
-              </p>
+              <div className="pd-hero-desc">
+                <FormattedDescription text={brand.id === 'klenco' ? product.description : (product.heroDescription || product.description)} />
+              </div>
 
               {/* Ideal For */}
               {product.idealFor && (
