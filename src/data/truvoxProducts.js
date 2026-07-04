@@ -633,6 +633,26 @@ export const truvoxData = {
       icon: '🧵',
       products: [
         {
+          id: 'hydromist-lite',
+          name: 'Hydromist Lite',
+          modelCode: 'HM-LITE',
+          image: 'https://www.truvox.com/wp-content/uploads/2023/11/HML-Website-768x1728.png',
+          tagline: 'An entry-level professional carpet and upholstery cleaner, providing exceptional cleaning results and outstanding value for money.',
+          heroDescription: 'An entry-level professional carpet and upholstery cleaner, providing exceptional cleaning results and outstanding value for money.',
+          description: 'An entry-level professional carpet and upholstery cleaner, providing exceptional cleaning results and outstanding value for money.',
+          idealFor: ['Education', 'Healthcare', 'Leisure', 'Retail', 'Veterinary'],
+          floorTypes: ['Carpet', 'Upholstery'],
+          features: [
+            { label: 'COMPACT', desc: 'Lightweight and easy to carry, this machine is easy to manoeuvre and transport between jobs', image: 'https://www.truvox.com/wp-content/uploads/2023/11/HML-features-compact-284x284.jpg' },
+            { label: 'ANTI-FOAM', desc: 'A separate tank to add any anti-foam detergent', image: 'https://www.truvox.com/wp-content/uploads/2023/11/HML-features-anti-foam-1-284x284.jpg' },
+            { label: 'SIMPLE', desc: 'Independent spray and vacuum controls for greater cleaning flexibility', image: 'https://www.truvox.com/wp-content/uploads/2023/11/HML-features-Simple-284x284.jpg' }
+          ],
+          gallery: [
+            'https://www.truvox.com/wp-content/uploads/2023/11/HML-Website-768x1728.png'
+          ],
+          techSpecs: []
+        },
+        {
           id: 'hydromist-40-120',
           name: 'Hydromist 40',
           modelCode: 'HM40',
