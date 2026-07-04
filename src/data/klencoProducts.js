@@ -8,6 +8,7 @@ export const klencoData = {
   categories: [
     {
       id: 'vacuum-cleaners',
+      bannerImage: '/assets/klenco-banners/klenco_vacuums_1783195952635.jpg',
       name: 'Dry and Wet/Dry Vacuum Cleaners',
       shortDesc: 'Powerful suction and versatile cleaning for both dry debris and liquid spills.',
       image: '/assets/product_1.png',
@@ -262,6 +263,7 @@ export const klencoData = {
     },
     {
       id: 'carpet-extractors',
+      bannerImage: '/assets/klenco-banners/klenco_carpet_extractors_1783195962843.jpg',
       name: 'Carpet & Upholstery Extractors',
       shortDesc: 'Deep cleaning and fast drying for carpets and upholstery surfaces.',
       image: '/assets/product_2.png',
@@ -401,6 +403,7 @@ export const klencoData = {
     },
     {
       id: 'single-disc-machines',
+      bannerImage: '/assets/klenco-banners/klenco_single_disc_1783195972621.jpg',
       name: 'Single Disc Floor Machines',
       shortDesc: 'Precision and Power for Perfect Floors.',
       image: '/assets/product_3.png',
@@ -540,6 +543,7 @@ export const klencoData = {
     },
     {
       id: 'automatic-scrubbers',
+      bannerImage: '/assets/klenco-banners/klenco_auto_scrubbers_1783195982050.jpg',
       name: 'Automatic Scrubbers',
       shortDesc: 'Ultimate Cleaning Solutions for Every Space.',
       image: '/assets/product_4.png',
@@ -886,6 +890,7 @@ export const klencoData = {
     },
     {
       id: 'sweepers',
+      bannerImage: '/assets/klenco-banners/klenco_sweepers_1783195991979.jpg',
       name: 'Sweepers',
       shortDesc: 'Efficient Cleaning for Every Surface.',
       image: '/assets/product_5.png',
@@ -982,6 +987,7 @@ export const klencoData = {
     },
     {
       id: 'ride-on-sweepers',
+      bannerImage: '/assets/klenco-banners/klenco_ride_on_sweepers_1783196001597.jpg',
       name: 'Ride-On Sweepers',
       shortDesc: 'High-Performance Cleaning for Large Areas.',
       image: '/assets/product_1.png', // Fallback image for now
@@ -1045,6 +1051,7 @@ export const klencoData = {
     },
     {
       id: 'steam-cleaners',
+      bannerImage: '/assets/klenco-banners/klenco_steam_cleaners_1783196011239.jpg',
       name: 'Steam Cleaners',
       shortDesc: 'Eco-Friendly Power for Deep Cleaning.',
       image: '/assets/product_2.png', // Fallback image for now
@@ -1163,6 +1170,7 @@ export const klencoData = {
     },
     {
       id: 'high-pressure-cleaners',
+      bannerImage: '/assets/klenco-banners/klenco_high_pressure_1783196021489.jpg',
       name: 'High Pressure Water Cleaners',
       shortDesc: 'Unmatched Power for Commercial Cleaning.',
       image: '/assets/product_3.png', // Fallback image for now
@@ -1284,6 +1292,7 @@ export const klencoData = {
     },
     {
       id: 'cold-water-cleaners',
+      bannerImage: '/assets/klenco-banners/klenco_cold_water_1783196033661.jpg',
       name: 'Cold Water High Pressure Cleaners',
       shortDesc: 'Industrial Strength for Heavy-Duty Cleaning.',
       image: '/assets/product_4.png', // Fallback image for now
