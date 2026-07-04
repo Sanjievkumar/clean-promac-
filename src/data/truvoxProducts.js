@@ -648,9 +648,24 @@ export const truvoxData = {
             { label: 'SIMPLE', desc: 'Independent spray and vacuum controls for greater cleaning flexibility', image: 'https://www.truvox.com/wp-content/uploads/2023/11/HML-features-Simple-284x284.jpg' }
           ],
           gallery: [
-            'https://www.truvox.com/wp-content/uploads/2023/11/HML-Website-768x1728.png'
+            'https://www.truvox.com/wp-content/uploads/2023/11/HML-Website-768x1728.png',
+            'https://www.truvox.com/wp-content/uploads/2023/11/HML-features-anti-foam-1-284x284.jpg',
+            'https://www.truvox.com/wp-content/uploads/2023/11/HML-features-Simple-284x284.jpg'
           ],
-          techSpecs: []
+          accessories: [
+            { code: '87-0026-0000', name: 'Hose', type: 'Standard', image: '/assets/87-0026-0000-2.png' },
+            { code: '87-0044-0000', name: 'Two-piece wand', type: 'Standard', image: '/assets/87-0044-0000.png' }
+          ],
+          specs: {
+            'Voltage AC (~) / Frequency': '230 V / 50-60 Hz',
+            'Vacuum Motor Power': '1200 W',
+            'Pump Power': '50 W',
+            'Pump Pressure': '4 bar / 58 psi',
+            'Solution Tank Capacity': '14 Litres',
+            'Recovery Tank Capacity': '11.5 Litres',
+            'Cable Length': '10 m',
+            'Weight': '10 kg'
+          }
         },
         {
           id: 'hydromist-40-120',

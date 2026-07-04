@@ -11,6 +11,7 @@ const floorTypeIcons = {
   'Carpet': '/assets/carpet.jpg',
   'Concrete': '/assets/concrete.jpg',
   'Hard Floors': '/assets/hard-floors.jpg',
+  'Upholstery': '/assets/upholstery.jpg',
   'Entrance Matting': '/assets/matting.jpg',
   'Studded Rubber': '/assets/studded-rubber.jpg',
   'Non-Slip Safety Floors': '/assets/non-slip.jpg',
