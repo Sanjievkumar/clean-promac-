@@ -106,7 +106,7 @@ const CategoryDetails = () => {
   }
 
   return (
-    <main className="category-details-page">
+    <main className={`category-details-page brand-theme-${brandId}`}>
 
       {/* Category Hero */}
       <section className="category-hero">

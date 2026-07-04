@@ -46,7 +46,7 @@ const ProductDetails = () => {
   const featuresAreObjects = product.features?.length > 0 && typeof product.features[0] === 'object';
 
   return (
-    <main className="pd-page">
+    <main className={`pd-page brand-theme-${brandId}`}>
 
       {/* ── BREADCRUMB ── */}
       <div className="pd-breadcrumb">

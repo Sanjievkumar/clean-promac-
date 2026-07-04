@@ -194,3 +194,14 @@ button {
 .anim-float {
   animation: float 6s ease-in-out infinite;
 }
+
+
+/* Brand specific themes */
+.brand-theme-truvox {
+  --font-family-base: 'Montserrat', sans-serif !important;
+  --font-family-heading: 'Montserrat', sans-serif !important;
+}
+.brand-theme-truvox * {
+  font-family: inherit;
+}
+

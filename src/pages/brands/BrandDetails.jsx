@@ -37,7 +37,7 @@ const BrandDetails = () => {
   }
 
   return (
-    <main className="brand-details-page">
+    <main className={`brand-details-page brand-theme-${brandId}`}>
       {/* Brand Hero */}
       <section className="brand-details-hero">
         {/* Back button pinned top-left */}
