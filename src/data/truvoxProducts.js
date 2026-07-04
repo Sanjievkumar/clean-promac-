@@ -649,12 +649,14 @@ export const truvoxData = {
           ],
           gallery: [
             'https://www.truvox.com/wp-content/uploads/2023/11/HML-Website-768x1728.png',
-            'https://www.truvox.com/wp-content/uploads/2023/11/HML-in-use1.jpg',
             'https://www.truvox.com/wp-content/uploads/2023/11/HML-in-use2.jpg',
             'https://www.truvox.com/wp-content/uploads/2023/11/HML-in-use3.jpg'
           ],
           accessories: [
-            { code: 'HML-ACC', name: 'Hose, Wand & Upholstery Tool Set', type: 'Standard', image: 'https://www.truvox.com/wp-content/uploads/2023/11/HML-features-Accessories-284x284.jpg' }
+            { code: '87-0026-0000', name: 'Hose', type: 'Standard', image: '/assets/87-0026-0000-2.png' },
+            { code: '87-0044-0000', name: 'Two-piece wand', type: 'Standard', image: '/assets/87-0044-0000.png' },
+            { code: 'FB116', name: 'Floor tool', type: 'Standard', image: '/assets/FB116-HR.png' },
+            { code: '20-0178-0000', name: 'Upholstery tool', type: 'Standard', image: 'https://www.truvox.com/wp-content/uploads/2023/11/HML-features-Accessories-284x284.jpg' }
           ],
           specs: {
             'Voltage': '230 V / 50-60 Hz',
@@ -670,7 +672,8 @@ export const truvoxData = {
             'Dimensions (L x W x H)': '53 x 37 x 43 cm',
             'Weight (empty)': '10 kg',
             'Hose Length': '3 metres',
-            'Cable Length': '4.5 metres'
+            'Cable Length': '4.5 metres',
+            'Warranty': '1 Year'
           }
         },
         {
