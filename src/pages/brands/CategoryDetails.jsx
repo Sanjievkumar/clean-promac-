@@ -4,6 +4,41 @@ import { truvoxData } from '../../data/truvoxProducts';
 import { klencoData } from '../../data/klencoProducts';
 import './CategoryDetails.css';
 
+const CategoryHero = ({ category, brand, title, desc, backText, backUrl }) => {
+  if (category.bannerImage) {
+    return (
+      <section className="category-hero-split">
+        <div className="split-left">
+          <Link to={backUrl} className="brand-back-btn">&larr; Back to {backText}</Link>
+          <div className="split-left-content">
+            <h1 className="split-title">{title}</h1>
+            <p className="split-desc">{desc}</p>
+          </div>
+          <svg className="split-curve" viewBox="0 0 100 100" preserveAspectRatio="none">
+             <path d="M0,0 L100,0 C100,50 50,100 0,100 Z" fill="currentColor" />
+          </svg>
+        </div>
+        <div className="split-right" style={{ backgroundImage: `url(${category.bannerImage})` }}>
+           {/* Action shot background */}
+        </div>
+      </section>
+    );
+  }
+
+  return (
+    <section className="category-hero">
+      <Link to={backUrl} className="brand-back-btn">&larr; Back to {backText}</Link>
+      <div className="container">
+        <div className="category-hero-content">
+          <span className="category-icon-large">{category.icon}</span>
+          <h1 className="category-title-main">{title}</h1>
+          <p className="category-hero-desc" style={{ textTransform: 'capitalize' }}>{desc}</p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const CategoryDetails = () => {
   const { brandId, categoryId } = useParams();
   const { search } = useLocation();
@@ -47,16 +82,14 @@ const CategoryDetails = () => {
     return (
       <main className="category-details-page">
         {/* Category Hero */}
-        <section className="category-hero">
-          <Link to={`/brands/${brand.id}`} className="brand-back-btn">&larr; Back to {brand.name}</Link>
-          <div className="container">
-            <div className="category-hero-content">
-              <span className="category-icon-large">{category.icon}</span>
-              <h1 className="category-title-main">{category.name}</h1>
-              <p className="category-hero-desc">Please select a subcategory below.</p>
-            </div>
-          </div>
-        </section>
+        <CategoryHero 
+          category={category} 
+          brand={brand}
+          title={category.name} 
+          desc="Please select a subcategory below." 
+          backText={brand.name} 
+          backUrl={`/brands/${brand.id}`} 
+        />
 
         {/* Subcategories Grid */}
         <section className="products-section">
@@ -109,20 +142,14 @@ const CategoryDetails = () => {
     <main className={`category-details-page brand-theme-${brandId}`}>
 
       {/* Category Hero */}
-      <section className="category-hero">
-        {activeSubcat ? (
-          <Link to={`/brands/${brand.id}/${category.id}`} className="brand-back-btn">&larr; Back to {category.name}</Link>
-        ) : (
-          <Link to={`/brands/${brand.id}`} className="brand-back-btn">&larr; Back to {brand.name}</Link>
-        )}
-        <div className="container">
-          <div className="category-hero-content">
-            <span className="category-icon-large">{category.icon}</span>
-            <h1 className="category-title-main">{pageTitle}</h1>
-            <p className="category-hero-desc" style={{ textTransform: 'capitalize' }}>{pageDesc}</p>
-          </div>
-        </div>
-      </section>
+      <CategoryHero 
+        category={category} 
+        brand={brand}
+        title={pageTitle} 
+        desc={pageDesc} 
+        backText={activeSubcat ? category.name : brand.name} 
+        backUrl={activeSubcat ? `/brands/${brand.id}/${category.id}` : `/brands/${brand.id}`} 
+      />
 
       {/* Product Cards Grid */}
       <section className="products-section">

@@ -430,3 +430,103 @@
 .subcategory-card:hover .subcategory-link-text {
   gap: 0.8rem;
 }
+
+/* Split Layout Hero */
+.category-hero-split {
+  display: flex;
+  position: relative;
+  min-height: 400px;
+  overflow: hidden;
+  background-color: var(--color-navy);
+}
+
+.split-left {
+  width: 55%;
+  position: relative;
+  z-index: 2;
+  background-color: var(--color-navy);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 6rem;
+  color: var(--color-white);
+}
+
+.brand-theme-truvox .split-left {
+  background-color: #00b2a9;
+}
+.brand-theme-klenco .split-left {
+  background-color: #00a8b0;
+}
+
+.split-left .brand-back-btn {
+  position: static;
+  margin-bottom: 2rem;
+  display: inline-block;
+  opacity: 0.8;
+}
+.split-left .brand-back-btn:hover {
+  opacity: 1;
+}
+
+.split-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.split-desc {
+  font-size: 1.25rem;
+  font-weight: 300;
+  opacity: 0.9;
+  line-height: 1.5;
+  max-width: 500px;
+}
+
+.split-curve {
+  position: absolute;
+  right: -50px;
+  top: 0;
+  height: 100%;
+  width: 51px; /* 1px extra to overlap sub-pixel gaps */
+}
+.brand-theme-truvox .split-curve {
+  color: #00b2a9;
+}
+.brand-theme-klenco .split-curve {
+  color: #00a8b0;
+}
+
+.split-right {
+  width: 45%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+/* Responsive Split Hero */
+@media (max-width: 992px) {
+  .category-hero-split {
+    flex-direction: column;
+    height: auto;
+  }
+  .split-left {
+    width: 100%;
+    padding: 3rem 2rem;
+  }
+  .split-curve {
+    display: none;
+  }
+  .split-right {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+}

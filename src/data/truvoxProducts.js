@@ -7,6 +7,7 @@ export const truvoxData = {
   categories: [
     {
       id: 'scrubber-dryers',
+      bannerImage: 'https://www.truvox.com/wp-content/uploads/2024/01/Scrubber-Dryer-Header-1.jpg',
       name: 'Scrubber Dryers',
       shortDesc: 'Wash, scrub and dry in one single pass on hard floors and carpets.',
       image: '/assets/product_4.png',
@@ -194,6 +195,7 @@ export const truvoxData = {
     },
     {
       id: 'single-disc',
+      bannerImage: 'https://www.truvox.com/wp-content/uploads/2024/01/Single-disc-header.jpg',
       name: 'Single Disc',
       shortDesc: 'Rotary machines for scrubbing, polishing and buffing.',
       image: '/assets/product_2.png',
@@ -346,6 +348,7 @@ export const truvoxData = {
     },
     {
       id: 'dry-vacuums',
+      bannerImage: 'https://www.truvox.com/wp-content/uploads/2024/02/VTVe-C-range-header.jpg',
       name: 'Dry Vacuums',
       shortDesc: 'Powerful, commercial-grade dry vacuum cleaners.',
       image: '/assets/product_3.png',
@@ -622,6 +625,7 @@ export const truvoxData = {
     },
     {
       id: 'carpet-cleaners',
+      bannerImage: 'https://www.truvox.com/wp-content/uploads/2024/01/Carpet-Cleaners-header.jpg',
       name: 'Carpet Cleaners',
       shortDesc: 'Deep extraction machines for professional carpet care.',
       image: '/assets/product_1.png',
@@ -791,6 +795,7 @@ export const truvoxData = {
     },
     {
       id: 'cimex-three-brush',
+      bannerImage: 'https://www.truvox.com/wp-content/uploads/2024/02/Cimex-header-banner.jpg',
       name: 'Cimex Three Brush',
       shortDesc: 'Unique 3-brush system for uneven floors and deep scarifying.',
       image: '/assets/product_2.png',
@@ -853,6 +858,7 @@ export const truvoxData = {
     },
     {
       id: 'escalator-sweepers',
+      bannerImage: 'https://www.truvox.com/wp-content/uploads/2024/02/Escalator-sweepers-header.jpg',
       name: 'Escalator Sweepers',
       shortDesc: 'Specialized sweepers for fast and efficient escalator cleaning.',
       image: '/assets/product_3.png',
@@ -906,6 +912,7 @@ export const truvoxData = {
     },
     {
       id: 'air-movers',
+      bannerImage: '/assets/air-movers-banner.jpg',
       name: 'Air Movers',
       shortDesc: 'High-velocity fans for rapid drying of carpets and floors.',
       image: '/assets/product_4.png',
