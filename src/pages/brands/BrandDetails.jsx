@@ -52,7 +52,6 @@ const BrandDetails = () => {
             <p className="brand-hero-desc">{brand.description}</p>
           </div>
         </div>
-        <div className="brand-hero-bg"></div>
       </section>
 
       {/* Categories Grid */}
