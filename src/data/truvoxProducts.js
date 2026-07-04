@@ -649,22 +649,28 @@ export const truvoxData = {
           ],
           gallery: [
             'https://www.truvox.com/wp-content/uploads/2023/11/HML-Website-768x1728.png',
-            'https://www.truvox.com/wp-content/uploads/2023/11/HML-features-anti-foam-1-284x284.jpg',
-            'https://www.truvox.com/wp-content/uploads/2023/11/HML-features-Simple-284x284.jpg'
+            'https://www.truvox.com/wp-content/uploads/2023/11/HML-in-use1.jpg',
+            'https://www.truvox.com/wp-content/uploads/2023/11/HML-in-use2.jpg',
+            'https://www.truvox.com/wp-content/uploads/2023/11/HML-in-use3.jpg'
           ],
           accessories: [
-            { code: '87-0026-0000', name: 'Hose', type: 'Standard', image: '/assets/87-0026-0000-2.png' },
-            { code: '87-0044-0000', name: 'Two-piece wand', type: 'Standard', image: '/assets/87-0044-0000.png' }
+            { code: 'HML-ACC', name: 'Hose, Wand & Upholstery Tool Set', type: 'Standard', image: 'https://www.truvox.com/wp-content/uploads/2023/11/HML-features-Accessories-284x284.jpg' }
           ],
           specs: {
-            'Voltage AC (~) / Frequency': '230 V / 50-60 Hz',
-            'Vacuum Motor Power': '1200 W',
+            'Voltage': '230 V / 50-60 Hz',
+            'Vacuum Motor Power': '1100 W',
+            'Pump Type': 'Magnet',
             'Pump Power': '50 W',
             'Pump Pressure': '4 bar / 58 psi',
-            'Solution Tank Capacity': '14 Litres',
-            'Recovery Tank Capacity': '11.5 Litres',
-            'Cable Length': '10 m',
-            'Weight': '10 kg'
+            'Solution Flow Rate': '2 l/min',
+            'Airflow Rate': '46.1 l/s',
+            'Solution Tank Capacity': '6.5 Litres',
+            'Recovery Tank Capacity': '7 Litres',
+            'Sound Pressure Level': '78 dB(A)',
+            'Dimensions (L x W x H)': '53 x 37 x 43 cm',
+            'Weight (empty)': '10 kg',
+            'Hose Length': '3 metres',
+            'Cable Length': '4.5 metres'
           }
         },
         {
