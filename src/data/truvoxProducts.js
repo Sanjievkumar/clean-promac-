@@ -506,6 +506,7 @@ export const truvoxData = {
     },
     {
       id: 'wet-and-dry-vacuums',
+      bannerImage: '/assets/wet-dry-vac-banner.jpg',
       name: 'Wet and Dry Vacuums',
       shortDesc: 'Versatile vacuums for both liquid spills and dry debris.',
       image: '/assets/product_4.png',
