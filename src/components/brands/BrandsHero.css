@@ -1,109 +1,163 @@
-.bh-overlay-section {
+.brands-hero {
   position: relative;
   width: 100%;
-  aspect-ratio: 1536 / 1024;
-  background-image: url('/assets/brands-hero-bg.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  font-family: inherit;
+  display: flex;
+  flex-direction: column;
 }
 
-/* 1. Hero Main Text (Top Left) */
-.bh-main-text {
-  position: absolute;
-  top: 20%;
-  left: 6%;
-  width: 40%;
+/* -----------------------------
+   TIER 1: Hero Image Section
+------------------------------ */
+.bh-main-image {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Adjust if needed */
+  background-image: url('/assets/brands-hero-bg.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.bh-hero-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  width: 100%;
+}
+
+.bh-text-box {
+  max-width: 450px;
+  background: transparent;
+  padding: 40px 0;
+  margin-left: 5%;
 }
 
 .bh-subtitle {
-  font-size: 1.2vw;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 1px;
-  margin-bottom: 2%;
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
-.bh-red { color: #E31837; }
+
+.text-red { color: #E31837; }
+.text-gray { color: #666; }
+
 .bh-title {
-  font-size: 4vw;
+  font-size: 3.2rem;
   font-weight: 800;
   line-height: 1.1;
   color: #0A2540;
-  margin-bottom: 3%;
+  margin-bottom: 20px;
 }
+
 .bh-underline {
-  width: 3vw;
-  height: 0.3vw;
+  width: 40px;
+  height: 2px;
   background-color: #0072CE;
-  margin-bottom: 4%;
+  margin-bottom: 25px;
 }
+
 .bh-desc {
-  font-size: 1.2vw;
+  font-size: 1.1rem;
   line-height: 1.6;
-  color: #666;
-  margin-bottom: 5%;
+  margin-bottom: 30px;
 }
-.bh-btn {
+
+.bh-cta-btn {
   display: inline-flex;
   align-items: center;
   font-weight: 700;
-  font-size: 1.1vw;
+  font-size: 0.9rem;
   color: #0A2540;
   text-decoration: none;
-  border-bottom: 0.2vw solid #E31837;
-  padding-bottom: 0.3vw;
+  border-bottom: 2px solid #E31837;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
   letter-spacing: 0.5px;
 }
-.bh-btn-icon {
-  margin-left: 0.8vw;
-  width: 1.5vw;
-  height: 1.5vw;
+
+.bh-cta-btn:hover {
   color: #E31837;
 }
 
-/* 2. Logo Band (Middle) */
-.bh-logo-band {
-  position: absolute;
-  top: 72.2%;
-  left: 10%;
-  width: 80%;
-  height: 14.5%;
+.bh-cta-icon {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+  color: #E31837;
+}
+
+.bh-cta-btn:hover .bh-cta-icon {
+  transform: translateX(5px);
+}
+
+/* -----------------------------
+   TIER 2: The Logo Band
+------------------------------ */
+.bh-logo-tier {
+  position: relative;
+  display: flex;
+  height: 150px; /* Fixed height for the logo band */
+  background-color: #FFFFFF;
+}
+
+.bh-blue-slant {
+  flex: 0 0 20%;
+  background-color: #0A2540;
+  /* Slants the right edge: top is wider, bottom is narrower */
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+}
+
+.bh-white-center {
+  flex: 1;
+  background-color: transparent; /* Let the container's white background show through */
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12%;
 }
 
-.bh-brand-block {
+.bh-red-slant {
+  flex: 0 0 20%;
+  background-color: #E31837;
+  /* Slants the left edge: top is narrower, bottom is wider */
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.bh-logos-container {
   display: flex;
   align-items: center;
-  gap: 1.5vw;
-  width: 40%;
-  justify-content: flex-end;
+  justify-content: center;
+  gap: 120px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
 }
-.klenco-block {
-  justify-content: flex-start;
+
+.bh-brand-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .bh-logo {
   object-fit: contain;
 }
-.truvox-size {
-  height: 4vw;
-}
-.klenco-size {
-  height: 6vw;
-}
+
+.truvox-logo { height: 40px; }
+.klenco-logo { height: 65px; }
 
 .bh-divider {
   width: 1px;
-  height: 4vw;
+  height: 50px;
   background-color: #E0E0E0;
 }
 
-.bh-info {
+.bh-brand-info {
   display: flex;
   flex-direction: column;
 }
@@ -111,84 +165,141 @@
 .bh-flag-row {
   display: flex;
   align-items: center;
-  gap: 0.5vw;
-  margin-bottom: 0.2vw;
+  gap: 8px;
+  margin-bottom: 5px;
 }
 
 .bh-flag {
-  width: 1.5vw;
+  width: 20px;
   height: auto;
   border-radius: 2px;
 }
 
 .bh-since {
-  font-size: 0.9vw;
+  font-size: 0.85rem;
   font-weight: 700;
   color: #0A2540;
 }
 
-.bh-info p {
+.bh-brand-info p {
   margin: 0;
-  font-size: 0.9vw;
+  font-size: 0.85rem;
   color: #666;
   line-height: 1.4;
 }
 
-/* 3. Feature Grid (Bottom) */
-.bh-features {
-  position: absolute;
-  top: 87%;
-  left: 5%;
-  width: 90%;
-  height: 13%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+/* -----------------------------
+   TIER 3: Dark Blue Feature Grid
+------------------------------ */
+.bh-feature-tier {
+  background-color: #0A2540;
+  padding: 40px 0;
 }
 
-.bh-feature-item {
+.bh-feature-grid {
   display: flex;
-  align-items: center;
-  gap: 1vw;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0;
+}
+
+.bh-feature-col {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
   flex: 1;
-  justify-content: center;
+  padding: 0 40px;
 }
 
-.bh-feature-center {
+.bh-feature-center-col {
   border-left: 1px solid rgba(255, 255, 255, 0.15);
   border-right: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.bh-feature-icon {
+.bh-icon-circle {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #FFFFFF;
 }
 
-.bh-feature-icon svg {
-  width: 2vw;
-  height: 2vw;
+.bh-icon-circle svg {
+  width: 32px;
+  height: 32px;
+  stroke-width: 1.5;
 }
 
 .bh-feature-text h5 {
   color: #FFFFFF;
-  font-size: 0.9vw;
+  font-size: 0.85rem;
   font-weight: 700;
-  margin-bottom: 0.3vw;
+  margin-bottom: 5px;
   letter-spacing: 0.5px;
   margin-top: 0;
 }
 
 .bh-feature-text p {
   color: #A0B3C6;
-  font-size: 0.8vw;
+  font-size: 0.8rem;
   line-height: 1.4;
   margin: 0;
 }
 
-/* Fallbacks for very narrow screens */
-@media (max-aspect-ratio: 1/1) {
-  .bh-overlay-section {
-    aspect-ratio: auto;
-    height: 100vh;
-    background-size: cover;
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+@media (max-width: 1024px) {
+  .bh-logos-container {
+    gap: 40px;
+  }
+  .bh-blue-slant,
+  .bh-red-slant {
+    flex: 0 0 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bh-text-box {
+    margin: 0 20px;
+    padding: 30px;
+  }
+  
+  .bh-title {
+    font-size: 2.5rem;
+  }
+
+  .bh-blue-slant,
+  .bh-red-slant {
+    display: none;
+  }
+  
+  .bh-logo-tier {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .bh-logos-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .bh-feature-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .bh-feature-center-col {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 30px 0;
+  }
+  
+  .bh-feature-col {
+    padding: 0 20px;
   }
 }
