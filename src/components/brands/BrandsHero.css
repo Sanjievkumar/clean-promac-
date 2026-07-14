@@ -21,15 +21,22 @@
 }
 
 /* -----------------------------
-   TIER 1: Main Image
+   TIER 1 & 2: Background Image
 ------------------------------ */
-.bh-main-image {
+.bh-image-container {
   position: relative;
   width: 100%;
-  /* 700px height for desktop perfectly crops the ceiling as requested */
-  height: 700px;
+  /* Fix the height to crop the lengthy ceiling, 
+     but anchor the image to the bottom so the slants are perfectly visible.
+  */
+  height: 80vh; 
+  min-height: 650px;
+  max-height: 850px;
   background-image: url('/assets/brands-hero-bg.png');
-  background-size: cover;
+  /* 100% auto ensures the image scales exactly to the screen width,
+     so the side columns are perfectly flush with the edges, and the slants match.
+  */
+  background-size: 100% auto;
   background-position: center bottom;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -40,9 +47,8 @@
 ------------------------------ */
 .bh-text-overlay {
   position: absolute;
-  top: 50%; 
+  top: 15%; 
   left: 12%; 
-  transform: translateY(-50%);
   width: 450px;
   max-width: 40%;
   opacity: 0;
@@ -110,40 +116,24 @@
 }
 
 /* -----------------------------
-   TIER 2: Logo Band
+   Logo Band Overlay
 ------------------------------ */
-.bh-logo-tier {
+.bh-logo-overlay {
+  position: absolute;
+  bottom: 0; 
+  left: 18%; 
+  right: 18%; 
+  /* Since background-size is exactly 100% width, 
+     the height of the baked-in white trapezoid is always 10.6% of the screen width. 
+  */
+  height: 10.6vw; 
+  min-height: 80px;
   display: flex;
-  height: 150px; /* Exact height for the logo band */
-  background-color: #FFFFFF;
-  width: 100%;
-  position: relative;
-  z-index: 10;
-}
-
-.bh-blue-slant {
-  width: 6%; /* Matches the width of the blue column in the image */
-  background-color: #0A2540;
-  /* Top is wide, bottom is narrow (slants inward to the left) */
-  clip-path: polygon(0 0, 100% 0, 40% 100%, 0 100%);
-}
-
-.bh-white-center {
-  flex: 1;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 80px; /* Space between the two brand groups */
-  background-color: #FFFFFF;
+  justify-content: space-between;
+  padding: 0 4%;
   opacity: 0;
   animation: heroFadeInUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s forwards;
-}
-
-.bh-red-slant {
-  width: 6%; /* Matches the width of the red column in the image */
-  background-color: #E31837;
-  /* Top is wide, bottom is narrow (slants inward to the right) */
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
 }
 
 .bh-brand-item {
@@ -282,18 +272,24 @@
    RESPONSIVE
 ------------------------------ */
 @media (max-width: 1024px) {
-  .bh-white-center {
-    gap: 40px;
+  .bh-logo-overlay {
+    padding: 0 2%;
+  }
+  .bh-brand-item {
+    gap: 10px;
   }
 }
 
 @media (max-width: 768px) {
-  .bh-main-image {
-    height: 500px;
+  .bh-image-container {
+    height: 60vh;
+    min-height: 500px;
+    background-size: cover; /* Switch back to cover for mobile since 100% auto would be too small */
+    background-position: center bottom;
   }
   
   .bh-text-overlay {
-    top: 50%;
+    top: 15%;
     left: 10%;
     width: 80%;
     max-width: none;
@@ -307,20 +303,16 @@
     font-size: 1rem;
   }
 
-  .bh-logo-tier {
+  .bh-logo-overlay {
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
     height: auto;
     flex-direction: column;
-    padding: 30px 0;
-  }
-
-  .bh-blue-slant,
-  .bh-red-slant {
-    display: none;
-  }
-
-  .bh-white-center {
-    flex-direction: column;
-    gap: 30px;
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
   }
 
   .bh-feature-grid {
