@@ -49,9 +49,9 @@ const Brands = () => {
           { icon: '🌐', title: 'Trusted', subtitle: 'Worldwide' }
         ]}
         images={[
-          "/assets/VA20-Website.png",
-          "/assets/VA40-Website.png",
-          "/assets/VDMU-Website.png"
+          "/assets/klenco-typhoon-hardy.png",
+          "/assets/klenco-cyclone-g680-0.png",
+          "/assets/klenco-tempest-ms900-0.png"
         ]}
         buttonText="Explore Klenco"
         exploreLink="/brands/klenco"
