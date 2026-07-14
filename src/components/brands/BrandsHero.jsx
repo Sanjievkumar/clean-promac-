@@ -10,52 +10,59 @@ const BrandsHero = () => {
       <div className="bh-image-container">
         
         {/* Text Overlay */}
-        <div className="bh-text-overlay">
-          <h4 className="bh-subtitle text-red">OUR BRANDS</h4>
-          <h1 className="bh-title">
-            World-Class Brands.<br/>
-            <span className="text-red">Built on Trust.</span>
-          </h1>
-          <div className="bh-underline"></div>
-          <p className="bh-desc text-gray">
-            Clean Promac proudly represents<br/>
-            global leaders in cleaning technology.<br/>
-            Proven. Reliable. Preferred worldwide.
-          </p>
-          <Link to="#explore" className="bh-cta-btn">
-            EXPLORE OUR BRANDS 
-            <svg className="bh-cta-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </Link>
-        </div>
-
-        {/* Logo Band Overlay (Positioned exactly over the baked-in white trapezoid) */}
-        <div className="bh-logo-overlay">
-          {/* Truvox */}
-          <div className="bh-brand-item">
-            <img src="/assets/truvox-logo-v2.svg" alt="Truvox" className="bh-logo truvox-logo" />
-            <div className="bh-divider"></div>
-            <div className="bh-brand-info">
-              <div className="bh-flag-row">
-                <img src="https://flagcdn.com/w40/gb.png" srcSet="https://flagcdn.com/w80/gb.png 2x" alt="UK" className="bh-flag" />
-                <span className="bh-since">SINCE 1960</span>
+        <div className="bh-text-overlay-wrapper">
+          <div className="bh-container">
+            <div className="bh-text-content">
+              <h4 className="bh-subtitle text-red">OUR BRANDS</h4>
+              <h1 className="bh-title">
+                World-Class Brands.<br/>
+                <span className="text-red">Built on Trust.</span>
+              </h1>
+              <div className="bh-underline"></div>
+              <p className="bh-desc text-gray">
+                Clean Promac proudly represents<br/>
+                global leaders in cleaning technology.<br/>
+                Proven. Reliable. Preferred worldwide.
+              </p>
+              <div className="bh-cta-btn-container">
+                <Link to="#explore" className="bh-cta-btn">
+                  EXPLORE OUR BRANDS
+                </Link>
+                <span className="bh-cta-arrow text-red">→</span>
               </div>
-              <p>Global technology partner for<br/>professional cleaning solutions.</p>
             </div>
           </div>
+        </div>
 
-          {/* Klenco */}
-          <div className="bh-brand-item">
-            <img src="/assets/klenco-logo.png" alt="Klenco" className="bh-logo klenco-logo" />
-            <div className="bh-divider"></div>
-            <div className="bh-brand-info">
-              <div className="bh-flag-row">
-                <img src="https://flagcdn.com/w40/sg.png" srcSet="https://flagcdn.com/w80/sg.png 2x" alt="Singapore" className="bh-flag" />
-                <span className="bh-since">SINCE 1975</span>
+        {/* Logo Band Overlay */}
+        <div className="bh-logo-overlay">
+          <div className="bh-container bh-logo-flex">
+            {/* Truvox */}
+            <div className="bh-brand-item">
+              <img src="/assets/truvox-logo-v2.svg" alt="Truvox" className="bh-logo truvox-logo" />
+              <div className="bh-divider"></div>
+              <div className="bh-brand-info">
+                <div className="bh-flag-row">
+                  <img src="https://flagcdn.com/w40/gb.png" srcSet="https://flagcdn.com/w80/gb.png 2x" alt="UK" className="bh-flag" />
+                  <span className="bh-since">SINCE 1960</span>
+                </div>
+                <p>Global technology partner for<br/>professional cleaning solutions.</p>
               </div>
-              <p>Innovation partner for<br/>advanced cleaning systems.</p>
+            </div>
+
+            <div className="bh-main-divider"></div>
+
+            {/* Klenco */}
+            <div className="bh-brand-item">
+              <img src="/assets/klenco-logo.png" alt="Klenco" className="bh-logo klenco-logo" />
+              <div className="bh-divider"></div>
+              <div className="bh-brand-info">
+                <div className="bh-flag-row">
+                  <img src="https://flagcdn.com/w40/sg.png" srcSet="https://flagcdn.com/w80/sg.png 2x" alt="Singapore" className="bh-flag" />
+                  <span className="bh-since">SINCE 1975</span>
+                </div>
+                <p>Innovation partner for<br/>advanced cleaning systems.</p>
+              </div>
             </div>
           </div>
         </div>

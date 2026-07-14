@@ -26,16 +26,10 @@
 .bh-image-container {
   position: relative;
   width: 100%;
-  /* Fix the height to crop the lengthy ceiling, 
-     but anchor the image to the bottom so the slants are perfectly visible.
-  */
   height: 80vh; 
   min-height: 650px;
   max-height: 850px;
   background-image: url('/assets/brands-hero-bg.png');
-  /* 100% auto ensures the image scales exactly to the screen width,
-     so the side columns are perfectly flush with the edges, and the slants match.
-  */
   background-size: 100% auto;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -43,20 +37,36 @@
 }
 
 /* -----------------------------
+   Container & Alignment
+------------------------------ */
+.bh-container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* -----------------------------
    Text Overlay
 ------------------------------ */
-.bh-text-overlay {
+.bh-text-overlay-wrapper {
   position: absolute;
-  top: 15%; 
-  left: 12%; 
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  margin-top: -30px; /* Lift slightly to clear the logos below */
+}
+
+.bh-text-content {
   width: 450px;
-  max-width: 40%;
+  max-width: 100%;
   opacity: 0;
   animation: heroFadeInUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 .bh-subtitle {
-  font-size: 1.1vw;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 20px;
@@ -67,7 +77,7 @@
 .text-gray { color: #666; }
 
 .bh-title {
-  font-size: 3.5vw;
+  font-size: 3.5rem;
   font-weight: 800;
   line-height: 1.1;
   color: #0A2540;
@@ -78,40 +88,45 @@
   width: 50px;
   height: 3px;
   background-color: #0072CE;
-  margin-bottom: 30px;
+  margin-bottom: 15px; /* Tighter spacing matching target */
 }
 
 .bh-desc {
-  font-size: 1.2vw;
+  font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 40px;
 }
 
-.bh-cta-btn {
+/* Button */
+.bh-cta-btn-container {
   display: inline-flex;
   align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.bh-cta-btn {
   font-weight: 700;
-  font-size: 1vw;
-  color: #0A2540;
+  font-size: 1rem;
+  color: #000;
   text-decoration: none;
   border-bottom: 2px solid #E31837;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
 }
 
-.bh-cta-btn:hover {
-  color: #E31837;
-}
-
-.bh-cta-icon {
-  margin-left: 10px;
+.bh-cta-arrow {
   font-size: 1.2rem;
+  font-weight: bold;
   transition: transform 0.3s ease;
+}
+
+.bh-cta-btn-container:hover .bh-cta-btn {
   color: #E31837;
 }
 
-.bh-cta-btn:hover .bh-cta-icon {
+.bh-cta-btn-container:hover .bh-cta-arrow {
   transform: translateX(5px);
 }
 
@@ -121,19 +136,26 @@
 .bh-logo-overlay {
   position: absolute;
   bottom: 0; 
-  left: 18%; 
-  right: 18%; 
-  /* Since background-size is exactly 100% width, 
-     the height of the baked-in white trapezoid is always 10.6% of the screen width. 
-  */
+  left: 0; 
+  right: 0; 
   height: 10.6vw; 
   min-height: 80px;
   display: flex;
   align-items: center;
+}
+
+.bh-logo-flex {
+  display: flex;
   justify-content: space-between;
-  padding: 0 4%;
+  align-items: center;
   opacity: 0;
   animation: heroFadeInUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s forwards;
+}
+
+.bh-main-divider {
+  width: 1px;
+  height: 50px;
+  background-color: #D0D0D0;
 }
 
 .bh-brand-item {
@@ -278,9 +300,16 @@
   .bh-brand-item {
     gap: 10px;
   }
+  .bh-container {
+    padding: 0 30px;
+  }
 }
 
 @media (max-width: 768px) {
+  .bh-container {
+    padding: 0 20px;
+  }
+  
   .bh-image-container {
     height: 60vh;
     min-height: 500px;
