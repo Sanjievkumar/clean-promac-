@@ -344,13 +344,13 @@
 .ah-brand-truvox {
   top: 50%;
   left: 0;
-  transform: translate(-50%, -80px);
+  transform: translate(-10%, -80px);
 }
 
 .ah-brand-klenco {
   top: 50%;
   right: 0;
-  transform: translate(50%, -80px);
+  transform: translate(10%, -80px);
 }
 
 .ah-brand-circle {
