@@ -48,22 +48,7 @@ const BrandsHero = () => {
             <div className="band-divider"></div>
             <div className="band-text">
               <div className="band-header">
-                {/* UK Flag SVG */}
-                <svg className="flag-icon" viewBox="0 0 60 30" width="30" height="20">
-                  <clipPath id="uk-s">
-                    <path d="M0,0 v30 h60 v-30 z"/>
-                  </clipPath>
-                  <clipPath id="uk-t">
-                    <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/>
-                  </clipPath>
-                  <g clipPath="url(#uk-s)">
-                    <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
-                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6"/>
-                    <path d="M0,0 L60,30 M60,0 L0,30" clipPath="url(#uk-t)" stroke="#C8102E" strokeWidth="4"/>
-                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" strokeWidth="10"/>
-                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" strokeWidth="6"/>
-                  </g>
-                </svg>
+                <img src="https://flagcdn.com/w40/gb.png" srcSet="https://flagcdn.com/w80/gb.png 2x" alt="UK" className="flag-icon" />
                 <span className="since-text">SINCE 1960</span>
               </div>
               <p>Global technology partner for<br/>professional cleaning solutions.</p>
@@ -80,25 +65,8 @@ const BrandsHero = () => {
             <div className="band-divider"></div>
             <div className="band-text">
               <div className="band-header">
-                {/* Singapore Flag SVG */}
-                <svg className="flag-icon" viewBox="0 0 900 600" width="30" height="20">
-                  <rect width="900" height="300" fill="#ed2939"/>
-                  <rect y="300" width="900" height="300" fill="#fff"/>
-                  <path fill="#fff" d="M309 68a125 125 0 1 0 0 224 100 100 0 1 1 0-224"/>
-                  <g fill="#fff" transform="translate(309 180)">
-                    <g id="sg-s">
-                      <path id="sg-t" d="M0-40 12-3 0 9-12-3z"/>
-                      <use href="#sg-t" transform="rotate(72)"/>
-                      <use href="#sg-t" transform="rotate(144)"/>
-                      <use href="#sg-t" transform="rotate(216)"/>
-                      <use href="#sg-t" transform="rotate(288)"/>
-                    </g>
-                    <use href="#sg-s" transform="translate(-40 -35)"/>
-                    <use href="#sg-s" transform="translate(40 -35)"/>
-                    <use href="#sg-s" transform="translate(-25 35)"/>
-                    <use href="#sg-s" transform="translate(25 35)"/>
-                  </g>
-                </svg>
+                {/* Singapore Flag Image */}
+                <img src="https://flagcdn.com/w40/sg.png" srcSet="https://flagcdn.com/w80/sg.png 2x" alt="Singapore" className="flag-icon" />
                 <span className="since-text">SINCE 1975</span>
               </div>
               <p>Innovation partner for<br/>advanced cleaning systems.</p>
