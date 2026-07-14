@@ -24,14 +24,14 @@
   display: flex;
   align-items: center;
   z-index: 2;
+  width: 100%;
 }
 
 .hero-content-left {
   max-width: 450px;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 40px;
-  border-radius: 8px;
-  margin-left: 20px;
+  background: transparent;
+  padding: 40px 0;
+  margin-left: 5%;
 }
 
 .hero-subtitle {
@@ -39,6 +39,7 @@
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .text-red {
@@ -58,8 +59,8 @@
 }
 
 .title-underline {
-  width: 50px;
-  height: 3px;
+  width: 40px;
+  height: 2px;
   background-color: #0072CE;
   margin-bottom: 25px;
 }
@@ -88,9 +89,10 @@
 }
 
 .hero-cta-icon {
-  margin-left: 8px;
+  margin-left: 10px;
   font-size: 1.2rem;
   transition: transform 0.3s ease;
+  color: #E31837;
 }
 
 .hero-cta-btn:hover .hero-cta-icon {
@@ -105,39 +107,41 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
+  padding: 30px 0;
   margin-top: 0;
 }
 
 /* Creating the angled colored cutouts */
+/* Left Blue Slant: Top is narrow, bottom is wide -> \ shape on the right edge */
 .brands-logo-band::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 12%;
+  width: 10%;
   height: 100%;
-  background-color: #0A2540; /* matches feature grid below */
-  clip-path: polygon(0 0, 100% 0, 30% 100%, 0 100%);
+  background-color: #0A2540;
+  clip-path: polygon(0 0, 40% 0, 100% 100%, 0 100%);
 }
 
+/* Right Red Slant: Top is wide, bottom is narrow -> \ shape on the left edge */
 .brands-logo-band::after {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
-  width: 12%;
+  width: 10%;
   height: 100%;
-  background-color: #E31837; /* red accent */
-  clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 100%);
+  background-color: #E31837;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
 }
 
 .logo-band-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
-  z-index: 2; /* above the pseudo elements */
+  gap: 120px;
+  z-index: 2;
 }
 
 .logo-band-item {
@@ -199,21 +203,25 @@
 .feature-grid-container {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  align-items: stretch;
+  gap: 0;
 }
 
 .feature-item {
   display: flex;
   align-items: flex-start;
-  gap: 15px;
+  gap: 20px;
+  flex: 1;
+  padding: 0 40px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.feature-item:last-child {
+  border-right: none;
 }
 
 .feature-icon-circle {
   flex-shrink: 0;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,8 +229,9 @@
 }
 
 .feature-icon-circle svg {
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
+  stroke-width: 1.5;
 }
 
 @media (max-width: 1024px) {
@@ -259,5 +268,10 @@
   .feature-grid-container {
     flex-direction: column;
     gap: 30px;
+  }
+
+  .feature-item {
+    border-right: none;
+    padding: 0;
   }
 }
