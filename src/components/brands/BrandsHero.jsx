@@ -10,7 +10,7 @@ const BrandsHero = () => {
       <div className="bh-image-container">
         
         {/* Text Overlay (Positioned carefully to avoid the blue block on the left) */}
-        <div className="bh-text-overlay animate-on-scroll">
+        <div className="bh-text-overlay">
           <h4 className="bh-subtitle text-red">OUR BRANDS</h4>
           <h1 className="bh-title">
             World-Class Brands.<br/>

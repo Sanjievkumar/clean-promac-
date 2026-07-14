@@ -13,10 +13,11 @@
   position: relative;
   width: 100%;
   /* 
-     Match the aspect ratio of the 1536x1024 image EXACTLY
-     so the slants and floor render perfectly at all screen sizes.
+     Bulletproof aspect-ratio hack (1024 / 1536 = 0.6666).
+     This guarantees the container height is exactly proportional 
+     to its width on ALL browsers (including older Safari).
   */
-  aspect-ratio: 1536 / 1024;
+  padding-bottom: 66.666%;
   background-image: url('/assets/brands-hero-bg.png');
   background-size: 100% 100%;
   background-position: center top;
