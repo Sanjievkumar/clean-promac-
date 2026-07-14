@@ -6,10 +6,10 @@ const BrandsHero = () => {
   return (
     <section className="brands-hero">
       
-      {/* Tier 1 & 2: Main Image with Overlays */}
-      <div className="bh-image-container">
+      {/* Tier 1: Main Image */}
+      <div className="bh-main-image">
         
-        {/* Text Overlay (Positioned carefully to avoid the blue block on the left) */}
+        {/* Text Overlay */}
         <div className="bh-text-overlay">
           <h4 className="bh-subtitle text-red">OUR BRANDS</h4>
           <h1 className="bh-title">
@@ -30,9 +30,13 @@ const BrandsHero = () => {
             </svg>
           </Link>
         </div>
+      </div>
 
-        {/* Logo Band Overlay (Positioned exactly over the white trapezoid in the image) */}
-        <div className="bh-logo-overlay">
+      {/* Tier 2: Logo Band (Directly below the image) */}
+      <div className="bh-logo-tier">
+        <div className="bh-blue-slant"></div>
+        
+        <div className="bh-white-center">
           {/* Truvox */}
           <div className="bh-brand-item">
             <img src="/assets/truvox-logo-v2.svg" alt="Truvox" className="bh-logo truvox-logo" />
@@ -59,6 +63,8 @@ const BrandsHero = () => {
             </div>
           </div>
         </div>
+
+        <div className="bh-red-slant"></div>
       </div>
 
       {/* Tier 3: Dark Blue Feature Grid (Directly below the image) */}
