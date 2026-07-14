@@ -150,12 +150,8 @@
   flex-direction: column;
   gap: 0;
   width: 80%;
-  padding: 2rem;
-  background: rgba(11, 19, 43, 0.4);
-  backdrop-filter: blur(20px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  padding: 0; /* Removed padding */
+  background: transparent; /* Removed background box */
 }
 
 .process-step {
