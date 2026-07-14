@@ -102,15 +102,18 @@
 .bh-logo-tier {
   position: relative;
   display: flex;
-  height: 150px; /* Fixed height for the logo band */
+  height: 160px; /* Slightly taller */
   background-color: #FFFFFF;
+  margin-top: -60px; /* Overlaps the bottom of the hero image */
+  z-index: 10;
+  box-shadow: 0 -10px 30px rgba(0,0,0,0.05); /* Optional subtle shadow to separate from floor */
 }
 
 .bh-blue-slant {
-  flex: 0 0 20%;
+  flex: 0 0 15%; /* 15% width */
   background-color: #0A2540;
-  /* Slants the right edge: top is wider, bottom is narrower */
-  clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+  /* Slants the right edge: top is NARROWER, bottom is WIDER. Right edge goes \ */
+  clip-path: polygon(0 0, 40% 0, 100% 100%, 0 100%);
 }
 
 .bh-white-center {
@@ -122,38 +125,37 @@
 }
 
 .bh-red-slant {
-  flex: 0 0 20%;
+  flex: 0 0 15%; /* 15% width */
   background-color: #E31837;
-  /* Slants the left edge: top is narrower, bottom is wider */
-  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+  /* Slants the left edge: top is WIDER, bottom is NARROWER. Left edge goes / */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
 }
 
 .bh-logos-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 120px;
+  justify-content: space-between; /* Space out the two brand blocks */
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px; /* Contain the width so they don't stretch too far */
   padding: 0 20px;
 }
 
 .bh-brand-item {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 25px; /* More space between logo and text */
 }
 
 .bh-logo {
   object-fit: contain;
 }
 
-.truvox-logo { height: 40px; }
-.klenco-logo { height: 65px; }
+.truvox-logo { height: 45px; }
+.klenco-logo { height: 75px; }
 
 .bh-divider {
   width: 1px;
-  height: 50px;
+  height: 60px;
   background-color: #E0E0E0;
 }
 
@@ -165,27 +167,28 @@
 .bh-flag-row {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   margin-bottom: 5px;
 }
 
 .bh-flag {
-  width: 20px;
+  width: 24px;
   height: auto;
   border-radius: 2px;
+  border: 1px solid rgba(0,0,0,0.1);
 }
 
 .bh-since {
-  font-size: 0.85rem;
-  font-weight: 700;
+  font-size: 0.95rem;
+  font-weight: 800;
   color: #0A2540;
 }
 
 .bh-brand-info p {
   margin: 0;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #666;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 
@@ -194,7 +197,7 @@
 ------------------------------ */
 .bh-feature-tier {
   background-color: #0A2540;
-  padding: 40px 0;
+  padding: 50px 0; /* Slightly more vertical padding */
 }
 
 .bh-feature-grid {
@@ -202,19 +205,21 @@
   justify-content: center;
   align-items: stretch;
   gap: 0;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .bh-feature-col {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: 25px; /* More space between icon and text */
   flex: 1;
-  padding: 0 40px;
+  padding: 0 50px; /* More horizontal padding */
 }
 
 .bh-feature-center-col {
-  border-left: 1px solid rgba(255, 255, 255, 0.15);
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid rgba(255, 255, 255, 0.1); /* Slightly fainter border */
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .bh-icon-circle {
@@ -226,24 +231,24 @@
 }
 
 .bh-icon-circle svg {
-  width: 32px;
-  height: 32px;
-  stroke-width: 1.5;
+  width: 45px; /* Bigger icons */
+  height: 45px;
+  stroke-width: 1.2; /* Thinner, more elegant lines */
 }
 
 .bh-feature-text h5 {
   color: #FFFFFF;
-  font-size: 0.85rem;
-  font-weight: 700;
-  margin-bottom: 5px;
+  font-size: 1.05rem; /* Bigger title */
+  font-weight: 800; /* Bolder */
+  margin-bottom: 8px;
   letter-spacing: 0.5px;
   margin-top: 0;
 }
 
 .bh-feature-text p {
   color: #A0B3C6;
-  font-size: 0.8rem;
-  line-height: 1.4;
+  font-size: 0.95rem; /* Bigger text */
+  line-height: 1.5;
   margin: 0;
 }
 
