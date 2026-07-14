@@ -7,20 +7,31 @@
 }
 
 /* -----------------------------
+   Hero Animations
+------------------------------ */
+@keyframes heroFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -----------------------------
    TIER 1 & 2: Background Image
 ------------------------------ */
 .bh-image-container {
   position: relative;
   width: 100%;
-  /* 
-     Bulletproof aspect-ratio hack (1024 / 1536 = 0.6666).
-     This guarantees the container height is exactly proportional 
-     to its width on ALL browsers (including older Safari).
-  */
-  padding-bottom: 66.666%;
+  height: 75vh; /* Crop the ceiling to remove the lengthy white space */
+  min-height: 600px;
+  max-height: 800px; /* Prevent it from getting too tall on giant screens */
   background-image: url('/assets/brands-hero-bg.png');
-  background-size: 100% 100%;
-  background-position: center top;
+  background-size: cover;
+  background-position: center bottom;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -30,11 +41,12 @@
 ------------------------------ */
 .bh-text-overlay {
   position: absolute;
-  /* Adjust based on the white wall space in the image */
-  top: 25%;
-  left: 15%; /* Safely avoids the dark blue block on the far left */
+  top: 15%; /* Moved up slightly since the ceiling is cropped */
+  left: 15%; 
   width: 400px;
   max-width: 40%;
+  opacity: 0;
+  animation: heroFadeInUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 .bh-subtitle {
@@ -100,27 +112,31 @@
 /* -----------------------------
    Logo Band Overlay
 ------------------------------ */
-/*
-   The background image already has the blue slant on the left,
-   the white trapezoid in the middle, and the red slant on the right.
-   We just need to place this invisible div over the white trapezoid!
-*/
 .bh-logo-overlay {
   position: absolute;
-  bottom: 0; /* Align to the bottom of the image */
-  left: 18%; /* Inset to avoid the blue slant */
-  right: 18%; /* Inset to avoid the red slant */
-  height: 16%; /* The white trapezoid is roughly the bottom 16% of the image */
+  bottom: 0; 
+  left: 18%; 
+  right: 18%; 
+  /* 10.6vw exactly matches the height of the white trapezoid in the background image when using background-size: cover */
+  height: 10.6vw; 
+  min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 4%;
+  opacity: 0;
+  animation: heroFadeInUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s forwards;
 }
 
 .bh-brand-item {
   display: flex;
   align-items: center;
   gap: 20px;
+  transition: transform 0.3s ease;
+}
+
+.bh-brand-item:hover {
+  transform: translateY(-5px);
 }
 
 .bh-logo {
@@ -195,7 +211,14 @@
   gap: 25px;
   flex: 1;
   padding: 0 50px;
+  opacity: 0;
+  animation: heroFadeInUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
+
+/* Stagger the feature grid animations */
+.bh-feature-col:nth-child(1) { animation-delay: 0.5s; }
+.bh-feature-col:nth-child(2) { animation-delay: 0.7s; }
+.bh-feature-col:nth-child(3) { animation-delay: 0.9s; }
 
 .bh-feature-center-col {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
@@ -208,6 +231,11 @@
   justify-content: center;
   align-items: center;
   color: #FFFFFF;
+  transition: transform 0.5s ease;
+}
+
+.bh-feature-col:hover .bh-icon-circle {
+  transform: scale(1.1) rotate(5deg);
 }
 
 .bh-icon-circle svg {
@@ -246,9 +274,8 @@
 
 @media (max-width: 768px) {
   .bh-image-container {
-    aspect-ratio: auto;
-    height: 80vh;
-    background-size: cover;
+    height: 60vh;
+    min-height: 500px;
   }
   
   .bh-text-overlay {
