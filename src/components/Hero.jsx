@@ -1,78 +1,79 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => {
   return (
-    <section className="hero">
-      <div className="container hero-container">
-        
-        {/* Left Content */}
-        <div className="hero-content">
-          <span className="subtitle text-red">CLEANER SPACES, STRONGER IMPACT.</span>
-          <h1 className="title">
-            Powering Clean Environments. <br/>
-            <span className="text-red">Elevating Standards.</span>
-          </h1>
-          <p className="description text-gray">
-            Advanced cleaning equipment and solutions that help businesses maintain cleaner, safer and more efficient environments.
-          </p>
+    <section className="home-hero">
+      <div className="home-hero-bg-container">
+        <div className="container home-hero-content">
           
-          <div className="hero-actions">
-            <button className="btn btn-primary">
-              Explore Products <span>&rarr;</span>
-            </button>
-            <button className="btn btn-outline hero-btn-secondary">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
-              Talk to an Expert
-            </button>
+          {/* Text Content */}
+          <div className="home-hero-text">
+            <span className="home-hero-subtitle text-navy">INDUSTRIAL CLEANING SOLUTIONS</span>
+            <h1 className="home-hero-title text-navy">
+              BUILT FOR <br/>
+              <span className="text-red">PERFORMANCE.</span>
+            </h1>
+            <p className="home-hero-desc text-gray">
+              Professional cleaning equipment for industries, healthcare, hospitality, commercial spaces, and institutions.
+            </p>
+            
+            <div className="home-hero-actions">
+              <button className="btn btn-primary">
+                Explore Products <span>&rarr;</span>
+              </button>
+              <button className="btn btn-outline hero-btn-secondary">
+                Talk to Our Experts <span>&rarr;</span>
+              </button>
+            </div>
           </div>
+          
+        </div>
+      </div>
 
-          <div className="hero-stats">
-            <div className="stat-item">
-              <div className="stat-icon">🌍</div>
-              <div className="stat-text">
-                <strong>20+</strong>
-                <span>Global Brands</span>
-              </div>
+      {/* Floating Features Bar */}
+      <div className="container">
+        <div className="home-features-bar">
+          <div className="home-feature-item">
+            <div className="home-feature-icon">
+              <img src="/assets/klenco-logo.png" alt="Icon" style={{width: '32px', height: '32px', objectFit: 'contain', opacity: 0}} />
+              {/* Using CSS masks or SVGs for icons in CSS or we can just use emoji placeholders if not provided */}
+              <span style={{position: 'absolute', fontSize: '1.8rem'}}>🎖️</span>
             </div>
-            <div className="stat-item">
-              <div className="stat-icon">🤝</div>
-              <div className="stat-text">
-                <strong>1000+</strong>
-                <span>Happy Clients</span>
-              </div>
+            <div className="home-feature-text">
+              <strong>WORLD-CLASS</strong>
+              <span>EQUIPMENT</span>
             </div>
-            <div className="stat-item">
-              <div className="stat-icon">⚙️</div>
-              <div className="stat-text">
-                <strong>25,000+</strong>
-                <span>Machines Deployed</span>
-              </div>
+          </div>
+          <div className="home-feature-item">
+            <div className="home-feature-icon">
+              <span style={{position: 'absolute', fontSize: '1.8rem'}}>⚙️</span>
             </div>
-            <div className="stat-item">
-              <div className="stat-icon">🎧</div>
-              <div className="stat-text">
-                <strong>24/7</strong>
-                <span>Service Support</span>
-              </div>
+            <div className="home-feature-text">
+              <strong>ENGINEERED FOR</strong>
+              <span>RELIABILITY</span>
+            </div>
+          </div>
+          <div className="home-feature-item">
+            <div className="home-feature-icon">
+              <span style={{position: 'absolute', fontSize: '1.8rem'}}>🎧</span>
+            </div>
+            <div className="home-feature-text">
+              <strong>EXPERT SUPPORT</strong>
+              <span>&amp; SERVICE</span>
+            </div>
+          </div>
+          <div className="home-feature-item">
+            <div className="home-feature-icon">
+              <span style={{position: 'absolute', fontSize: '1.8rem'}}>🛡️</span>
+            </div>
+            <div className="home-feature-text">
+              <strong>TRUSTED BY</strong>
+              <span>INDUSTRIES</span>
             </div>
           </div>
         </div>
-
-        {/* Right Content / Image */}
-        <div className="hero-visual">
-          <div className="visual-bg-arc"></div>
-          <div className="image-container">
-            <img src="/assets/hero.png" alt="Industrial Cleaning Equipment" className="hero-image" />
-          </div>
-          <button className="watch-video-btn">
-            <span className="play-icon">▶</span>
-            <span className="video-text">Watch<br/>Video</span>
-          </button>
-        </div>
-
       </div>
     </section>
   );

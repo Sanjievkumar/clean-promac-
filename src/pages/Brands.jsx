@@ -24,8 +24,11 @@ const Brands = () => {
           { icon: '🛡️', title: 'Built to', subtitle: 'Last' },
           { icon: '🌱', title: 'Sustainable', subtitle: 'by Design' }
         ]}
-        imageSrc="/assets/product_4.png"
-        imageAlt="Truvox Floorcare Machine"
+        images={[
+          "/assets/truvox-mwpro-440.png",
+          "/assets/Orbis-200-Website.png",
+          "/assets/VBUII-website.png"
+        ]}
         buttonText="Explore Truvox"
         exploreLink="/brands/truvox"
         isReversed={false}
@@ -45,8 +48,11 @@ const Brands = () => {
           { icon: '🛋️', title: 'Ergonomic', subtitle: 'Design' },
           { icon: '🌐', title: 'Trusted', subtitle: 'Worldwide' }
         ]}
-        imageSrc="/assets/product_2.png"
-        imageAlt="Klenco Cleaning Cart"
+        images={[
+          "/assets/VA20-Website.png",
+          "/assets/VA40-Website.png",
+          "/assets/VDMU-Website.png"
+        ]}
         buttonText="Explore Klenco"
         exploreLink="/brands/klenco"
         isReversed={true}

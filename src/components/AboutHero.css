@@ -1,180 +1,501 @@
-.about-hero {
-  padding: 8rem 0 6rem 0;
-  background-color: var(--color-gray-50);
+/* ==========================================================================
+   ABOUT HERO SECTION - COMPLEX GRAPHIC REPLICA
+   ========================================================================== */
+
+.about-hero-section {
+  position: relative;
+  background-color: #FAFAFA;
   overflow: hidden;
-  position: relative;
+  padding: 100px 0 150px 0;
+  /* Faint dot pattern background */
+  background-image: radial-gradient(#E0E0E0 1px, transparent 1px);
+  background-size: 20px 20px;
 }
 
-/* Subtle glowing background mesh */
-.about-hero::before {
-  content: '';
+/* -----------------------------
+   Background Elements
+------------------------------ */
+.ah-bottom-bg {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at 0% 0%, rgba(230, 57, 70, 0.05) 0%, transparent 50%),
-              radial-gradient(circle at 100% 100%, rgba(8, 12, 22, 0.05) 0%, transparent 50%);
-  pointer-events: none;
-  z-index: 0;
-}
-
-.about-hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 4rem;
-  align-items: center;
-  position: relative;
+  right: 0;
+  height: 250px;
+  background-color: #0A2540;
   z-index: 1;
 }
 
-.about-hero-content {
+.ah-world-map-bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 400px;
+  background-image: url('/assets/dotted-map.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+  z-index: 2;
+  opacity: 0.7;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 30%);
+  mask-image: linear-gradient(to right, transparent, black 30%);
+}
+
+/* -----------------------------
+   Container & Grid
+------------------------------ */
+.ah-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 5;
+}
+
+.ah-grid {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 700px;
+  gap: 50px;
 }
 
-.about-hero .subtitle {
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
+/* -----------------------------
+   Left Text Content
+------------------------------ */
+.ah-text-content {
+  flex: 0 0 45%;
+  max-width: 600px;
+  padding-bottom: 60px; /* Ensure button is visible above overlap */
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
 }
 
-.hero-title {
-  font-size: 4.5rem;
-  font-weight: 900;
-  line-height: 1.05;
-  color: var(--color-navy);
-  margin-bottom: 1.5rem;
-  letter-spacing: -0.03em;
+.ah-subtitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
-.hero-title .text-red {
-  background: linear-gradient(135deg, var(--color-red) 0%, #FF4D5A 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.text-red {
+  color: #E31837;
 }
 
-.hero-desc {
-  font-size: 1.2rem;
-  color: var(--color-gray-700);
+.ah-underline-small {
+  width: 40px;
+  height: 3px;
+  background-color: #E31837;
+  margin-bottom: 30px;
+}
+
+.ah-title {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #0A2540;
+  margin-bottom: 30px;
+}
+
+.ah-divider {
+  width: 60px;
+  height: 2px;
+  background-color: #0A2540;
+  margin-bottom: 30px;
+}
+
+.ah-desc {
+  font-size: 1.25rem;
   line-height: 1.6;
-  margin-bottom: 3rem;
-  max-width: 90%;
+  color: #4A5568;
+  margin-bottom: 50px;
+  font-weight: 400;
 }
 
-.hero-actions {
-  display: flex;
-  gap: 1.5rem;
+/* Custom Button */
+.ah-cta-btn {
+  display: inline-flex;
   align-items: center;
-}
-
-.btn-video {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-family: var(--font-family-heading);
-  font-weight: 600;
-  color: var(--color-navy);
+  gap: 15px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #0A2540;
+  text-decoration: none;
+  letter-spacing: 0.5px;
   transition: all 0.3s ease;
 }
 
-.play-icon-outline {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
+.ah-cta-icon-circle {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  border: 1.5px solid var(--color-gray-300);
-  color: var(--color-red);
-  font-size: 1rem;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  box-shadow: var(--shadow-sm);
-}
-
-.btn-video:hover {
-  transform: translateY(-2px);
-}
-
-.btn-video:hover .play-icon-outline {
-  background: linear-gradient(135deg, var(--color-red) 0%, #FF4D5A 100%);
-  color: var(--color-white);
-  border-color: transparent;
-  box-shadow: 0 8px 20px rgba(230, 57, 70, 0.3);
-}
-
-.about-hero-visual {
-  position: relative;
-  height: 600px;
+  border: 2px solid #E31837;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  color: #E31837;
+  transition: all 0.3s ease;
 }
 
-.red-accent-curve {
-  position: absolute;
-  left: -15%;
-  top: 10%;
-  width: 70%;
-  height: 80%;
-  background: linear-gradient(135deg, var(--color-red) 0%, #FF4D5A 100%);
-  border-radius: 50% 0 0 50%;
-  z-index: 1;
-  box-shadow: var(--shadow-xl);
+.ah-cta-btn:hover {
+  color: #E31837;
 }
 
-.hero-image-wrapper {
+.ah-cta-btn:hover .ah-cta-icon-circle {
+  background-color: #E31837;
+  color: #FFF;
+  transform: translateX(5px);
+}
+
+/* -----------------------------
+   Right Complex Graphic
+------------------------------ */
+.ah-graphic-container {
+  flex: 0 0 55%;
   position: relative;
-  width: 95%;
-  height: 90%;
-  border-radius: var(--radius-xl) 0 0 var(--radius-xl);
-  overflow: hidden;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeScale 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s forwards;
+}
+
+/* Connecting SVG Lines */
+.ah-connecting-lines {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Outer Rings */
+.ah-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
   z-index: 2;
-  box-shadow: var(--shadow-2xl);
-  transform: perspective(1000px) rotateY(-5deg);
-  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.hero-image-wrapper:hover {
-  transform: perspective(1000px) rotateY(0deg) scale(1.02);
+.ah-ring-outer {
+  width: 650px;
+  height: 650px;
+  border: 2px solid transparent;
+  /* Top-Right Red, Bottom-Left Blue */
+  border-top-color: #E31837;
+  border-right-color: #E31837;
+  border-left-color: #0A2540;
+  border-bottom-color: #0A2540;
+  opacity: 0.2;
 }
 
-.about-hero-img {
+.ah-ring-inner {
+  width: 580px;
+  height: 580px;
+  border: 1px solid #D0D0D0;
+}
+
+/* Dots on Rings */
+.ah-ring-dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  z-index: 6;
+}
+
+.dot-1 { top: 15%; left: 25%; background: #E31837; }
+.dot-2 { top: 10%; right: 30%; background: #E31837; }
+.dot-3 { bottom: 10%; left: 30%; background: #0A2540; }
+.dot-4 { bottom: 20%; right: 25%; background: #0A2540; }
+.dot-5 { top: 50%; left: -5px; background: #E31837; }
+.dot-6 { top: 50%; right: -5px; background: #0A2540; }
+
+/* Masked Arcs */
+.ah-arc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 3;
+}
+
+/* Blue Skyscraper Arc (Left half) */
+.ah-arc-blue {
+  width: 520px;
+  height: 520px;
+  -webkit-mask-image: radial-gradient(circle, transparent 180px, black 181px);
+  mask-image: radial-gradient(circle, transparent 180px, black 181px);
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+
+/* Red Skyscraper Arc (Top-Right Quarter) */
+.ah-arc-red {
+  width: 560px;
+  height: 560px;
+  -webkit-mask-image: radial-gradient(circle, transparent 195px, black 196px);
+  mask-image: radial-gradient(circle, transparent 195px, black 196px);
+  clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+}
+
+.ah-arc-image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ah-arc-image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* Rotate slightly for dynamic feel */
+  transform: rotate(-15deg) scale(1.2);
 }
 
-@media (max-width: 992px) {
-  .about-hero-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-  .about-hero-visual {
-    height: 400px;
-  }
-  .red-accent-curve {
-    border-radius: 50%;
-    left: 10%;
-    top: -10%;
-    width: 80%;
-    height: 80%;
-  }
-  .hero-image-wrapper {
-    width: 100%;
-    border-radius: 20px;
-  }
+.ah-arc-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  mix-blend-mode: multiply;
 }
 
-@media (max-width: 576px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
-  .hero-actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .about-hero-visual {
-    height: 300px;
-  }
+.blue-overlay { background: rgba(10, 37, 64, 0.85); }
+.red-overlay { background: rgba(227, 24, 55, 0.85); }
+
+/* Central CleanPromac Circle */
+.ah-center-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 320px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+}
+
+.ah-center-circle:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.15);
+}
+
+.ah-logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.ah-cleanpromac-center-logo-img {
+  width: 85%;
+  height: auto;
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.ah-center-divider {
+  width: 40px;
+  height: 2px;
+  background-color: #E31837;
+  margin: 0 auto 20px auto;
+}
+
+.ah-core-values {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #0A2540;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.ah-core-values span { 
+  margin: 0 8px; 
+  color: #E31837;
+}
+
+/* Overlapping Brand Circles */
+.ah-brand-container {
+  position: absolute;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 160px;
+}
+
+.ah-brand-truvox {
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -80px);
+}
+
+.ah-brand-klenco {
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -80px);
+}
+
+.ah-brand-circle {
+  width: 160px;
+  height: 160px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 25px;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.ah-brand-circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+}
+
+.ah-brand-logo {
+  width: 80%;
+  height: auto;
+}
+
+.klenco-logo {
+  width: 70%;
+}
+
+.ah-brand-text {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #0A2540;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  margin: 0 0 12px 0;
+}
+
+.ah-brand-divider {
+  width: 30px;
+  height: 3px;
+}
+
+.blue-line {
+  background-color: #0072CE;
+}
+
+.red-line {
+  background-color: #E31837;
+}
+
+/* -----------------------------
+   Bottom Feature Grid
+------------------------------ */
+.ah-feature-grid-wrapper {
+  position: relative;
+  z-index: 20;
+  margin-top: -80px; /* Overlap the blue footer */
+}
+
+.ah-feature-card {
+  background: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  opacity: 0;
+  animation: fadeUp 1s ease 0.6s forwards;
+}
+
+.ah-feature-col {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 30px;
+  border-right: 1px solid #EAEAEA;
+}
+
+.ah-feature-col:last-child {
+  border-right: none;
+}
+
+.ah-feature-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.ah-feature-card:hover .ah-feature-icon {
+  transform: scale(1.1);
+}
+
+.red-bg { background-color: #E31837; }
+.blue-bg { background-color: #0072CE; }
+.dark-bg { background-color: #0A2540; }
+
+.ah-feature-text h5 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #0A2540;
+  margin: 0 0 5px 0;
+}
+
+.ah-feature-text p {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* -----------------------------
+   Animations
+------------------------------ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeScale {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* -----------------------------
+   Responsive
+------------------------------ */
+@media (max-width: 1200px) {
+  .ah-grid { flex-direction: column; text-align: center; gap: 80px; }
+  .ah-text-content { max-width: 100%; }
+  .ah-cta-btn { margin: 0 auto; }
+  .ah-feature-card { flex-wrap: wrap; gap: 30px; padding: 30px; }
+  .ah-feature-col { flex: 0 0 45%; border-right: none; }
+}
+
+@media (max-width: 768px) {
+  .ah-title { font-size: 2.5rem; }
+  .ah-graphic-container { width: 100%; transform: scale(0.6); margin-top: -100px; margin-bottom: -100px; }
+  .ah-feature-col { flex: 0 0 100%; }
 }

@@ -13,8 +13,7 @@ const BrandCard = ({
   subtitle, 
   description, 
   features, 
-  imageSrc, 
-  imageAlt, 
+  images, 
   buttonText, 
   exploreLink,
   isReversed,
@@ -89,7 +88,18 @@ const BrandCard = ({
           {/* Image Side */}
           <div className="brand-card-visual" style={{ backgroundColor: `${accentColor}15` }}>
             <div className="visual-accent-shape" style={{ backgroundColor: accentColor }}></div>
-            <img src={imageSrc} alt={imageAlt} className="brand-product-img" />
+            {images && images.length > 0 ? (
+              <div className="brand-product-collage">
+                {images.map((imgSrc, idx) => (
+                  <img 
+                    key={idx} 
+                    src={imgSrc} 
+                    alt={`${brandName} Product ${idx + 1}`} 
+                    className={`collage-img collage-img-${idx + 1}`} 
+                  />
+                ))}
+              </div>
+            ) : null}
           </div>
 
         </div>

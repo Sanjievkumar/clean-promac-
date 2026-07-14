@@ -35,14 +35,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="container navbar-container">
           <Link to="/" className="logo">
-            <span className="logo-icon">
-              {/* Simple placeholder icon, replace with actual logo */}
-              <div className="logo-circle"></div>
-            </span>
-            <div className="logo-text">
-              <strong>CleanPromac</strong>
-              <small>Professional Cleaning Solutions</small>
-            </div>
+            <img src="/assets/clean-promac-logo.jpg" alt="Clean Promac" className="navbar-logo-img" />
           </Link>
 
           <div className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>

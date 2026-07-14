@@ -74,13 +74,45 @@ const ServicesWhyPartner = () => {
             {/* Background red geometric shape */}
             <div className="why-visual-bg"></div>
 
-            {/* Angled Masked Image */}
-            <div className="why-image-wrapper">
-              <img 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
-                alt="Modern Office" 
-                className="why-img"
-              />
+            {/* Abstract Geometric Design with Process Diagram */}
+            <div className="why-image-wrapper abstract-layout">
+              <div className="abstract-shape shape-1"></div>
+              <div className="abstract-shape shape-2"></div>
+              <div className="abstract-shape shape-3"></div>
+              
+              <div className="process-diagram">
+                <div className="process-step">
+                  <div className="process-icon">1</div>
+                  <div className="process-info">
+                    <h5>Consultation</h5>
+                    <p>Understanding your specific facility needs.</p>
+                  </div>
+                </div>
+                <div className="process-connector"></div>
+                <div className="process-step">
+                  <div className="process-icon">2</div>
+                  <div className="process-info">
+                    <h5>Solution Design</h5>
+                    <p>Tailoring the perfect equipment & plan.</p>
+                  </div>
+                </div>
+                <div className="process-connector"></div>
+                <div className="process-step">
+                  <div className="process-icon">3</div>
+                  <div className="process-info">
+                    <h5>Implementation</h5>
+                    <p>Seamless setup and operator training.</p>
+                  </div>
+                </div>
+                <div className="process-connector"></div>
+                <div className="process-step">
+                  <div className="process-icon">4</div>
+                  <div className="process-info">
+                    <h5>Ongoing Support</h5>
+                    <p>Dedicated maintenance & parts supply.</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Floating Stats Card */}

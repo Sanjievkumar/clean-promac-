@@ -26,11 +26,11 @@
 .bh-image-container {
   position: relative;
   width: 100%;
-  height: 80vh; 
-  min-height: 650px;
-  max-height: 850px;
+  aspect-ratio: 1536 / 1024; /* Match EXACT image dimensions */
+  min-height: 500px;
+  max-height: 1200px; /* Allow full height expansion on 1080p+ screens */
   background-image: url('/assets/brands-hero-bg.png');
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -51,11 +51,10 @@
 ------------------------------ */
 .bh-text-overlay-wrapper {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 0;
   right: 0;
   transform: translateY(-50%);
-  margin-top: -30px; /* Lift slightly to clear the logos below */
 }
 
 .bh-text-content {
@@ -66,9 +65,9 @@
 }
 
 .bh-subtitle {
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
@@ -77,24 +76,26 @@
 .text-gray { color: #666; }
 
 .bh-title {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.15;
   color: #0A2540;
   margin-bottom: 25px;
+  letter-spacing: -0.5px;
 }
 
 .bh-underline {
-  width: 50px;
+  width: 40px;
   height: 3px;
   background-color: #0072CE;
-  margin-bottom: 15px; /* Tighter spacing matching target */
+  margin-bottom: 25px;
 }
 
 .bh-desc {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.6;
   margin-bottom: 40px;
+  color: #4A5568;
 }
 
 /* Button */
@@ -106,14 +107,14 @@
 }
 
 .bh-cta-btn {
-  font-weight: 700;
-  font-size: 1rem;
+  font-weight: 800;
+  font-size: 0.9rem;
   color: #000;
   text-decoration: none;
   border-bottom: 2px solid #E31837;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
   transition: all 0.3s ease;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 .bh-cta-arrow {
@@ -138,7 +139,7 @@
   bottom: 0; 
   left: 0; 
   right: 0; 
-  height: 10.6vw; 
+  height: 11%; /* Scale with aspect ratio to fit perfectly inside the white band of the bg image */
   min-height: 80px;
   display: flex;
   align-items: center;
@@ -146,8 +147,9 @@
 
 .bh-logo-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 100px; /* Brings Truvox, Divider, and Klenco closer in the center */
   opacity: 0;
   animation: heroFadeInUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s forwards;
 }

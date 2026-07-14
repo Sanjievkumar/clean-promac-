@@ -3,7 +3,6 @@ import Hero from '../components/Hero';
 import BrandsSection from '../components/BrandsSection';
 import FeaturesSection from '../components/FeaturesSection';
 import StatsBanner from '../components/StatsBanner';
-import FeaturedProducts from '../components/FeaturedProducts';
 import IndustriesGrid from '../components/IndustriesGrid';
 import CoreValues from '../components/CoreValues';
 import CtaSection from '../components/CtaSection';
@@ -15,8 +14,6 @@ const Home = () => {
       <BrandsSection />
       
       <CoreValues />
-
-      <FeaturedProducts />
       
       <FeaturesSection />
 

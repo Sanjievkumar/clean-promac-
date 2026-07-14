@@ -17,11 +17,6 @@ const IndustryCard = ({ industry }) => {
         <div className="industry-overlay"></div>
         
         <div className="industry-content">
-          <div className="industry-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-            </svg>
-          </div>
           <h3 className="industry-name">{industry.name}</h3>
         </div>
       </div>

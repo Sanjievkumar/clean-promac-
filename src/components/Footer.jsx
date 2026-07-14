@@ -12,15 +12,9 @@ const Footer = () => {
       <div className="container">
         <div className="footer-grid">
           
-          <div className="footer-col brand-col">
+          <div className="footer-brand">
             <Link to="/" className="logo footer-logo">
-              <span className="logo-icon">
-                <div className="logo-circle"></div>
-              </span>
-              <div className="logo-text">
-                <strong className="text-white">CleanPromac</strong>
-                <small className="text-gray-300">Professional Cleaning Solutions</small>
-              </div>
+              <img src="/assets/clean-promac-logo.jpg" alt="Clean Promac" className="footer-logo-img" />
             </Link>
             <p className="footer-desc">
               Providing professional cleaning equipment, solutions and support to help your facilities cleaner, safer and more efficient.

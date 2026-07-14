@@ -64,50 +64,10 @@
   gap: 1rem;
 }
 
-.logo-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo-circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, var(--color-red), #990000);
-  box-shadow: 0 4px 10px rgba(230, 57, 70, 0.3);
-  position: relative;
-}
-
-.logo-circle::after {
-  content: '';
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  right: 4px;
-  bottom: 4px;
-  background-color: var(--color-white);
-  border-radius: 50%;
-}
-
-.logo-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.logo-text strong {
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  color: var(--color-navy);
-  line-height: 1.1;
-}
-
-.logo-text small {
-  font-size: 0.65rem;
-  color: var(--color-gray-500);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+.navbar-logo-img {
+  height: 95px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-links {
