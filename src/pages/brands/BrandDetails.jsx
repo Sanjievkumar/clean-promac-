@@ -66,7 +66,9 @@ const BrandDetails = () => {
             {brand.categories.map((category) => (
               <Link to={`/brands/${brand.id}/${category.id}`} className="category-card" key={category.id}>
                 <div className="category-img-wrapper">
-                  <img src={category.products?.[0]?.image || category.image} alt={category.name} className="category-img" />
+                  <div className="category-img-inner">
+                    <img src={category.products?.[0]?.image || category.image} alt={category.name} className="category-img" />
+                  </div>
                   <div className="category-icon">{category.icon}</div>
                 </div>
                 <div className="category-content">

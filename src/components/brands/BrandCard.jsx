@@ -91,12 +91,13 @@ const BrandCard = ({
             {images && images.length > 0 ? (
               <div className="brand-product-collage">
                 {images.map((imgSrc, idx) => (
-                  <img 
-                    key={idx} 
-                    src={imgSrc} 
-                    alt={`${brandName} Product ${idx + 1}`} 
-                    className={`collage-img collage-img-${idx + 1}`} 
-                  />
+                  <div key={idx} className={`collage-img-wrapper collage-img-wrapper-${idx + 1}`}>
+                    <img 
+                      src={imgSrc} 
+                      alt={`${brandName} Product ${idx + 1}`} 
+                      className="collage-img" 
+                    />
+                  </div>
                 ))}
               </div>
             ) : null}

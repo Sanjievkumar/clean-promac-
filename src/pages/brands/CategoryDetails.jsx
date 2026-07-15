@@ -162,7 +162,9 @@ const CategoryDetails = () => {
                 key={product.id}
               >
                 <div className="product-card-img-wrapper">
-                  <img src={product.image} alt={product.name} className="product-card-img" />
+                  <div className="product-card-img-inner">
+                    <img src={product.image} alt={product.name} className="product-card-img" />
+                  </div>
                 </div>
                 <div className="product-card-body">
                   {product.modelCode && <span className="product-model-code">{product.modelCode}</span>}
