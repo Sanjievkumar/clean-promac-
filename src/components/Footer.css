@@ -26,9 +26,9 @@
   height: 60px;
   width: auto;
   object-fit: contain;
-  background-color: #fff;
-  padding: 10px 15px;
-  border-radius: 8px;
+  /* Convert to solid white to blend seamlessly into dark footer without a box */
+  filter: grayscale(1) invert(1) brightness(5);
+  mix-blend-mode: screen;
 }
 
 .text-white {
