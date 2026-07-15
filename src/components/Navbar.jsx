@@ -25,7 +25,7 @@ const Navbar = () => {
             </svg>
             <span>+01 44 1234 5678</span>
           </div>
-          <Link to="/quote" className="btn btn-primary btn-sm topbar-cta">
+          <Link to="/contact" className="btn btn-primary btn-sm topbar-cta">
             Request a Quote <span>&rarr;</span>
           </Link>
         </div>

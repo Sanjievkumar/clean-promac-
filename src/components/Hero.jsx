@@ -20,12 +20,12 @@ const Hero = () => {
             </p>
             
             <div className="home-hero-actions">
-              <button className="btn btn-primary">
+              <Link to="/brands" className="btn btn-primary">
                 Explore Products <span>&rarr;</span>
-              </button>
-              <button className="btn btn-outline hero-btn-secondary">
+              </Link>
+              <Link to="/contact" className="btn btn-outline hero-btn-secondary">
                 Talk to Our Experts <span>&rarr;</span>
-              </button>
+              </Link>
             </div>
           </div>
           

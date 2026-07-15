@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './AboutCta.css';
 
 const AboutCta = () => {
@@ -22,10 +23,10 @@ const AboutCta = () => {
                 Talk to our experts and discover how we can elevate your cleaning experience.
               </p>
               <div className="about-cta-actions">
-                <button className="btn btn-primary">Schedule a Consultation &rarr;</button>
-                <button className="btn btn-outline about-btn-outline">
+                <Link to="/contact" className="btn btn-primary">Schedule a Consultation &rarr;</Link>
+                <Link to="/contact" className="btn btn-outline about-btn-outline">
                   <span className="phone-icon-small">📞</span> Talk to an Expert
-                </button>
+                </Link>
               </div>
             </div>
           </div>

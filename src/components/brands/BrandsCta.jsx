@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './BrandsCta.css';
 
 const BrandsCta = () => {
@@ -16,9 +17,9 @@ const BrandsCta = () => {
             </p>
           </div>
           <div className="cta-action">
-            <button className="btn btn-primary cta-btn">
+            <Link to="/contact" className="btn btn-primary cta-btn">
               Book a Free Demo <span>&rarr;</span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
