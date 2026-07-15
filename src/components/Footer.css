@@ -26,8 +26,8 @@
   height: 60px;
   width: auto;
   object-fit: contain;
-  /* Convert to solid white to blend seamlessly into dark footer without a box */
-  filter: grayscale(1) invert(1) brightness(5);
+  /* Crush JPEG artifacts to pure black so mix-blend-mode screen makes it perfectly transparent */
+  filter: grayscale(1) invert(1) contrast(1000%);
   mix-blend-mode: screen;
 }
 

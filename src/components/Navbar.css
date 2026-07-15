@@ -37,16 +37,13 @@
 
 /* Main Navbar */
 .navbar {
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background-color: #ffffff;
   height: var(--header-height);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
 
 .header.scrolled .navbar {
-  background-color: rgba(255, 255, 255, 0.95);
   box-shadow: var(--shadow-md);
 }
 
